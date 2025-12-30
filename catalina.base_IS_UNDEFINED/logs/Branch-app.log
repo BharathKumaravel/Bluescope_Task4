@@ -710,3 +710,20 @@ com.fasterxml.jackson.core.JsonParseException: Unexpected character ('b' (code 9
 2025-12-30 17:13:06 INFO  org.example.servelet.EmployeeServelet - Employee created successfully: 1
 2025-12-30 17:13:06 INFO  org.example.servelet.EmployeeServelet - Updated Successfully
 2025-12-30 17:13:06 INFO  org.example.servelet.EmployeeServelet - Employee Deleted Successfully..
+2025-12-30 22:36:07 INFO  org.example.servelet.BankBranchManagement - Fetched all Branches successfully
+2025-12-30 22:36:07 INFO  org.example.servelet.BankBranchManagement - Updated Successfully
+2025-12-30 22:36:07 INFO  org.example.servelet.BankBranchManagement - Branch created successfully: 1
+2025-12-30 22:36:07 INFO  org.example.servelet.BankBranchManagement - Branch Deleted Successfully..
+2025-12-30 22:36:08 INFO  org.example.repository.BranchDAO - Successfully inserted account: 1
+2025-12-30 22:36:09 INFO  org.example.repository.BranchDAO - Successfully fetched all Branch, count=1
+2025-12-30 22:36:09 INFO  org.example.repository.BranchDAO - Successfully inserted account: 1
+2025-12-30 22:36:09 INFO  org.example.repository.BranchDAO - Successfully updated account with id=1
+2025-12-30 22:36:09 INFO  org.example.repository.BranchDAO - Successfully fetched all Branch, count=1
+2025-12-30 22:36:09 INFO  org.example.repository.BranchDAO - Successfully inserted account: 1
+2025-12-30 22:36:09 INFO  org.example.repository.BranchDAO - Successfully deleted Branch with id:1
+2025-12-30 22:36:09 INFO  org.example.repository.BranchDAO - Successfully fetched all Branch, count=0
+2025-12-30 22:36:09 INFO  org.example.repository.BranchDAO - Successfully inserted account: 1
+2025-12-30 22:36:09 INFO  org.example.repository.BranchDAO - Successfully fetched all Branch, count=1
+2025-12-30 22:36:09 INFO  org.example.servelet.EmployeeServelet - Employee created successfully: 1
+2025-12-30 22:36:09 INFO  org.example.servelet.EmployeeServelet - Updated Successfully
+2025-12-30 22:36:09 INFO  org.example.servelet.EmployeeServelet - Employee Deleted Successfully..
