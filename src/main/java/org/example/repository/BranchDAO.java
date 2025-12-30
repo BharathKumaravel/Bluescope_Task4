@@ -1,6 +1,7 @@
 package org.example.repository;
 
 import org.example.dbconfig.ConnectionClass;
+import org.example.exception.DataException;
 import org.example.model.Branch;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -12,26 +13,43 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class BranchRepository {
-    Logger LOG = LoggerFactory.getLogger(BranchRepository.class);
+public class BranchDAO {
+    Logger LOG = LoggerFactory.getLogger(BranchDAO.class);
+
+    static final int INSERT_BRANCH_ID=1;
+    static final int INSERT_BRANCH_NAME=2;
+    static final int INSERT_BRANCH_IFSCCODE=3;
+    static final int INSERT_BRANCH_CITY=4;
+    static final int INSERT_BRANCH_STATE=5;
+    static final int INSERT_BRANCH_PINCODE=6;
+    static final int INSERT_BRANCH_STATUS=7;
+
+    static final int DELETE_BRANCH_ID=1;
+
+    static final int UPDATE_BRANCH_IFSC=1;
+    static final int UPDATE_BRANCH_ID=2;
+
+
+
+
     String InsertSQl = "Insert into Branch (branchId ,branchName ,ifscCode ,city ,state ,pincode ,status) values(?,?,?,?,?,?,?) ";
     String SelectAllSQL ="select * from Branch";
     String DeleteSQL="Delete from Branch where branchId=?";
-
     String UpdateSQL="Update Branch set ifscCode =? where branchId=?";
+
     public void insert(Branch branch){
 
         try(Connection con = ConnectionClass.getConnection();
             PreparedStatement ps = con.prepareStatement(InsertSQl))
         {
 
-          ps.setInt(1,branch.getBranchId());
-          ps.setString(2,branch.getBranchName());
-          ps.setString(3,branch.getIfscCode());
-          ps.setString(4,branch.getCity());
-          ps.setString(5,branch.getState());
-          ps.setString(6,branch.getPincode());
-          ps.setString(7,branch.getStatus());
+          ps.setInt(INSERT_BRANCH_ID,branch.getBranchId());
+          ps.setString(INSERT_BRANCH_NAME,branch.getBranchName());
+          ps.setString(INSERT_BRANCH_IFSCCODE,branch.getIfscCode());
+          ps.setString(INSERT_BRANCH_CITY,branch.getCity());
+          ps.setString(INSERT_BRANCH_STATE,branch.getState());
+          ps.setString(INSERT_BRANCH_PINCODE,branch.getPincode());
+          ps.setString(INSERT_BRANCH_STATUS,branch.getStatus());
 
             int affectedRows = ps.executeUpdate();
             if (affectedRows == 0) {
@@ -45,7 +63,7 @@ public class BranchRepository {
         catch (SQLException e)
         {
 
-            LOG.error("Failed to Insert Branch");
+            throw new DataException("Failed:",e);
         }
 
 
@@ -68,8 +86,8 @@ public class BranchRepository {
 
 
         catch (SQLException e ) {
-            LOG.error("Failed to fetch Branch");
-            return branchList;
+
+            throw new DataException("Failed to fetch Branch ",e);
         }
     }
     public Branch mapping(ResultSet rs)throws SQLException{
@@ -88,7 +106,7 @@ public class BranchRepository {
     {
         try(Connection con = ConnectionClass.getConnection();
             PreparedStatement ps = con.prepareStatement(DeleteSQL)){
-            ps.setInt(1,id);
+            ps.setInt(DELETE_BRANCH_ID,id);
 
             int rows = ps.executeUpdate();
             if (rows == 0) {
@@ -101,18 +119,17 @@ public class BranchRepository {
 
 
         }
-        catch (Exception e)
+        catch (SQLException e)
         {
-            LOG.error("Failed to delete Branch");
-
+            throw new DataException("Failed to Delete Branch ",e);
         }
     }
 
     public void updateBranch(String ifsc ,int id)  {
         try(Connection con = ConnectionClass.getConnection();
             PreparedStatement ps =con.prepareStatement(UpdateSQL)){
-            ps.setString(1,ifsc);
-            ps.setInt(2,id);
+            ps.setString(UPDATE_BRANCH_IFSC,ifsc);
+            ps.setInt(UPDATE_BRANCH_ID,id);
 
             int rows = ps.executeUpdate();
             if (rows == 0) {
@@ -124,8 +141,8 @@ public class BranchRepository {
         }
         catch (SQLException e)
         {
-            LOG.error("Failed to update with id:"+id);
 
+            throw new DataException("Failed to Update",e);
         }
     }
 }

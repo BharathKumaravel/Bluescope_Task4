@@ -1,24 +1,24 @@
 package org.example.service;
 
 import org.example.model.Branch;
-import org.example.repository.BranchRepository;
+import org.example.repository.BranchDAO;
 
 public class BranchService {
 
-    BranchRepository branchRepository =new BranchRepository();
+    BranchDAO branchDAO =new BranchDAO();
     public void insert(Branch branch) {
-        branchRepository.insert(branch);
+        branchDAO.insert(branch);
     }
 
     public Object findAll() {
-        return branchRepository.findAll();
+        return branchDAO.findAll();
     }
 
     public void delete(int id) {
-        branchRepository.delete(id);
+        branchDAO.delete(id);
     }
 
-    public void updateBranch(String ifscCode, int branchId) {
-        branchRepository.updateBranch(ifscCode,branchId);
+    public void updateBranch(String designation, int employeeId) {
+        branchDAO.updateBranch(designation,employeeId);
     }
 }

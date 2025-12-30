@@ -1,9 +1,11 @@
 package org.example.dbconfig;
 
-import com.sun.org.slf4j.internal.Logger;
-import com.sun.org.slf4j.internal.LoggerFactory;
+import org.example.exception.DataException;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 
+import java.security.DigestException;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -13,7 +15,7 @@ public final class ConnectionClass {
     private static final String URL = "jdbc:mysql://localhost:3306/BankBranchManagement";
     private static final String USER = "root";
     private static final String PASSWORD = "root";
-    Logger LOG =LoggerFactory.getLogger(ConnectionClass.class);
+
     private ConnectionClass() {
         throw new UnsupportedOperationException("Utility class");
     }
@@ -23,6 +25,7 @@ public final class ConnectionClass {
             Class.forName("com.mysql.cj.jdbc.Driver");
         } catch (ClassNotFoundException e) {
 
+            throw new DataException("Driver not found",e);
         }
     }
 
@@ -30,7 +33,8 @@ public final class ConnectionClass {
         try {
             return DriverManager.getConnection(URL, USER, PASSWORD);
         } catch (SQLException e) {
-          return null;
+
+            throw new DataException("DB not connected",e);
         }
     }
 

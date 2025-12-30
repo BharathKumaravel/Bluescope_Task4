@@ -1,0 +1,712 @@
+2025-12-30 09:57:27 INFO  org.example.servelet.BankBranchManagement - Account created successfully: 1
+2025-12-30 09:59:31 INFO  org.example.repository.BranchRepository - Successfully fetched all Branch, count=2
+2025-12-30 09:59:31 INFO  org.example.servelet.BankBranchManagement - Fetched all Branches successfully
+2025-12-30 09:59:31 INFO  org.example.repository.BranchRepository - Successfully deleted Branch with id:1
+2025-12-30 09:59:31 INFO  org.example.servelet.BankBranchManagement - Branch Deleted Successfully..
+2025-12-30 09:59:31 INFO  org.example.repository.BranchRepository - Successfully inserted account: 1
+2025-12-30 09:59:31 INFO  org.example.servelet.BankBranchManagement - Account created successfully: 1
+2025-12-30 09:59:31 INFO  org.example.repository.BranchRepository - Successfully updated account with id=1
+2025-12-30 09:59:31 INFO  org.example.servelet.BankBranchManagement - Updated Successfully
+2025-12-30 10:00:24 INFO  org.example.servelet.BankBranchManagement - Account created successfully: 1
+2025-12-30 10:01:59 INFO  org.example.servelet.BankBranchManagement - Fetched all Branches successfully
+2025-12-30 10:02:06 INFO  org.example.servelet.BankBranchManagement - Fetched all Branches successfully
+2025-12-30 10:02:06 INFO  org.example.servelet.BankBranchManagement - Account created successfully: 1
+2025-12-30 10:03:01 INFO  org.example.servelet.BankBranchManagement - Branch Deleted Successfully..
+2025-12-30 10:05:45 INFO  org.example.servelet.BankBranchManagement - Fetched all Branches successfully
+2025-12-30 10:05:45 INFO  org.example.servelet.BankBranchManagement - Updated Successfully
+2025-12-30 10:05:45 INFO  org.example.servelet.BankBranchManagement - Account created successfully: 1
+2025-12-30 10:05:45 INFO  org.example.servelet.BankBranchManagement - Branch Deleted Successfully..
+2025-12-30 10:05:50 INFO  org.example.servelet.BankBranchManagement - Fetched all Branches successfully
+2025-12-30 10:05:50 INFO  org.example.servelet.BankBranchManagement - Updated Successfully
+2025-12-30 10:05:50 INFO  org.example.servelet.BankBranchManagement - Account created successfully: 1
+2025-12-30 10:05:50 INFO  org.example.servelet.BankBranchManagement - Branch Deleted Successfully..
+2025-12-30 10:05:52 INFO  org.example.servelet.BankBranchManagement - Fetched all Branches successfully
+2025-12-30 10:05:53 INFO  org.example.servelet.BankBranchManagement - Updated Successfully
+2025-12-30 10:05:53 INFO  org.example.servelet.BankBranchManagement - Account created successfully: 1
+2025-12-30 10:05:53 INFO  org.example.servelet.BankBranchManagement - Branch Deleted Successfully..
+2025-12-30 10:09:02 INFO  org.example.servelet.BankBranchManagement - Fetched all Branches successfully
+2025-12-30 10:09:02 INFO  org.example.servelet.BankBranchManagement - Updated Successfully
+2025-12-30 10:09:02 INFO  org.example.servelet.BankBranchManagement - Account created successfully: 1
+2025-12-30 10:09:02 INFO  org.example.servelet.BankBranchManagement - Branch Deleted Successfully..
+2025-12-30 10:09:45 INFO  org.example.servelet.BankBranchManagement - Fetched all Branches successfully
+2025-12-30 10:09:45 INFO  org.example.servelet.BankBranchManagement - Updated Successfully
+2025-12-30 10:09:45 INFO  org.example.servelet.BankBranchManagement - Account created successfully: 1
+2025-12-30 10:09:45 INFO  org.example.servelet.BankBranchManagement - Branch Deleted Successfully..
+2025-12-30 12:05:46 INFO  org.example.servelet.BankBranchManagement - Fetched all Branches successfully
+2025-12-30 12:05:46 INFO  org.example.servelet.BankBranchManagement - Updated Successfully
+2025-12-30 12:05:46 INFO  org.example.servelet.BankBranchManagement - Branch created successfully: 1
+2025-12-30 12:05:46 INFO  org.example.servelet.BankBranchManagement - Branch Deleted Successfully..
+2025-12-30 12:11:04 INFO  org.example.servelet.BankBranchManagement - Branch created successfully: 0
+2025-12-30 12:11:21 INFO  org.example.servelet.BankBranchManagement - Branch created successfully: 0
+2025-12-30 12:13:03 INFO  org.example.servelet.BankBranchManagement - Branch created successfully: null
+2025-12-30 12:15:04 ERROR org.example.servelet.BankBranchManagement - Failed to create Branch, EXCEPTION: 
+com.fasterxml.jackson.core.JsonParseException: Unexpected character ('b' (code 98)): was expecting double-quote to start field name
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 2]
+	at com.fasterxml.jackson.core.JsonParser._constructReadException(JsonParser.java:2643)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:685)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._handleOddName(UTF8StreamJsonParser.java:2103)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._parseName(UTF8StreamJsonParser.java:1753)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser.nextToken(UTF8StreamJsonParser.java:757)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:177)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:342)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4905)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3885)
+	at org.example.servelet.BankBranchManagement.doPost(BankBranchManagement.java:34)
+	at org.example.BankBranchManagementTest.TestdoPostError(BankBranchManagementTest.java:75)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:218)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:214)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:139)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:63)
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:66)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:237)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58)
+2025-12-30 12:16:07 ERROR org.example.servelet.BankBranchManagement - Failed to create Branch, EXCEPTION: 
+com.fasterxml.jackson.core.JsonParseException: Unexpected character ('b' (code 98)): was expecting double-quote to start field name
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 2]
+	at com.fasterxml.jackson.core.JsonParser._constructReadException(JsonParser.java:2643)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:685)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._handleOddName(UTF8StreamJsonParser.java:2103)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._parseName(UTF8StreamJsonParser.java:1753)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser.nextToken(UTF8StreamJsonParser.java:757)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:177)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:342)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4905)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3885)
+	at org.example.servelet.BankBranchManagement.doPost(BankBranchManagement.java:34)
+	at org.example.BankBranchManagementTest.TestdoPostError(BankBranchManagementTest.java:75)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:218)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:214)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:139)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:63)
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:66)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:237)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58)
+2025-12-30 12:16:11 ERROR org.example.servelet.BankBranchManagement - Failed to create Branch, EXCEPTION: 
+com.fasterxml.jackson.core.JsonParseException: Unexpected character ('b' (code 98)): was expecting double-quote to start field name
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 2]
+	at com.fasterxml.jackson.core.JsonParser._constructReadException(JsonParser.java:2643)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:685)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._handleOddName(UTF8StreamJsonParser.java:2103)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._parseName(UTF8StreamJsonParser.java:1753)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser.nextToken(UTF8StreamJsonParser.java:757)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:177)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:342)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4905)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3885)
+	at org.example.servelet.BankBranchManagement.doPost(BankBranchManagement.java:34)
+	at org.example.BankBranchManagementTest.TestdoPostError(BankBranchManagementTest.java:75)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:218)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:214)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:139)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:63)
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:66)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:237)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58)
+2025-12-30 12:16:37 ERROR org.example.servelet.BankBranchManagement - Failed to create Branch, EXCEPTION: 
+com.fasterxml.jackson.core.JsonParseException: Unexpected character ('b' (code 98)): was expecting double-quote to start field name
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 2]
+	at com.fasterxml.jackson.core.JsonParser._constructReadException(JsonParser.java:2643)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:685)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._handleOddName(UTF8StreamJsonParser.java:2103)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._parseName(UTF8StreamJsonParser.java:1753)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser.nextToken(UTF8StreamJsonParser.java:757)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:177)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:342)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4905)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3885)
+	at org.example.servelet.BankBranchManagement.doPost(BankBranchManagement.java:34)
+	at org.example.BankBranchManagementTest.TestdoPostError(BankBranchManagementTest.java:75)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:218)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:214)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:139)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:63)
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:66)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:237)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58)
+2025-12-30 12:16:55 ERROR org.example.servelet.BankBranchManagement - Failed to create Branch, EXCEPTION: 
+com.fasterxml.jackson.core.JsonParseException: Unexpected character ('b' (code 98)): was expecting double-quote to start field name
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 2]
+	at com.fasterxml.jackson.core.JsonParser._constructReadException(JsonParser.java:2643)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:685)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._handleOddName(UTF8StreamJsonParser.java:2103)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._parseName(UTF8StreamJsonParser.java:1753)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser.nextToken(UTF8StreamJsonParser.java:757)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:177)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:342)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4905)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3885)
+	at org.example.servelet.BankBranchManagement.doPost(BankBranchManagement.java:34)
+	at org.example.BankBranchManagementTest.TestdoPostError(BankBranchManagementTest.java:75)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:218)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:214)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:139)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:63)
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:66)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:237)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58)
+2025-12-30 12:17:13 ERROR org.example.servelet.BankBranchManagement - Failed to create Branch, EXCEPTION: 
+com.fasterxml.jackson.core.JsonParseException: Unexpected character ('b' (code 98)): was expecting double-quote to start field name
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 2]
+	at com.fasterxml.jackson.core.JsonParser._constructReadException(JsonParser.java:2643)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:685)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._handleOddName(UTF8StreamJsonParser.java:2103)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._parseName(UTF8StreamJsonParser.java:1753)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser.nextToken(UTF8StreamJsonParser.java:757)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:177)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:342)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4905)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3885)
+	at org.example.servelet.BankBranchManagement.doPost(BankBranchManagement.java:34)
+	at org.example.BankBranchManagementTest.TestdoPostError(BankBranchManagementTest.java:75)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:218)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:214)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:139)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:63)
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:66)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:237)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58)
+2025-12-30 12:23:23 INFO  org.example.servelet.BankBranchManagement - Branch created successfully: 1
+2025-12-30 12:23:57 INFO  org.example.servelet.BankBranchManagement - Branch created successfully: 1
+2025-12-30 12:24:12 INFO  org.example.servelet.BankBranchManagement - Branch created successfully: 1
+2025-12-30 12:25:08 INFO  org.example.servelet.BankBranchManagement - Branch created successfully: 1
+2025-12-30 12:25:22 INFO  org.example.servelet.BankBranchManagement - Branch created successfully: 1
+2025-12-30 12:25:41 INFO  org.example.servelet.BankBranchManagement - Branch created successfully: 1
+2025-12-30 12:27:06 INFO  org.example.servelet.BankBranchManagement - Fetched all Branches successfully
+2025-12-30 12:27:06 INFO  org.example.servelet.BankBranchManagement - Updated Successfully
+2025-12-30 12:27:06 INFO  org.example.servelet.BankBranchManagement - Branch created successfully: 1
+2025-12-30 12:27:06 INFO  org.example.servelet.BankBranchManagement - Branch Deleted Successfully..
+2025-12-30 12:27:06 INFO  org.example.servelet.BankBranchManagement - Branch created successfully: 1
+2025-12-30 12:29:32 INFO  org.example.servelet.BankBranchManagement - Fetched all Branches successfully
+2025-12-30 12:29:32 INFO  org.example.servelet.BankBranchManagement - Updated Successfully
+2025-12-30 12:29:32 INFO  org.example.servelet.BankBranchManagement - Branch created successfully: 1
+2025-12-30 12:29:32 INFO  org.example.servelet.BankBranchManagement - Branch Deleted Successfully..
+2025-12-30 12:29:32 INFO  org.example.servelet.BankBranchManagement - Branch created successfully: 1
+2025-12-30 12:59:41 INFO  org.example.servelet.BankBranchManagement - Fetched all Branches successfully
+2025-12-30 12:59:41 INFO  org.example.servelet.BankBranchManagement - Updated Successfully
+2025-12-30 12:59:42 INFO  org.example.servelet.BankBranchManagement - Branch created successfully: 1
+2025-12-30 12:59:42 INFO  org.example.servelet.BankBranchManagement - Branch Deleted Successfully..
+2025-12-30 12:59:42 INFO  org.example.servelet.BankBranchManagement - Branch created successfully: 1
+2025-12-30 13:00:16 INFO  org.example.servelet.BankBranchManagement - Fetched all Branches successfully
+2025-12-30 13:00:16 INFO  org.example.servelet.BankBranchManagement - Updated Successfully
+2025-12-30 13:00:16 INFO  org.example.servelet.BankBranchManagement - Branch created successfully: 1
+2025-12-30 13:00:16 INFO  org.example.servelet.BankBranchManagement - Branch Deleted Successfully..
+2025-12-30 13:00:16 INFO  org.example.servelet.BankBranchManagement - Branch created successfully: 1
+2025-12-30 13:01:34 INFO  org.example.servelet.BankBranchManagement - Fetched all Branches successfully
+2025-12-30 13:01:34 INFO  org.example.servelet.BankBranchManagement - Updated Successfully
+2025-12-30 13:01:34 INFO  org.example.servelet.BankBranchManagement - Branch created successfully: 1
+2025-12-30 13:01:34 INFO  org.example.servelet.BankBranchManagement - Branch Deleted Successfully..
+2025-12-30 13:01:34 INFO  org.example.servelet.BankBranchManagement - Branch created successfully: 1
+2025-12-30 13:01:48 INFO  org.example.servelet.BankBranchManagement - Fetched all Branches successfully
+2025-12-30 13:01:48 INFO  org.example.servelet.BankBranchManagement - Updated Successfully
+2025-12-30 13:01:48 INFO  org.example.servelet.BankBranchManagement - Branch created successfully: 1
+2025-12-30 13:01:48 INFO  org.example.servelet.BankBranchManagement - Branch Deleted Successfully..
+2025-12-30 13:01:48 INFO  org.example.servelet.BankBranchManagement - Branch created successfully: 1
+2025-12-30 13:08:11 INFO  org.example.servelet.BankBranchManagement - Fetched all Branches successfully
+2025-12-30 13:08:11 INFO  org.example.servelet.BankBranchManagement - Updated Successfully
+2025-12-30 13:08:11 INFO  org.example.servelet.BankBranchManagement - Branch created successfully: 1
+2025-12-30 13:08:11 INFO  org.example.servelet.BankBranchManagement - Branch Deleted Successfully..
+2025-12-30 13:08:11 INFO  org.example.servelet.BankBranchManagement - Branch created successfully: 1
+2025-12-30 13:11:09 INFO  org.example.servelet.BankBranchManagement - Fetched all Branches successfully
+2025-12-30 13:11:10 INFO  org.example.servelet.BankBranchManagement - Updated Successfully
+2025-12-30 13:11:10 INFO  org.example.servelet.BankBranchManagement - Branch created successfully: 1
+2025-12-30 13:11:10 INFO  org.example.servelet.BankBranchManagement - Branch Deleted Successfully..
+2025-12-30 13:11:10 INFO  org.example.servelet.BankBranchManagement - Branch created successfully: 1
+2025-12-30 13:14:19 INFO  org.example.servelet.BankBranchManagement - Fetched all Branches successfully
+2025-12-30 13:14:19 INFO  org.example.servelet.BankBranchManagement - Updated Successfully
+2025-12-30 13:14:19 INFO  org.example.servelet.BankBranchManagement - Branch created successfully: 1
+2025-12-30 13:14:19 INFO  org.example.servelet.BankBranchManagement - Branch Deleted Successfully..
+2025-12-30 13:14:19 INFO  org.example.servelet.BankBranchManagement - Branch created successfully: 1
+2025-12-30 14:11:02 INFO  org.example.servelet.BankBranchManagement - Fetched all Branches successfully
+2025-12-30 14:11:02 INFO  org.example.servelet.BankBranchManagement - Updated Successfully
+2025-12-30 14:11:02 INFO  org.example.servelet.BankBranchManagement - Branch created successfully: 1
+2025-12-30 14:11:02 INFO  org.example.servelet.BankBranchManagement - Branch Deleted Successfully..
+2025-12-30 14:11:02 INFO  org.example.servelet.BankBranchManagement - Branch created successfully: 1
+2025-12-30 14:15:28 INFO  org.example.servelet.BankBranchManagement - Fetched all Branches successfully
+2025-12-30 14:15:28 INFO  org.example.servelet.BankBranchManagement - Updated Successfully
+2025-12-30 14:15:28 INFO  org.example.servelet.BankBranchManagement - Branch created successfully: 1
+2025-12-30 14:15:28 INFO  org.example.servelet.BankBranchManagement - Branch Deleted Successfully..
+2025-12-30 14:15:28 INFO  org.example.servelet.BankBranchManagement - Branch created successfully: 1
+2025-12-30 14:17:01 INFO  org.example.servelet.BankBranchManagement - Fetched all Branches successfully
+2025-12-30 14:17:01 INFO  org.example.servelet.BankBranchManagement - Updated Successfully
+2025-12-30 14:17:01 INFO  org.example.servelet.BankBranchManagement - Branch created successfully: 1
+2025-12-30 14:17:01 INFO  org.example.servelet.BankBranchManagement - Branch Deleted Successfully..
+2025-12-30 14:17:01 INFO  org.example.servelet.BankBranchManagement - Branch created successfully: 1
+2025-12-30 14:18:07 INFO  org.example.servelet.BankBranchManagement - Fetched all Branches successfully
+2025-12-30 14:18:07 INFO  org.example.servelet.BankBranchManagement - Updated Successfully
+2025-12-30 14:18:07 INFO  org.example.servelet.BankBranchManagement - Branch created successfully: 1
+2025-12-30 14:18:07 INFO  org.example.servelet.BankBranchManagement - Branch Deleted Successfully..
+2025-12-30 14:18:07 INFO  org.example.servelet.BankBranchManagement - Branch created successfully: 1
+2025-12-30 14:20:49 INFO  org.example.servelet.BankBranchManagement - Fetched all Branches successfully
+2025-12-30 14:20:49 INFO  org.example.servelet.BankBranchManagement - Updated Successfully
+2025-12-30 14:20:49 INFO  org.example.servelet.BankBranchManagement - Branch created successfully: 1
+2025-12-30 14:20:49 INFO  org.example.servelet.BankBranchManagement - Branch Deleted Successfully..
+2025-12-30 14:20:49 INFO  org.example.servelet.BankBranchManagement - Branch created successfully: 1
+2025-12-30 15:11:29 INFO  org.example.servelet.BankBranchManagement - Fetched all Branches successfully
+2025-12-30 15:11:29 INFO  org.example.servelet.BankBranchManagement - Updated Successfully
+2025-12-30 15:11:30 INFO  org.example.repository.BranchDAO - Successfully inserted account: 1
+2025-12-30 15:11:30 INFO  org.example.servelet.BankBranchManagement - Branch created successfully: 1
+2025-12-30 15:11:30 INFO  org.example.servelet.BankBranchManagement - Branch Deleted Successfully..
+2025-12-30 15:12:09 INFO  org.example.servelet.BankBranchManagement - Fetched all Branches successfully
+2025-12-30 15:12:09 INFO  org.example.servelet.BankBranchManagement - Updated Successfully
+2025-12-30 15:12:09 INFO  org.example.servelet.BankBranchManagement - Branch created successfully: 1
+2025-12-30 15:12:09 INFO  org.example.servelet.BankBranchManagement - Branch Deleted Successfully..
+2025-12-30 15:12:18 INFO  org.example.servelet.BankBranchManagement - Fetched all Branches successfully
+2025-12-30 15:12:18 INFO  org.example.servelet.BankBranchManagement - Updated Successfully
+2025-12-30 15:12:18 INFO  org.example.servelet.BankBranchManagement - Branch created successfully: 1
+2025-12-30 15:12:18 INFO  org.example.servelet.BankBranchManagement - Branch Deleted Successfully..
+2025-12-30 15:28:16 INFO  org.example.servelet.BankBranchManagement - Fetched all Branches successfully
+2025-12-30 15:28:16 INFO  org.example.servelet.BankBranchManagement - Updated Successfully
+2025-12-30 15:28:16 INFO  org.example.servelet.BankBranchManagement - Branch created successfully: 1
+2025-12-30 15:28:16 INFO  org.example.servelet.BankBranchManagement - Branch Deleted Successfully..
+2025-12-30 15:38:57 INFO  org.example.servelet.BankBranchManagement - Fetched all Branches successfully
+2025-12-30 15:38:57 INFO  org.example.servelet.BankBranchManagement - Updated Successfully
+2025-12-30 15:38:57 INFO  org.example.servelet.BankBranchManagement - Updated Successfully
+2025-12-30 15:38:57 INFO  org.example.servelet.BankBranchManagement - Branch created successfully: 1
+2025-12-30 15:38:57 INFO  org.example.servelet.BankBranchManagement - Branch Deleted Successfully..
+2025-12-30 15:39:16 INFO  org.example.servelet.BankBranchManagement - Fetched all Branches successfully
+2025-12-30 15:39:16 INFO  org.example.servelet.BankBranchManagement - Updated Successfully
+2025-12-30 15:39:16 INFO  org.example.servelet.BankBranchManagement - Updated Successfully
+2025-12-30 15:39:16 INFO  org.example.servelet.BankBranchManagement - Branch created successfully: 1
+2025-12-30 15:39:16 INFO  org.example.servelet.BankBranchManagement - Branch Deleted Successfully..
+2025-12-30 15:40:52 INFO  org.example.servelet.BankBranchManagement - Updated Successfully
+2025-12-30 15:41:03 INFO  org.example.servelet.BankBranchManagement - Fetched all Branches successfully
+2025-12-30 15:41:03 INFO  org.example.servelet.BankBranchManagement - Updated Successfully
+2025-12-30 15:41:03 INFO  org.example.servelet.BankBranchManagement - Updated Successfully
+2025-12-30 15:41:03 INFO  org.example.servelet.BankBranchManagement - Branch created successfully: 1
+2025-12-30 15:41:03 INFO  org.example.servelet.BankBranchManagement - Branch Deleted Successfully..
+2025-12-30 16:10:35 INFO  org.example.repository.BranchDAO - Successfully fetched all Branch, count=1
+2025-12-30 16:10:35 INFO  org.example.repository.BranchDAO - Successfully updated account with id=1
+2025-12-30 16:10:35 INFO  org.example.servelet.BankBranchManagement - Updated Successfully
+2025-12-30 16:10:35 ERROR org.example.repository.BranchDAO - Update failed
+2025-12-30 16:10:35 INFO  org.example.servelet.BankBranchManagement - Updated Successfully
+2025-12-30 16:10:36 INFO  org.example.repository.BranchDAO - Successfully deleted Branch with id:1
+2025-12-30 16:10:36 INFO  org.example.servelet.BankBranchManagement - Branch Deleted Successfully..
+2025-12-30 16:11:59 INFO  org.example.repository.BranchDAO - Successfully inserted account: 1
+2025-12-30 16:11:59 INFO  org.example.servelet.BankBranchManagement - Branch created successfully: 1
+2025-12-30 16:12:12 INFO  org.example.repository.BranchDAO - Successfully fetched all Branch, count=1
+2025-12-30 16:12:18 INFO  org.example.repository.BranchDAO - Successfully deleted Branch with id:1
+2025-12-30 16:12:18 INFO  org.example.servelet.BankBranchManagement - Branch Deleted Successfully..
+2025-12-30 16:12:29 ERROR org.example.repository.BranchDAO - Update failed
+2025-12-30 16:12:29 INFO  org.example.servelet.BankBranchManagement - Updated Successfully
+2025-12-30 16:12:34 ERROR org.example.repository.BranchDAO - Update failed
+2025-12-30 16:12:34 INFO  org.example.servelet.BankBranchManagement - Updated Successfully
+2025-12-30 16:13:54 INFO  org.example.repository.BranchDAO - Successfully fetched all Branch, count=0
+2025-12-30 16:13:54 ERROR org.example.repository.BranchDAO - Update failed
+2025-12-30 16:13:54 INFO  org.example.servelet.BankBranchManagement - Updated Successfully
+2025-12-30 16:13:54 ERROR org.example.repository.BranchDAO - Update failed
+2025-12-30 16:13:54 INFO  org.example.servelet.BankBranchManagement - Updated Successfully
+2025-12-30 16:13:54 INFO  org.example.repository.BranchDAO - Successfully inserted account: 1
+2025-12-30 16:13:54 INFO  org.example.servelet.BankBranchManagement - Branch created successfully: 1
+2025-12-30 16:13:54 INFO  org.example.repository.BranchDAO - Successfully deleted Branch with id:1
+2025-12-30 16:13:54 INFO  org.example.servelet.BankBranchManagement - Branch Deleted Successfully..
+2025-12-30 16:15:06 INFO  org.example.servelet.BankBranchManagement - Fetched all Branches successfully
+2025-12-30 16:15:06 INFO  org.example.servelet.BankBranchManagement - Updated Successfully
+2025-12-30 16:15:06 INFO  org.example.servelet.BankBranchManagement - Updated Successfully
+2025-12-30 16:15:06 INFO  org.example.servelet.BankBranchManagement - Branch created successfully: 1
+2025-12-30 16:15:06 INFO  org.example.servelet.BankBranchManagement - Branch Deleted Successfully..
+2025-12-30 16:44:05 INFO  org.example.servelet.EmployeeServelet - Employee created successfully: 1
+2025-12-30 16:46:07 INFO  org.example.servelet.EmployeeServelet - Employee created successfully: 0
+2025-12-30 16:46:54 INFO  org.example.servelet.EmployeeServelet - Employee created successfully: 0
+2025-12-30 16:48:30 INFO  org.example.servelet.BankBranchManagement - Branch created successfully: 0
+2025-12-30 16:48:42 INFO  org.example.servelet.EmployeeServelet - Employee created successfully: 1
+2025-12-30 16:48:42 INFO  org.example.servelet.EmployeeServelet - Employee created successfully: 0
+2025-12-30 16:48:57 INFO  org.example.servelet.BankBranchManagement - Fetched all Branches successfully
+2025-12-30 16:48:57 INFO  org.example.servelet.BankBranchManagement - Updated Successfully
+2025-12-30 16:48:57 INFO  org.example.servelet.BankBranchManagement - Updated Successfully
+2025-12-30 16:48:57 INFO  org.example.servelet.BankBranchManagement - Branch created successfully: 0
+2025-12-30 16:48:57 INFO  org.example.servelet.BankBranchManagement - Branch created successfully: 1
+2025-12-30 16:48:57 INFO  org.example.servelet.BankBranchManagement - Branch Deleted Successfully..
+2025-12-30 16:48:57 INFO  org.example.servelet.EmployeeServelet - Employee created successfully: 1
+2025-12-30 16:48:57 INFO  org.example.servelet.EmployeeServelet - Employee created successfully: 0
+2025-12-30 16:50:16 INFO  org.example.servelet.EmployeeServelet - Employee created successfully: 1
+2025-12-30 16:52:31 INFO  org.example.servelet.EmployeeServelet - Employee Deleted Successfully..
+2025-12-30 16:55:55 INFO  org.example.servelet.BankBranchManagement - Fetched all Branches successfully
+2025-12-30 16:55:55 INFO  org.example.servelet.BankBranchManagement - Updated Successfully
+2025-12-30 16:55:55 INFO  org.example.servelet.BankBranchManagement - Updated Successfully
+2025-12-30 16:55:55 INFO  org.example.servelet.BankBranchManagement - Branch created successfully: 0
+2025-12-30 16:55:55 INFO  org.example.servelet.BankBranchManagement - Branch created successfully: 1
+2025-12-30 16:55:55 INFO  org.example.servelet.BankBranchManagement - Branch Deleted Successfully..
+2025-12-30 16:55:55 INFO  org.example.servelet.EmployeeServelet - Employee created successfully: 1
+2025-12-30 16:55:55 INFO  org.example.servelet.EmployeeServelet - Employee created successfully: 0
+2025-12-30 16:55:55 INFO  org.example.servelet.EmployeeServelet - Employee Deleted Successfully..
+2025-12-30 16:58:36 INFO  org.example.servelet.BankBranchManagement - Fetched all Branches successfully
+2025-12-30 16:58:36 INFO  org.example.servelet.BankBranchManagement - Updated Successfully
+2025-12-30 16:58:36 INFO  org.example.servelet.BankBranchManagement - Updated Successfully
+2025-12-30 16:58:36 INFO  org.example.servelet.BankBranchManagement - Branch created successfully: 1
+2025-12-30 16:58:36 INFO  org.example.servelet.BankBranchManagement - Branch Deleted Successfully..
+2025-12-30 16:58:36 INFO  org.example.servelet.EmployeeServelet - Employee created successfully: 1
+2025-12-30 16:58:36 INFO  org.example.servelet.EmployeeServelet - Employee Deleted Successfully..
+2025-12-30 17:09:22 INFO  org.example.servelet.EmployeeServelet - Updated Successfully
+2025-12-30 17:13:06 INFO  org.example.servelet.BankBranchManagement - Fetched all Branches successfully
+2025-12-30 17:13:06 INFO  org.example.servelet.BankBranchManagement - Updated Successfully
+2025-12-30 17:13:06 INFO  org.example.servelet.BankBranchManagement - Branch created successfully: 1
+2025-12-30 17:13:06 INFO  org.example.servelet.BankBranchManagement - Branch Deleted Successfully..
+2025-12-30 17:13:06 INFO  org.example.servelet.EmployeeServelet - Employee created successfully: 1
+2025-12-30 17:13:06 INFO  org.example.servelet.EmployeeServelet - Updated Successfully
+2025-12-30 17:13:06 INFO  org.example.servelet.EmployeeServelet - Employee Deleted Successfully..

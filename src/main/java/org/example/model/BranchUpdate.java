@@ -3,6 +3,11 @@ package org.example.model;
 public class BranchUpdate {
     private int branchId;
     private String ifscCode;
+    public BranchUpdate(){}
+    public BranchUpdate(int branchId, String ifscCode) {
+        this.branchId = branchId;
+        this.ifscCode = ifscCode;
+    }
 
     public int getBranchId() {
         return branchId;

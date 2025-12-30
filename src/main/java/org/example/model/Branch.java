@@ -9,6 +9,22 @@ public class Branch {
    private String pincode;
    private String status;
 
+    public Branch(int branchId, String branchName, String ifscCode, String city, String state, String pincode, String status) {
+        this.branchId = branchId;
+        this.branchName = branchName;
+        this.ifscCode = ifscCode;
+        this.city = city;
+        this.state = state;
+        this.pincode = pincode;
+        this.status = status;
+    }
+    public Branch(){
+
+    }
+
+    public Branch(int branchId) {
+        this.branchId = branchId;
+    }
 
     public int getBranchId() {
         return branchId;
