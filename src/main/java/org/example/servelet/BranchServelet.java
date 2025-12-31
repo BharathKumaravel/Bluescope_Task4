@@ -19,11 +19,11 @@ import java.io.IOException;
 
 
 @WebServlet("/branch")
-public class BankBranchManagement extends HttpServlet {
+public class BranchServelet extends HttpServlet {
     private static final long serialVersionUID=1L;
 
 
-   static  Logger LOG = LoggerFactory.getLogger(BankBranchManagement.class);
+   static  Logger LOG = LoggerFactory.getLogger(BranchServelet.class);
 
     private final ObjectMapper objectMapper = new ObjectMapper();
 
@@ -41,7 +41,7 @@ public class BankBranchManagement extends HttpServlet {
         catch (IOException e) {
 
             response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
-            throw new DataException("Failed to insert Branch, EXCEPTION: ",e);
+            LOG.error("Failed to insert Branch, EXCEPTION: ",e);
         }
     }
     @Override
@@ -56,7 +56,7 @@ public class BankBranchManagement extends HttpServlet {
         {
 
             response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
-            throw new DataException("Failed to get Branch , EXCEPTION: ", e);
+            LOG.error("Failed to get Branch , EXCEPTION: ", e);
         }
 
     }
@@ -83,7 +83,7 @@ public class BankBranchManagement extends HttpServlet {
         {
 
             response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
-            throw new DataException("Failed to delete Branch, EXCEPTION: "+e);
+            LOG.error("Failed to delete Branch, EXCEPTION: ",e);
         }
     }
 
@@ -100,7 +100,7 @@ public class BankBranchManagement extends HttpServlet {
         {
 
             response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
-            throw new DataException("Failed to Update Branch , EXCEPTION: ",e);
+          LOG.error("Failed to Update Branch , EXCEPTION: ",e);
 
         }
     }

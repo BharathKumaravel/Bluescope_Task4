@@ -1,16 +1,13 @@
 package org.example;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.example.exception.DataException;
 import org.example.model.Branch;
 import org.example.model.BranchUpdate;
-import org.example.servelet.BankBranchManagement;
+import org.example.servelet.BranchServelet;
 import org.example.service.BranchService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.mockito.InjectMocks;
-import org.mockito.Mock;
 
 import javax.servlet.ReadListener;
 import javax.servlet.http.HttpServletRequest;
@@ -28,10 +25,10 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.*;
 
-public class BankBranchManagementTest {
+public class BranchServeletTest {
 
     ObjectMapper objectMapper =new ObjectMapper();
-    private BankBranchManagement branchServelet;
+    private BranchServelet branchServelet;
     private HttpServletResponse response;
     private  HttpServletRequest request;
     private BranchService branchService;
@@ -39,12 +36,12 @@ public class BankBranchManagementTest {
 
     @BeforeEach
     void set() throws Exception{
-        branchServelet =new BankBranchManagement();
+        branchServelet =new BranchServelet();
         request=mock(HttpServletRequest.class);
         response=mock(HttpServletResponse.class);
         branchService= mock(BranchService.class);
 
-        var field = BankBranchManagement.class.getDeclaredField("branchService");
+        var field = BranchServelet.class.getDeclaredField("branchService");
         field.setAccessible(true);
         field.set(branchServelet, branchService);
 

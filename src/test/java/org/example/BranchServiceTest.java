@@ -11,8 +11,7 @@ import java.lang.reflect.Field;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.mockito.Mockito.verify;
-import static org.mockito.Mockito.when;
+import static org.mockito.Mockito.*;
 
 class BranchServiceTest {
 
@@ -23,7 +22,7 @@ class BranchServiceTest {
     void setup() throws Exception {
 
         branchService = new BranchService();
-        branchDAO = Mockito.mock(BranchDAO.class);
+        branchDAO = mock(BranchDAO.class);
 
 
         var field = BranchService.class.getDeclaredField("branchDAO");
@@ -47,7 +46,7 @@ class BranchServiceTest {
         List<Branch> branches = List.of(new Branch());
         when(branchDAO.findAll()).thenReturn(branches);
 
-        Object result = branchService.findAll();
+         Object  result = branchService.findAll();
 
         assertEquals(branches, result);
         verify(branchDAO).findAll();

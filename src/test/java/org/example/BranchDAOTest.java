@@ -12,7 +12,9 @@ import java.sql.DriverManager;
 import java.sql.Statement;
 import java.util.List;
 
+import static java.lang.Class.forName;
 import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.Mockito.when;
 
 class BranchDAOTest {
 
@@ -24,13 +26,16 @@ class BranchDAOTest {
         branchDAO = new BranchDAO();
 
 
-        try (Connection con = DriverManager.getConnection(
+        try (
+
+                Connection con = DriverManager.getConnection(
                 "jdbc:mysql://localhost:3306/BankBranchManagement",
                 "root",
                 "root"
         )) {
             Statement stmt = con.createStatement();
-            stmt.execute("DELETE FROM Branch");
+            stmt.execute("Delete from employee");
+            stmt.execute("Delete from Branch");
         }
     }
 
@@ -41,10 +46,22 @@ class BranchDAOTest {
 
         branchDAO.insert(branch);
 
-        List<Branch> brancheList = branchDAO.findAll();
-        assertEquals(1, brancheList.size());
-        assertEquals("Chennai", brancheList.get(0).getBranchName());
+        List<Branch> branches = branchDAO.findAll();
+        assertEquals(1, branches.size());
+        assertEquals("ChennaiBranch", branches.get(0).getBranchName());
     }
+    @Test
+    void testInsertInvalid() {
+
+        Branch branch = new Branch();
+        try {
+            branchDAO.insert(branch);
+        } catch (DataException e) {
+            assertNotNull(e.getMessage());
+            assertEquals("Failed:", e.getMessage());
+        }
+    }
+
 
     @Test
     void testFindAll() {
@@ -80,14 +97,7 @@ class BranchDAOTest {
 
     private Branch createBranch() {
 
-        Branch b = new Branch();
-        b.setBranchId(1);
-        b.setBranchName("Chennai");
-        b.setIfscCode("IFSC001");
-        b.setCity("Chennai");
-        b.setState("TN");
-        b.setPincode("600001");
-        b.setStatus("ACTIVE");
+        Branch b = new Branch(1,"ChennaiBranch","KKBK000123","Chennai","TamilNadu","600100","ACTIVE");
         return b;
     }
 }

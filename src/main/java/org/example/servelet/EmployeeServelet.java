@@ -2,8 +2,6 @@ package org.example.servelet;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.example.exception.DataException;
-import org.example.model.Branch;
-import org.example.model.BranchUpdate;
 import org.example.model.Employee;
 import org.example.model.EmployeeUpdate;
 import org.example.service.EmployeeService;
@@ -15,6 +13,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.List;
 
 @WebServlet("/employee")
 public class EmployeeServelet extends HttpServlet {
@@ -38,7 +37,7 @@ public class EmployeeServelet extends HttpServlet {
         catch (IOException e) {
 
             response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
-            throw new DataException("Failed to insert Employee",e);
+            LOG.error("Failed to insert Employee",e);
         }
     }
     @Override
@@ -52,7 +51,7 @@ public class EmployeeServelet extends HttpServlet {
         {
 
             response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
-            throw new DataException("Failed to Delete Employee",e);
+            LOG.error("Failed to Delete Employee",e);
         }
     }
 
@@ -68,7 +67,26 @@ public class EmployeeServelet extends HttpServlet {
         {
             response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
 
-            throw new DataException("Failed to Update Employee",e);
+            LOG.error("Failed to Update Employee",e);
+        }
+    }
+
+    @Override
+    public void doGet(HttpServletRequest request,HttpServletResponse response)
+    {
+
+        try{
+            int branchId = Integer.parseInt(request.getParameter("branchId"));
+        List<Employee> employees = employeeService.getByBranchId(branchId);
+
+        ObjectMapper mapper = new ObjectMapper();
+        String json = mapper.writeValueAsString(employees);
+
+        response.setStatus(HttpServletResponse.SC_OK);
+        response.getWriter().write(json);}
+        catch (Exception e)
+        {
+            LOG.error("Failed :",e);
         }
     }
 

@@ -8,7 +8,10 @@ import org.slf4j.LoggerFactory;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class EmployeeDAO {
 
@@ -21,12 +24,14 @@ public class EmployeeDAO {
 
     static final int UPDATE_EMPLOYEE_DESIGNATION=1;
     static final int UPDATE_EMPLOYEE_ID=2;
+
+    static  final int GET_EMPLOYEE_BY_BRANCHID=1;
     Logger LOG = LoggerFactory.getLogger(EmployeeDAO.class);
 
     String InsertSQl = "Insert into employee (branchId,employeeId,employeeName,designation) values(?,?,?,?)";
-    String SelectAllSQL ="select * from employee";
     String DeleteSQL="Delete from employee where employeeId=?";
     String UpdateSQL="Update employee set designation=? where employeeId=?";
+    String GetByBranchIdSQL="select * from Employee where branchId=?";
 
     public void insert(Employee employee){
 
@@ -59,6 +64,7 @@ public class EmployeeDAO {
     }
     public void delete(int id)
     {
+
         try(Connection con = ConnectionClass.getConnection();
             PreparedStatement ps = con.prepareStatement(DeleteSQL)){
             ps.setInt(DELETE_EMPLOYEE_ID,id);
@@ -98,6 +104,33 @@ public class EmployeeDAO {
 
             throw new DataException("Failed to update employee",e);
         }
+    }
+
+    public List<Employee> getEmployeeByBranchId(int branchId)
+    {
+        try(Connection con =ConnectionClass.getConnection();
+         PreparedStatement ps = con.prepareStatement(GetByBranchIdSQL)){
+            ps.setInt(GET_EMPLOYEE_BY_BRANCHID,branchId);
+            ResultSet rs = ps.executeQuery();
+            List<Employee> employeeList = new ArrayList<>();
+            while(rs.next()){
+                employeeList.add(mapping(rs));
+            }
+            return employeeList;
+        }
+
+        catch (SQLException e)
+        {
+            throw new DataException("Failed to get Employee",e);
+        }
+    }
+    public Employee mapping(ResultSet rs) throws SQLException {
+        Employee employee =new Employee();
+        employee.setEmployeeName(rs.getString("employeeName"));
+        employee.setEmployeeId(rs.getInt("employeeId"));
+        employee.setDesignation(rs.getString("Designation"));
+        employee.setBranchId(rs.getInt("branchId"));
+        return employee;
     }
 
 }

@@ -1,8 +1,8 @@
 package org.example.service;
-
-import org.example.model.Branch;
 import org.example.model.Employee;
 import org.example.repository.EmployeeDAO;
+
+import java.util.List;
 
 public class EmployeeService {
     EmployeeDAO employeeDAO = new EmployeeDAO();
@@ -10,8 +10,9 @@ public class EmployeeService {
         employeeDAO.insert(employee);
     }
     public void delete(int id) {employeeDAO.delete(id);}
-    public void updateEmployee(String ifscCode, int branchId) {
-        employeeDAO.updateEmployee(ifscCode,branchId);
+    public void updateEmployee(String designation, int employeeId) {
+        employeeDAO.updateEmployee(designation,employeeId);
     }
+    public List<Employee> getByBranchId(int branchId){return employeeDAO.getEmployeeByBranchId(branchId);}
 }
 
