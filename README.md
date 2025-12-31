@@ -67,8 +67,7 @@ create table Branch(branchId int not null primary key,
    -designation: Employee Designation ,not null
 
    ---
-
-   ## Example API Requests and Responses
+ ## Example API Requests and Responses
 
 ### Branch Endpoints (/branch)
 
@@ -89,7 +88,7 @@ create table Branch(branchId int not null primary key,
 ## Insert Branch
 *Request*
 *Post/branch*
-json
+```json
 {
   "branchId":4,
 	"branchName": "chennaiBranch",
@@ -99,6 +98,7 @@ json
 	"pincode": "600100",
 	"status": "ACTIVE"
   }
+```
 
 *Response(JSON)*
  - Status: 202 Created
@@ -108,9 +108,9 @@ json
     *Get/branch*
 
  *Response*
- json
-{
-  "branchId":4,
+``` json
+ [{
+  "branchId":1,
 	"branchName": "chennaiBranch",
 	"ifscCode": "KKBK000123",
 	"city": "chennai",
@@ -118,6 +118,35 @@ json
 	"pincode": "600100",
 	"status": "ACTIVE"
   }
+  {
+  "branchId":2,
+	"branchName": "chennaiBranch",
+	"ifscCode": "KKBK000123",
+	"city": "chennai",
+	"state": "Tamil Nadu",
+	"pincode": "600100",
+	"status": "ACTIVE"
+  }]
+```
+
+## Delete Branch
+*Request*
+  *Delete/branch?id=branchId*
+*Response*
+   - Status: 200
+
+## Update Branch
+*Request*
+ *Update/branch*
+ ```json
+{
+    "branchId":3,
+    "ifscCode":"KKBK000111"
+	
+}
+```
+*response*
+  -status:200
 
 
      
