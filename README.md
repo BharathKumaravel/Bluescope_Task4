@@ -74,7 +74,7 @@ create table Branch(branchId int not null primary key,
 | Operation   | HTTP Method | URL                            |
 |-------------|-------------|--------------------------------|
 | Create      | POST        | /branch                      |
-| Get All     | GET         | /loan/account                |
+| Get All     | GET         | /branch              |
 | Update      | PUT         | /branch              |
 | Delete      | DELETE      | /branch?id={branchId} |
 
@@ -87,10 +87,10 @@ create table Branch(branchId int not null primary key,
 
 ## Insert Branch
 *Request*
-*Post/branch*
+`Post/branch`
 ```json
 {
-  "branchId":4,
+  "branchId":1,
 	"branchName": "chennaiBranch",
 	"ifscCode": "KKBK000123",
 	"city": "chennai",
@@ -105,7 +105,7 @@ create table Branch(branchId int not null primary key,
 
   ## Get Branch
  *Request*
-    *Get/branch*
+    `Get/branch`
 
  *Response*
 ``` json
@@ -131,16 +131,16 @@ create table Branch(branchId int not null primary key,
 
 ## Delete Branch
 *Request*
-  *Delete/branch?id=branchId*
+  `Delete/branch?id=branchId`
 *Response*
    - Status: 200
 
 ## Update Branch
 *Request*
- *Update/branch*
+ `Update/branch`
  ```json
 {
-    "branchId":3,
+    "branchId":1,
     "ifscCode":"KKBK000111"
 	
 }
@@ -149,7 +149,76 @@ create table Branch(branchId int not null primary key,
   -status:200
 
 
-     
+     ### EMployee Endpoints (/branch)
+
+| Operation   | HTTP Method | URL                            |
+|-------------|-------------|--------------------------------|
+| Create      | POST        | /employee                      |
+| Get All     | GET         | /employee               |
+| Update      | PUT         | /employee              |
+| Delete      | DELETE      | /employee?id={branchId} |
+
+
+  ---
+
+  
+### Request and Response
+*Request Body(JSON)*
+
+## Insert Branch
+*Request*
+`Post/employee`
+```json
+{
+   "branchId":1, 
+     "employeeId":2,
+     "employeeName":"Bharath",
+     "designation" :"Manager"
+  }
+```
+
+*Response(JSON)*
+ - Status: 202 Created
+
+  ## Get employee by branch id
+ *Request*
+    `Get/employee?id=branchId`
+
+ *Response*
+``` json
+ [{
+    "branchId":1, 
+     "employeeId":1,
+     "employeeName":"Bharath",
+     "designation" :"Manager"
+  }
+  {
+   "branchId":1, 
+     "employeeId":2,
+     "employeeName":"Bharath",
+     "designation" :"Manager"
+  }]
+```
+
+## Delete Branch
+*Request*
+  `Delete/employee?id=EmployeeId`
+*Response*
+   - Status: 200
+
+## Update Branch
+*Request*
+ `Update/employee`
+ ```json
+{
+    "employeeId":1,
+    "Designation":"Manager"
+	
+}
+```
+*response*
+  -status:200
+
 
  
 
