@@ -61,10 +61,10 @@ create table Branch(branchId int not null primary key,
    ```
    ### Columns:
 
-   -branch_id: not null
-   -employeeId: Primary Key not null,
-   -employeeName: Name of the employee
-   -designation: Employee Designation ,not null
+   - branch_id: not null
+    - employeeId: Primary Key not null,
+   - employeeName: Name of the employee
+   - designation: Employee Designation ,not null
 
    ---
  ## Example API Requests and Responses
@@ -146,7 +146,7 @@ create table Branch(branchId int not null primary key,
 }
 ```
 *response*
-  -status:200
+  - status:200
 
 
      ### EMployee Endpoints (/branch)
@@ -217,7 +217,7 @@ create table Branch(branchId int not null primary key,
 }
 ```
 *response*
-  -status:200
+  - status:200
 
 
  
