@@ -73,17 +73,17 @@ create table Branch(branchId int not null primary key,
 
 | Operation   | HTTP Method | URL                            |
 |-------------|-------------|--------------------------------|
-| Create      | POST        | /branch                      |
-| Get All     | GET         | /branch              |
-| Update      | PUT         | /branch              |
-| Delete      | DELETE      | /branch?id={branchId} |
+| Create      | POST        | `/branch`                   |
+| Get All     | GET         | `/branch`              |
+| Update      | PUT         | `/branch`              |
+| Delete      | DELETE      | `/branch?id={branchId}` |
 
 
   ---
 
   
 ### Request and Response
-*Request Body(JSON)*
+
 
 ## Insert Branch
 *Request*
@@ -132,6 +132,7 @@ create table Branch(branchId int not null primary key,
 ## Delete Branch
 *Request*
   `Delete/branch?id=branchId`
+  -
 *Response*
    - Status: 200
 
@@ -153,17 +154,17 @@ create table Branch(branchId int not null primary key,
 
 | Operation   | HTTP Method | URL                            |
 |-------------|-------------|--------------------------------|
-| Create      | POST        | /employee                      |
-| Get All     | GET         | /employee               |
-| Update      | PUT         | /employee              |
-| Delete      | DELETE      | /employee?id={branchId} |
+| Create      | POST        | `/employee`                      |
+| Get All     | GET         | `/employee`               |
+| Update      | PUT         | `/employee`              |
+| Delete      | DELETE      | `/employee?id={branchId}` |
 
 
   ---
 
   
 ### Request and Response
-*Request Body(JSON)*
+
 
 ## Insert Employee
 *Request*
@@ -203,7 +204,7 @@ create table Branch(branchId int not null primary key,
 ## Delete Employee
 *Request*
   `Delete/employee?id=EmployeeId`
-  
+  - 
 *Response*
    - Status: 200
 
