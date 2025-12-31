@@ -23,7 +23,7 @@ class BranchDAOTest {
 
         branchDAO = new BranchDAO();
 
-        // Clean table before each test
+
         try (Connection con = DriverManager.getConnection(
                 "jdbc:mysql://localhost:3306/BankBranchManagement",
                 "root",
@@ -41,9 +41,9 @@ class BranchDAOTest {
 
         branchDAO.insert(branch);
 
-        List<Branch> branches = branchDAO.findAll();
-        assertEquals(1, branches.size());
-        assertEquals("Chennai", branches.get(0).getBranchName());
+        List<Branch> brancheList = branchDAO.findAll();
+        assertEquals(1, brancheList.size());
+        assertEquals("Chennai", brancheList.get(0).getBranchName());
     }
 
     @Test
