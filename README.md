@@ -100,7 +100,7 @@ create table Branch(branchId int not null primary key,
   }
 ```
 
-*Response(JSON)*
+*Response*
  - Status: 202 Created
 
   ## Get Branch
@@ -165,7 +165,7 @@ create table Branch(branchId int not null primary key,
 ### Request and Response
 *Request Body(JSON)*
 
-## Insert Branch
+## Insert Employee
 *Request*
 `Post/employee`
 ```json
@@ -177,7 +177,7 @@ create table Branch(branchId int not null primary key,
   }
 ```
 
-*Response(JSON)*
+*Response*
  - Status: 202 Created
 
   ## Get employee by branch id
@@ -200,13 +200,14 @@ create table Branch(branchId int not null primary key,
   }]
 ```
 
-## Delete Branch
+## Delete Employee
 *Request*
   `Delete/employee?id=EmployeeId`
+  
 *Response*
    - Status: 200
 
-## Update Branch
+## Update Employee
 *Request*
  `Update/employee`
  ```json
