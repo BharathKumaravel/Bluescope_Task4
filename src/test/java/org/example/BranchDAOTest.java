@@ -1,6 +1,7 @@
 package org.example;
 
 
+import org.example.dbconfig.ConnectionClass;
 import org.example.exception.DataException;
 import org.example.model.Branch;
 import org.example.repository.BranchDAO;
@@ -25,18 +26,14 @@ class BranchDAOTest {
 
         branchDAO = new BranchDAO();
 
-
         try (
 
-                Connection con = DriverManager.getConnection(
-                "jdbc:mysql://localhost:3306/BankBranchManagement",
-                "root",
-                "root"
-        )) {
+                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/BankBranchManagement","root","root");) {
             Statement stmt = con.createStatement();
             stmt.execute("Delete from employee");
             stmt.execute("Delete from Branch");
         }
+
     }
 
     @Test

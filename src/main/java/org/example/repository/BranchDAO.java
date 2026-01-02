@@ -39,7 +39,7 @@ public class BranchDAO {
 
     public void insert(Branch branch){
 
-        try(Connection con = ConnectionClass.getConnection();
+        try(Connection con = ConnectionClass.getConnect().getConnection();
             PreparedStatement ps = con.prepareStatement(InsertSQl))
         {
 
@@ -72,7 +72,7 @@ public class BranchDAO {
     public List<Branch> findAll()
     {
         List<Branch> branchList =new ArrayList<>();
-        try (Connection con = ConnectionClass.getConnection();
+        try (Connection con = ConnectionClass.getConnect().getConnection();
              PreparedStatement ps = con.prepareStatement(SelectAllSQL)){
 
             ResultSet rs =ps.executeQuery();
@@ -104,7 +104,7 @@ public class BranchDAO {
 
     public void delete(int id)
     {
-        try(Connection con = ConnectionClass.getConnection();
+        try(Connection con = ConnectionClass.getConnect().getConnection();
             PreparedStatement ps = con.prepareStatement(DeleteSQL)){
             ps.setInt(DELETE_BRANCH_ID,id);
 
@@ -126,7 +126,7 @@ public class BranchDAO {
     }
 
     public void updateBranch(String ifsc ,int id)  {
-        try(Connection con = ConnectionClass.getConnection();
+        try(Connection con = ConnectionClass.getConnect().getConnection();
             PreparedStatement ps =con.prepareStatement(UpdateSQL)){
             ps.setString(UPDATE_BRANCH_IFSC,ifsc);
             ps.setInt(UPDATE_BRANCH_ID,id);

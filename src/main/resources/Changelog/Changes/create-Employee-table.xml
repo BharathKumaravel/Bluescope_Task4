@@ -1,0 +1,26 @@
+
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation=" http://www.liquibase.org/xml/ns/dbchangelog
+                   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.15.xsd">
+    <changeSet id="create-Employee-table" author="Bharath">
+        <createTable tableName="Employee">
+            <column name="branchId" type="INT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="employeeId" type="INT">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+
+            <column name="employeeName" type="VARCHAR(20)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="Designation" type="VARCHAR(20)">
+                <constraints nullable="false"/>
+            </column>
+
+        </createTable>
+        <addForeignKeyConstraint baseTableName="Employee" baseColumnNames="branchId" constraintName="fk_branch_employee" referencedTableName="Branch"
+                                 referencedColumnNames="branchId"/>
+    </changeSet>
+</databaseChangeLog>

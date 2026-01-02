@@ -35,7 +35,7 @@ public class EmployeeDAO {
 
     public void insert(Employee employee){
 
-        try(Connection con = ConnectionClass.getConnection();
+        try(Connection con = ConnectionClass.getConnect().getConnection();
             PreparedStatement ps = con.prepareStatement(InsertSQl))
         {
 
@@ -65,7 +65,7 @@ public class EmployeeDAO {
     public void delete(int id)
     {
 
-        try(Connection con = ConnectionClass.getConnection();
+        try(Connection con = ConnectionClass.getConnect().getConnection();
             PreparedStatement ps = con.prepareStatement(DeleteSQL)){
             ps.setInt(DELETE_EMPLOYEE_ID,id);
 
@@ -86,7 +86,7 @@ public class EmployeeDAO {
         }
     }
     public void updateEmployee(String designation ,int id)  {
-        try(Connection con = ConnectionClass.getConnection();
+        try(Connection con = ConnectionClass.getConnect().getConnection();
             PreparedStatement ps =con.prepareStatement(UpdateSQL)){
             ps.setString(UPDATE_EMPLOYEE_DESIGNATION,designation);
             ps.setInt(UPDATE_EMPLOYEE_ID,id);
@@ -108,7 +108,7 @@ public class EmployeeDAO {
 
     public List<Employee> getEmployeeByBranchId(int branchId)
     {
-        try(Connection con =ConnectionClass.getConnection();
+        try(Connection con =ConnectionClass.getConnect().getConnection();
          PreparedStatement ps = con.prepareStatement(GetByBranchIdSQL)){
             ps.setInt(GET_EMPLOYEE_BY_BRANCHID,branchId);
             ResultSet rs = ps.executeQuery();

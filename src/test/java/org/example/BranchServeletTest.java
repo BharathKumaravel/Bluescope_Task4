@@ -82,7 +82,6 @@ public class BranchServeletTest {
     @Test
     void testDoGet() throws Exception {
 
-        when(branchService.findAll()).thenReturn(List.of(new Branch()));
 
 
         StringWriter writer = new StringWriter();

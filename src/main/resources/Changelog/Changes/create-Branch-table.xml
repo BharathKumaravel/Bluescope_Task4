@@ -1,0 +1,32 @@
+
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation=" http://www.liquibase.org/xml/ns/dbchangelog
+                   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.15.xsd">
+    <changeSet id="create-Branch-table" author="Bharath">
+        <createTable tableName="Branch">
+            <column name="branchId" type="INT">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="branchName" type="VARCHAR(20)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="ifscCode" type="VARCHAR(11)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="city" type="VARCHAR(30)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="state" type="VARCHAR(30)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="pincode" type="VARCHAR(6)">
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="status" type="VARCHAR(20)" defaultValue="ACTIVE">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+</databaseChangeLog>
