@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>EmployeeService.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">BankBranchManagement</a> &gt; <a href="index.source.html" class="el_package">org.example.service</a> &gt; <span class="el_source">EmployeeService.java</span></div><h1>EmployeeService.java</h1><pre class="source lang-java linenums">package org.example.service;
+import org.example.model.Employee;
+import org.example.repository.EmployeeDAO;
+
+import java.util.List;
+
+<span class="fc" id="L7">public class EmployeeService {</span>
+<span class="fc" id="L8">    EmployeeDAO employeeDAO = new EmployeeDAO();</span>
+    public void insert(Employee employee) {
+<span class="fc" id="L10">        employeeDAO.insert(employee);</span>
+<span class="fc" id="L11">    }</span>
+<span class="fc" id="L12">    public void delete(int id) {employeeDAO.delete(id);}</span>
+    public void updateEmployee(String designation, int employeeId) {
+<span class="fc" id="L14">        employeeDAO.updateEmployee(designation,employeeId);</span>
+<span class="fc" id="L15">    }</span>
+<span class="fc" id="L16">    public List&lt;Employee&gt; getByBranchId(int branchId){return employeeDAO.getEmployeeByBranchId(branchId);}</span>
+}
+
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>

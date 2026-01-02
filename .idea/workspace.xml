@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1f258fa8-a8e1-4378-8ff8-5e403f664b76" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalina.base_IS_UNDEFINED/logs/Branch-app.log" beforeDir="false" afterPath="$PROJECT_DIR$/catalina.base_IS_UNDEFINED/logs/Branch-app.log" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="37VNfNpcQwFaC8X4x9iy1IeKR8x" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JUnit.BankBranchManagementTest.TestdoPost.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BankBranchManagementTest.TestdoPostError.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BankBranchManagementTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BankBranchManagementTest.testDoDelete.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BankBranchManagementTest.testDoDeleteInvalid.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BankBranchManagementTest.testDoGet.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BankBranchManagementTest.testDoGetInvalid.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BankBranchManagementTest.testDoGet_success.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BankBranchManagementTest.testDoPostInvalid.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BankBranchManagementTest.testDoPostInvalidJsonReturns500.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BankBranchManagementTest.testDoPut.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BankBranchManagementTest.testDoPutInvalid.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BranchDAOTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BranchDAOTest.testDelete.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BranchDAOTest.testDeleteInvalid.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BranchDAOTest.testFindAll.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BranchDAOTest.testInsert.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BranchDAOTest.testInsertInvalid.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BranchDAOTest.testUpdateBranch.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BranchServeletTest.testDoGet.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BranchServiceTest.testFindAll.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EmployeeDAOTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EmployeeDAOTest.testDelete.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EmployeeDAOTest.testDeleteInvalid.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EmployeeDAOTest.testGet.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EmployeeDAOTest.testInsert.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EmployeeDAOTest.testInsertInvalid.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EmployeeDAOTest.testUpdate.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EmployeeDAOTest.testUpdateInvalid.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EmployeeServeletTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EmployeeServeletTest.testDoPut.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EmployeeServeletTest.testDoPutInvalid.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EmployeeServeletTest.testdoDelete.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EmployeeServeletTest.testdoDeleteInvalid.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EmployeeServeletTest.testdoPost.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.EmployeeServeletTest.testdoPostFailure.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EmployeeServeletTest.testdoPostInvalid.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EmployeeServiceTest.doDelete.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EmployeeServiceTest.doGet.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EmployeeServiceTest.doPost.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EmployeeServiceTest.doPut.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EmployeeServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\BLUE SCOPE\IdeaProjects\BankBranchManagement\BankBranchManagement" />
+      <recent name="C:\Users\BLUE SCOPE\IdeaProjects\BankBranchManagement\BankBranchManagement\src\main\resources" />
+      <recent name="C:\Users\BLUE SCOPE\IdeaProjects\BankBranchManagement\BankBranchManagement\src\main\resources\Changelog\Changes" />
+      <recent name="C:\Users\BLUE SCOPE\IdeaProjects\BankBranchManagement\BankBranchManagement\src\main\resources\Liquibase" />
+      <recent name="C:\Users\BLUE SCOPE\IdeaProjects\BankBranchManagement\BankBranchManagement\src\main\java\org\example" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.BranchServeletTest.testDoGet">
+    <configuration name="BranchDAOTest.testDeleteInvalid" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BankBranchManagement" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.BranchDAOTest" />
+      <option name="METHOD_NAME" value="testDeleteInvalid" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BranchDAOTest.testInsert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BankBranchManagement" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.BranchDAOTest" />
+      <option name="METHOD_NAME" value="testInsert" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BranchDAOTest.testInsertInvalid" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BankBranchManagement" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.BranchDAOTest" />
+      <option name="METHOD_NAME" value="testInsertInvalid" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BranchServeletTest.testDoGet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BankBranchManagement" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.BranchServeletTest" />
+      <option name="METHOD_NAME" value="testDoGet" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EmployeeDAOTest.testDeleteInvalid" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BankBranchManagement" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.EmployeeDAOTest" />
+      <option name="METHOD_NAME" value="testDeleteInvalid" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.BranchServeletTest.testDoGet" />
+        <item itemvalue="JUnit.BranchDAOTest.testInsert" />
+        <item itemvalue="JUnit.BranchDAOTest.testDeleteInvalid" />
+        <item itemvalue="JUnit.EmployeeDAOTest.testDeleteInvalid" />
+        <item itemvalue="JUnit.BranchDAOTest.testInsertInvalid" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-cffe25b9f5b3-intellij.indexing.shared.core-IU-253.28294.334" />
+        <option value="bundled-js-predefined-d6986cc7102b-c7e53b3be11b-JavaScript-IU-253.28294.334" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1f258fa8-a8e1-4378-8ff8-5e403f664b76" name="Changes" comment="" />
+      <created>1766984382993</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1766984382993</updated>
+      <workItem from="1766984387181" duration="2053000" />
+      <workItem from="1766986932225" duration="12970000" />
+      <workItem from="1767009498480" duration="4807000" />
+      <workItem from="1767014361769" duration="1753000" />
+      <workItem from="1767067405663" duration="2198000" />
+      <workItem from="1767069692040" duration="5527000" />
+      <workItem from="1767076345625" duration="11820000" />
+      <workItem from="1767091131126" duration="12000" />
+      <workItem from="1767091206415" duration="4698000" />
+      <workItem from="1767153170339" duration="1140000" />
+      <workItem from="1767154329535" duration="22036000" />
+      <workItem from="1767335532660" duration="15543000" />
+      <workItem from="1767358776328" duration="3202000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/BankBranchManagement$EmployeeServeletTest_testdoPost.ic" NAME="EmployeeServeletTest.testdoPost Coverage Results" MODIFIED="1767093614723" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>org.example.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/BankBranchManagement$BankBranchManagementTest.ic" NAME="BankBranchManagementTest Coverage Results" MODIFIED="1767091233633" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>org.example.*</FILTER>
+    </SUITE>
+  </component>
+</project>
