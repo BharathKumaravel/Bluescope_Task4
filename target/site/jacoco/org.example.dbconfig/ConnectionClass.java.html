@@ -21,37 +21,34 @@ public final class ConnectionClass {
     }
 
         private static final HikariDataSource DATA_SOURCE;
+
     static {
         try {
 
-<span class="fc" id="L27">            Properties prop =new Properties();</span>
-<span class="fc" id="L28">            prop.load(new FileInputStream(&quot;C:\\Users\\BLUE SCOPE\\IdeaProjects\\BankBranchManagement\\BankBranchManagement\\src\\main\\resources\\db.properties&quot;));</span>
+<span class="fc" id="L28">            Properties prop =new Properties();</span>
+<span class="fc" id="L29">            prop.load(new FileInputStream(&quot;liquibase.properties&quot;));</span>
 
+<span class="fc" id="L31">            HikariConfig config = new HikariConfig();</span>
+<span class="fc" id="L32">            config.setDriverClassName(prop.getProperty(&quot;driver&quot;));</span>
+<span class="fc" id="L33">            config.setJdbcUrl(prop.getProperty(&quot;url&quot;));</span>
+<span class="fc" id="L34">            config.setUsername(prop.getProperty(&quot;username&quot;));</span>
+<span class="fc" id="L35">            config.setPassword(prop.getProperty(&quot;username&quot;));</span>
 
-<span class="fc" id="L31">            Class.forName(prop.getProperty(&quot;db.driver&quot;));</span>
-
-<span class="fc" id="L33">            HikariConfig config = new HikariConfig();</span>
-<span class="fc" id="L34">            config.setJdbcUrl(prop.getProperty(&quot;db.URL&quot;));</span>
-<span class="fc" id="L35">            config.setUsername(prop.getProperty(&quot;db.USER&quot;));</span>
-<span class="fc" id="L36">            config.setPassword(prop.getProperty(&quot;db.PASSWORD&quot;));</span>
-
-<span class="fc" id="L38">            config.setMaximumPoolSize(Integer.parseInt(prop.getProperty(&quot;Hikari.maximumPool&quot;)));</span>
-//            config.setConnectionTimeout(Long.parseLong(prop.getProperty(&quot;Hikari.connectionTimeout&quot;)));
-//            config.setMinimumIdle(Integer.parseInt(prop.getProperty(&quot;Hikari.minimumIdle&quot;)));
-//            config.setIdleTimeout(Long.parseLong(prop.getProperty(&quot;Hikari.idletimeout&quot;)));
+<span class="fc" id="L37">            config.setMaximumPoolSize(Integer.parseInt(prop.getProperty(&quot;Hikari.maximumPool&quot;)));</span>
 
 
 
-<span class="fc" id="L45">            DATA_SOURCE = new HikariDataSource(config);</span>
-<span class="nc" id="L46">        } catch (Exception e) {</span>
 
-<span class="nc" id="L48">            throw new DataException(&quot;DB not connected&quot;,e);</span>
-<span class="fc" id="L49">        }</span>
+<span class="fc" id="L42">            DATA_SOURCE = new HikariDataSource(config);</span>
+<span class="nc" id="L43">        } catch (Exception e) {</span>
+
+<span class="nc" id="L45">            throw new DataException(&quot;DB not connected&quot;,e);</span>
+<span class="fc" id="L46">        }</span>
 
 
-<span class="fc" id="L52">    }</span>
+<span class="fc" id="L49">    }</span>
     public static DataSource getConnect(){
-<span class="fc" id="L54">        return DATA_SOURCE;</span>
+<span class="fc" id="L51">        return DATA_SOURCE;</span>
 
     }
 

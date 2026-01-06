@@ -21,19 +21,18 @@ public final class ConnectionClass {
     }
 
         private static final HikariDataSource DATA_SOURCE;
+
     static {
         try {
 
             Properties prop =new Properties();
-            prop.load(new FileInputStream("C:\\Users\\BLUE SCOPE\\IdeaProjects\\BankBranchManagement\\BankBranchManagement\\src\\main\\resources\\db.properties"));
-
-
-            Class.forName(prop.getProperty("db.driver"));
+            prop.load(new FileInputStream("liquibase.properties"));
 
             HikariConfig config = new HikariConfig();
-            config.setJdbcUrl(prop.getProperty("db.URL"));
-            config.setUsername(prop.getProperty("db.USER"));
-            config.setPassword(prop.getProperty("db.PASSWORD"));
+            config.setDriverClassName(prop.getProperty("driver"));
+            config.setJdbcUrl(prop.getProperty("url"));
+            config.setUsername(prop.getProperty("username"));
+            config.setPassword(prop.getProperty("username"));
 
             config.setMaximumPoolSize(Integer.parseInt(prop.getProperty("Hikari.maximumPool")));
 

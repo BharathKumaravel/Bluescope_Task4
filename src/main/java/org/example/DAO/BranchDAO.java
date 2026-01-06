@@ -58,7 +58,7 @@ public class BranchDAO {
             } else {
                 LOG.info("Successfully inserted account: {}", branch.getBranchId());
             }
-
+             con.close();
         }
         catch (SQLException e)
         {
@@ -81,7 +81,10 @@ public class BranchDAO {
             }
 
             LOG.info("Successfully fetched all Branch, count={}", branchList.size());
+            con.close();
             return branchList;
+
+
         }
 
 
@@ -116,7 +119,7 @@ public class BranchDAO {
                 LOG.info("Successfully deleted Branch with id:{}", id);
 
             }
-
+            con.close();
 
         }
         catch (SQLException e)
@@ -138,6 +141,7 @@ public class BranchDAO {
             } else {
                 LOG.info("Successfully updated account with id={}", id);
             }
+            con.close();
         }
         catch (SQLException e)
         {

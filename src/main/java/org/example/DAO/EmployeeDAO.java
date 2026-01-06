@@ -52,7 +52,7 @@ public class EmployeeDAO {
             } else {
                 LOG.info("Successfully inserted Employee: {}", employee.getEmployeeId());
             }
-
+            con.close();
         }
         catch (SQLException e)
         {
@@ -77,7 +77,7 @@ public class EmployeeDAO {
                 LOG.info("Successfully deleted Employee with id:{}", id);
 
             }
-
+            con.close();
 
         }
         catch (Exception e)
@@ -98,6 +98,7 @@ public class EmployeeDAO {
             } else {
                 LOG.info("Successfully updated employee with id={}", id);
             }
+            con.close();
         }
         catch (SQLException e)
         {
@@ -116,7 +117,9 @@ public class EmployeeDAO {
             while(rs.next()){
                 employeeList.add(mapping(rs));
             }
+            con.close();
             return employeeList;
+
         }
 
         catch (SQLException e)
