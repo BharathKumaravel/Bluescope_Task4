@@ -1,13 +1,11 @@
 package org.example;
 
-import org.example.repository.BranchDAO;
+import org.example.DAO.BranchDAO;
 import org.example.model.Branch;
 import org.example.service.BranchService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.mockito.Mockito;
 
-import java.lang.reflect.Field;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

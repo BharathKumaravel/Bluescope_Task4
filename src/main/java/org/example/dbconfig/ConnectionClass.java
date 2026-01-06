@@ -5,6 +5,7 @@ import com.zaxxer.hikari.HikariDataSource;
 import org.example.exception.DataException;
 
 import javax.sql.DataSource;
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.sql.Connection;
@@ -24,12 +25,10 @@ public final class ConnectionClass {
         try {
 
             Properties prop =new Properties();
-            InputStream inputStream =Thread.currentThread()
-                    .getContextClassLoader()
-                    .getResourceAsStream("db.properties") ;
-            prop.load(inputStream);
+            prop.load(new FileInputStream("C:\\Users\\BLUE SCOPE\\IdeaProjects\\BankBranchManagement\\BankBranchManagement\\src\\main\\resources\\db.properties"));
 
-             Class.forName(prop.getProperty("db.driver"));
+
+            Class.forName(prop.getProperty("db.driver"));
 
             HikariConfig config = new HikariConfig();
             config.setJdbcUrl(prop.getProperty("db.URL"));
@@ -37,9 +36,7 @@ public final class ConnectionClass {
             config.setPassword(prop.getProperty("db.PASSWORD"));
 
             config.setMaximumPoolSize(Integer.parseInt(prop.getProperty("Hikari.maximumPool")));
-            config.setConnectionTimeout(Long.parseLong(prop.getProperty("Hikari.connectionTimeout")));
-            config.setMinimumIdle(Integer.parseInt(prop.getProperty("Hikari.minimumIdle")));
-            config.setIdleTimeout(Long.parseLong(prop.getProperty("Hikari.idletimeout")));
+
 
 
 

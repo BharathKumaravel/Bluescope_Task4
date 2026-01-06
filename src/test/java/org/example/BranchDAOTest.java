@@ -1,10 +1,9 @@
 package org.example;
 
 
-import org.example.dbconfig.ConnectionClass;
 import org.example.exception.DataException;
 import org.example.model.Branch;
-import org.example.repository.BranchDAO;
+import org.example.DAO.BranchDAO;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -15,7 +14,6 @@ import java.util.List;
 
 import static java.lang.Class.forName;
 import static org.junit.jupiter.api.Assertions.*;
-import static org.mockito.Mockito.when;
 
 class BranchDAOTest {
 

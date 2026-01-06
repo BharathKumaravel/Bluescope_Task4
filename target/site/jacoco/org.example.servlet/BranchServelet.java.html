@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>BranchServelet.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">BankBranchManagement</a> &gt; <a href="index.source.html" class="el_package">org.example.servlet</a> &gt; <span class="el_source">BranchServelet.java</span></div><h1>BranchServelet.java</h1><pre class="source lang-java linenums">package org.example.servlet;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+import org.example.exception.DataException;
+import org.example.model.Branch;
+import org.example.model.BranchUpdate;
+
+import org.example.model.Employee;
+import org.example.service.BranchService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import java.io.IOException;
+import java.util.List;
+
+
+@WebServlet(&quot;/branch&quot;)
+<span class="fc" id="L24">public class BranchServelet extends HttpServlet {</span>
+    private static final long serialVersionUID=1L;
+
+
+<span class="fc" id="L28">   static  Logger LOG = LoggerFactory.getLogger(BranchServelet.class);</span>
+
+<span class="fc" id="L30">    private final ObjectMapper objectMapper = new ObjectMapper();</span>
+
+<span class="fc" id="L32">   final BranchService branchService =new BranchService();</span>
+    @Override
+    public void doPost(HttpServletRequest request, HttpServletResponse response){
+
+
+        try {
+<span class="fc" id="L38">            Branch branch  = objectMapper.readValue(request.getInputStream(), Branch.class);</span>
+<span class="fc" id="L39">             branchService.insert(branch);</span>
+<span class="fc" id="L40">            response.setStatus(HttpServletResponse.SC_ACCEPTED);</span>
+
+<span class="fc" id="L42">             LOG.info(&quot;Branch created successfully: {}&quot;, branch.getBranchId());</span>
+        }
+<span class="fc" id="L44">        catch (IOException e) {</span>
+
+<span class="fc" id="L46">            response.setStatus(HttpServletResponse.SC_BAD_REQUEST);</span>
+<span class="fc" id="L47">            LOG.error(&quot;Failed to insert Branch, EXCEPTION: &quot;,e);</span>
+<span class="fc" id="L48">        }</span>
+<span class="fc" id="L49">    }</span>
+    @Override
+    public void doGet(HttpServletRequest request , HttpServletResponse response)
+    {
+        try{
+           // mapBranch(response);
+<span class="fc" id="L55">            List&lt;Branch&gt; branches = (List&lt;Branch&gt;) branchService.findAll();</span>
+
+<span class="fc" id="L57">            ObjectMapper mapper = new ObjectMapper();</span>
+<span class="fc" id="L58">            String json = mapper.writeValueAsString(branches);</span>
+
+<span class="fc" id="L60">            response.setStatus(HttpServletResponse.SC_OK);</span>
+<span class="fc" id="L61">            response.getWriter().write(json);</span>
+<span class="fc" id="L62">            LOG.info(&quot;Fetched all Branches successfully&quot;);</span>
+<span class="fc" id="L63">            response.setStatus(HttpServletResponse.SC_ACCEPTED);</span>
+        }
+<span class="nc" id="L65">        catch (Exception e)</span>
+        {
+
+<span class="nc" id="L68">            response.setStatus(HttpServletResponse.SC_BAD_REQUEST);</span>
+<span class="nc" id="L69">            LOG.error(&quot;Failed to get Branch , EXCEPTION: &quot;, e);</span>
+<span class="fc" id="L70">        }</span>
+
+<span class="fc" id="L72">    }</span>
+    private void mapBranch(HttpServletResponse response) {
+        try {
+<span class="nc" id="L75">            objectMapper.writeValue(response.getWriter(), branchService.findAll());</span>
+
+        }
+<span class="nc" id="L78">        catch (IOException e) {</span>
+
+<span class="nc" id="L80">            throw new DataException(&quot;Failed to fetch branch&quot;, e);</span>
+<span class="nc" id="L81">        }</span>
+<span class="nc" id="L82">    }</span>
+
+    @Override
+    public void doDelete(HttpServletRequest request , HttpServletResponse response){
+        try{
+<span class="fc" id="L87">            int id = Integer.parseInt(request.getParameter(&quot;id&quot;));</span>
+<span class="fc" id="L88">            branchService.delete(id);</span>
+<span class="fc" id="L89">            response.setStatus(HttpServletResponse.SC_ACCEPTED);</span>
+<span class="fc" id="L90">            LOG.info(&quot;Branch Deleted Successfully..&quot;);</span>
+        }
+<span class="fc" id="L92">        catch (Exception e)</span>
+        {
+
+<span class="fc" id="L95">            response.setStatus(HttpServletResponse.SC_BAD_REQUEST);</span>
+<span class="fc" id="L96">            LOG.error(&quot;Failed to delete Branch, EXCEPTION: &quot;,e);</span>
+<span class="fc" id="L97">        }</span>
+<span class="fc" id="L98">    }</span>
+
+    @Override
+    public void doPut(HttpServletRequest request , HttpServletResponse response){
+        try{
+<span class="fc" id="L103">            BranchUpdate branchUpdate = objectMapper.readValue(request.getInputStream(),BranchUpdate.class);</span>
+<span class="fc" id="L104">            branchService.updateBranch(branchUpdate.getIfscCode(),branchUpdate.getBranchId());</span>
+<span class="fc" id="L105">            response.setStatus(HttpServletResponse.SC_ACCEPTED);</span>
+<span class="fc" id="L106">            LOG.info(&quot;Updated Successfully&quot;);</span>
+
+        }
+<span class="fc" id="L109">        catch (Exception e)</span>
+        {
+
+<span class="fc" id="L112">            response.setStatus(HttpServletResponse.SC_BAD_REQUEST);</span>
+<span class="fc" id="L113">          LOG.error(&quot;Failed to Update Branch , EXCEPTION: &quot;,e);</span>
+
+<span class="fc" id="L115">        }</span>
+<span class="fc" id="L116">    }</span>
+
+
+}
+
+
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>

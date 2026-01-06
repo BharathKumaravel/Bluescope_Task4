@@ -1,7 +1,7 @@
 package org.example.service;
 
 import org.example.model.Branch;
-import org.example.repository.BranchDAO;
+import org.example.DAO.BranchDAO;
 
 public class BranchService {
 

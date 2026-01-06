@@ -5,8 +5,89 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1f258fa8-a8e1-4378-8ff8-5e403f664b76" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalina.base_IS_UNDEFINED/logs/Branch-app.2025-12-31.log" beforeDir="false" afterPath="$PROJECT_DIR$/catalina.base_IS_UNDEFINED/logs/Branch-app.2025-12-31.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catalina.base_IS_UNDEFINED/logs/Branch-app.log" beforeDir="false" afterPath="$PROJECT_DIR$/catalina.base_IS_UNDEFINED/logs/Branch-app.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/liquibase.properties" beforeDir="false" afterPath="$PROJECT_DIR$/liquibase.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dbconfig/ConnectionClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/dbconfig/ConnectionClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/repository/BranchDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/DAO/BranchDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/repository/EmployeeDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/DAO/EmployeeDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/servelet/BranchServelet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/servlet/BranchServelet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/servelet/EmployeeServelet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/servlet/EmployeeServelet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service/BranchService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service/BranchService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service/EmployeeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service/EmployeeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Changelog/Changes/create-Branch-table.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Changelog/Changes/create-Branch-table.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Changelog/Changes/create-Employee-table.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Changelog/Changes/create-Employee-table.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Changelog/db.changelog.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/BranchDAOTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/BranchDAOTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/BranchServeletTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/BranchServeletTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/BranchServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/BranchServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/EmployeeDAOTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/EmployeeDAOTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/EmployeeServeletTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/EmployeeServeletTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/EmployeeServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/EmployeeServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/BankBranchManagement.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/BankBranchManagement.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/BankBranchManagement/WEB-INF/classes/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/BankBranchManagement/WEB-INF/classes/db.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/BankBranchManagement/WEB-INF/classes/org/example/dbconfig/ConnectionClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/BankBranchManagement/WEB-INF/classes/org/example/dbconfig/ConnectionClass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/BankBranchManagement/WEB-INF/classes/org/example/repository/BranchDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/BankBranchManagement/WEB-INF/classes/org/example/repository/EmployeeDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/BankBranchManagement/WEB-INF/classes/org/example/servelet/BranchServelet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/BankBranchManagement/WEB-INF/classes/org/example/servelet/EmployeeServelet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/BankBranchManagement/WEB-INF/classes/org/example/service/BranchService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/BankBranchManagement/WEB-INF/classes/org/example/service/BranchService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/BankBranchManagement/WEB-INF/classes/org/example/service/EmployeeService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/BankBranchManagement/WEB-INF/classes/org/example/service/EmployeeService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/db.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/dbconfig/ConnectionClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/dbconfig/ConnectionClass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/repository/BranchDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/repository/EmployeeDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/servelet/BranchServelet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/servelet/EmployeeServelet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/service/BranchService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/service/BranchService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/service/EmployeeService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/service/EmployeeService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jacoco.exec" beforeDir="false" afterPath="$PROJECT_DIR$/target/jacoco.exec" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-sessions.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/jacoco-sessions.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco.csv" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/jacoco.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/jacoco.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/org.example.dbconfig/ConnectionClass.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/org.example.dbconfig/ConnectionClass.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/org.example.dbconfig/ConnectionClass.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/org.example.dbconfig/ConnectionClass.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/org.example.dbconfig/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/org.example.dbconfig/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/org.example.dbconfig/index.source.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/org.example.dbconfig/index.source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/org.example.repository/BranchDAO.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/org.example.repository/BranchDAO.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/org.example.repository/EmployeeDAO.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/org.example.repository/EmployeeDAO.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/org.example.repository/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/org.example.repository/index.source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/org.example.servelet/BranchServelet.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/org.example.servelet/BranchServelet.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/org.example.servelet/EmployeeServelet.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/org.example.servelet/EmployeeServelet.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/org.example.servelet/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/org.example.servelet/index.source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/org.example.service/BranchService.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/org.example.service/BranchService.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/org.example.service/EmployeeService.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/org.example.service/EmployeeService.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-org.example.BranchDAOTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-org.example.BranchDAOTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-org.example.BranchServeletTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-org.example.BranchServeletTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-org.example.BranchServiceTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-org.example.BranchServiceTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-org.example.EmployeeDAOTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-org.example.EmployeeDAOTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-org.example.EmployeeServeletTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-org.example.EmployeeServeletTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-org.example.EmployeeServiceTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-org.example.EmployeeServiceTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/org.example.BranchDAOTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/org.example.BranchDAOTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/org.example.BranchServeletTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/org.example.BranchServeletTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/org.example.BranchServiceTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/org.example.BranchServiceTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/org.example.EmployeeDAOTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/org.example.EmployeeDAOTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/org.example.EmployeeServeletTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/org.example.EmployeeServeletTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/org.example.EmployeeServiceTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/org.example.EmployeeServiceTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/org/example/BranchDAOTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/example/BranchDAOTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/org/example/BranchServeletTest$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/example/BranchServeletTest$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/org/example/BranchServeletTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/example/BranchServeletTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/org/example/BranchServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/example/BranchServiceTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/org/example/EmployeeDAOTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/example/EmployeeDAOTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/org/example/EmployeeServeletTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/example/EmployeeServeletTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/org/example/EmployeeServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/example/EmployeeServiceTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +114,8 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Application.WireMockRunner.executor&quot;: &quot;Run&quot;,
+    &quot;Application.WiremockRunner.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.BankBranchManagementTest.TestdoPost.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.BankBranchManagementTest.TestdoPostError.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.BankBranchManagementTest.executor&quot;: &quot;Run&quot;,
@@ -83,7 +166,7 @@
     &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
@@ -91,14 +174,14 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\BLUE SCOPE\IdeaProjects\BankBranchManagement\BankBranchManagement\src\main\resources\Changelog" />
+      <recent name="C:\Users\BLUE SCOPE\IdeaProjects\BankBranchManagement\BankBranchManagement\src\main\resources\Changelog\changes" />
       <recent name="C:\Users\BLUE SCOPE\IdeaProjects\BankBranchManagement\BankBranchManagement" />
       <recent name="C:\Users\BLUE SCOPE\IdeaProjects\BankBranchManagement\BankBranchManagement\src\main\resources" />
       <recent name="C:\Users\BLUE SCOPE\IdeaProjects\BankBranchManagement\BankBranchManagement\src\main\resources\Changelog\Changes" />
-      <recent name="C:\Users\BLUE SCOPE\IdeaProjects\BankBranchManagement\BankBranchManagement\src\main\resources\Liquibase" />
-      <recent name="C:\Users\BLUE SCOPE\IdeaProjects\BankBranchManagement\BankBranchManagement\src\main\java\org\example" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BranchServeletTest.testDoGet">
+  <component name="RunManager" selected="JUnit.BranchDAOTest.testDeleteInvalid">
     <configuration name="BranchDAOTest.testDeleteInvalid" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BankBranchManagement" />
       <extension name="coverage">
@@ -181,9 +264,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BranchDAOTest.testDeleteInvalid" />
         <item itemvalue="JUnit.BranchServeletTest.testDoGet" />
         <item itemvalue="JUnit.BranchDAOTest.testInsert" />
-        <item itemvalue="JUnit.BranchDAOTest.testDeleteInvalid" />
         <item itemvalue="JUnit.EmployeeDAOTest.testDeleteInvalid" />
         <item itemvalue="JUnit.BranchDAOTest.testInsertInvalid" />
       </list>
@@ -216,7 +299,19 @@
       <workItem from="1767153170339" duration="1140000" />
       <workItem from="1767154329535" duration="22036000" />
       <workItem from="1767335532660" duration="15543000" />
-      <workItem from="1767358776328" duration="3202000" />
+      <workItem from="1767358776328" duration="3401000" />
+      <workItem from="1767415225694" duration="831000" />
+      <workItem from="1767417935590" duration="556000" />
+      <workItem from="1767418570537" duration="1906000" />
+      <workItem from="1767422523388" duration="3804000" />
+      <workItem from="1767433607641" duration="388000" />
+      <workItem from="1767434362186" duration="63000" />
+      <workItem from="1767434440540" duration="63000" />
+      <workItem from="1767434517102" duration="264000" />
+      <workItem from="1767434887620" duration="2183000" />
+      <workItem from="1767437879336" duration="2497000" />
+      <workItem from="1767588973934" duration="16928000" />
+      <workItem from="1767673559916" duration="504000" />
     </task>
     <servers />
   </component>

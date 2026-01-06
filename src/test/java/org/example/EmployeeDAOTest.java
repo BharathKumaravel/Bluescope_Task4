@@ -1,9 +1,8 @@
 package org.example;
 
 import org.example.exception.DataException;
-import org.example.model.Branch;
 import org.example.model.Employee;
-import org.example.repository.EmployeeDAO;
+import org.example.DAO.EmployeeDAO;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

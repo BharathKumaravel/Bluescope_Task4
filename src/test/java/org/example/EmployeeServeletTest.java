@@ -4,7 +4,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import org.example.exception.DataException;
 import org.example.model.Employee;
 import org.example.model.EmployeeUpdate;
-import org.example.servelet.EmployeeServelet;
+import org.example.servlet.EmployeeServelet;
 import org.example.service.EmployeeService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

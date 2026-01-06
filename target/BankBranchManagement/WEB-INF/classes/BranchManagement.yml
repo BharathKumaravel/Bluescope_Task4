@@ -1,0 +1,250 @@
+openapi: 3.1.0
+info:
+  title: Bank Branch Management
+  description: REST API for Manging Branches and Employees in a Bank
+  version: 1.0.12
+
+paths:
+  /BankBranchManagement/branch:
+    post:
+      tags:
+        - Branch
+      requestBody:
+        description: Insert Branch
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/branchRequest'
+
+
+
+      responses:
+        '200':
+          description: Branch Created Successfully
+        '400':
+          description: Invalid input
+
+    get:
+      tags:
+        - Branch
+      description: Getting Details od Branch
+
+      responses:
+        '200':
+          description: Getting all Branches
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/GetBranchResponse'
+        '400':
+          description: Failed to Fetch Branch
+
+
+    put:
+      tags:
+        - Branch
+      description: Update the Branch
+
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UpdateBranchRequest'
+
+      responses:
+        '200':
+          description: Updated Successfully
+        '400':
+          description: Invalid Input
+
+    delete:
+      tags:
+        - Branch
+      description: Delete the Particular Branch
+      parameters:
+        - name: branchId
+          in: query
+          required: true
+          schema:
+            type: integer
+
+      responses:
+        '200':
+          description: Successfully Deleted
+        '400':
+          description: branchId not found
+
+
+  /BankBranchManagement/employee:
+    post:
+      tags:
+        - Employee
+      requestBody:
+        description: Insert Employee
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/employeeRequest'
+
+
+
+      responses:
+        '200':
+          description: Employee Created Successfully
+        '400':
+          description: Invalid input
+
+    get:
+      tags:
+        - Employee
+      description: Getting Details of
+
+      responses:
+        '200':
+          description: Getting all Employee
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/GetEmployeeResponse'
+        '400':
+          description: Failed to Fetch Branch
+
+
+    put:
+      tags:
+        - Employee
+      description: Update the Employee
+
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UpdateEmployeeRequest'
+
+      responses:
+        '200':
+          description: Updated Successfully
+        '400':
+          description: Invalid Input
+
+    delete:
+      tags:
+        - Employee
+      description: Delete the Particular Employee
+      parameters:
+        - name: employeeId
+          in: query
+          required: true
+          schema:
+            type: integer
+
+
+
+      responses:
+        '200':
+          description: Successfully Deleted
+        '400':
+          description: employeeId not found
+
+
+
+
+components:
+  schemas:
+    branchRequest:
+      type: object
+      properties:
+        branchId:
+          type: integer
+        branchName:
+          type: string
+        ifsc:
+          type: string
+        city:
+          type: string
+        state:
+          type: string
+        pincode:
+          type: string
+        status:
+          type: string
+
+    GetBranchResponse:
+      type: object
+      properties:
+        branchId:
+          type: integer
+          example: 1
+        branchName:
+          type: string
+          example: ChennaiBranch
+        ifsc:
+          type: string
+          example: KKBK000123
+
+        city:
+          type: string
+          example: chennai
+
+        state:
+          type: string
+          example: TamilNadu
+        pincode:
+          type: string
+          example: 600100
+        status:
+          type: string
+          example: ACTIVE
+
+
+    UpdateBranchRequest:
+      type: object
+      properties:
+        branchId:
+          type: string
+        ifsc:
+          type: string
+
+    employeeRequest:
+      type: object
+      properties:
+        branchId:
+          type: integer
+        employeeId:
+          type: string
+        employeeName:
+          type: string
+        designation:
+          type: string
+
+    UpdateEmployeeRequest:
+      type: object
+      properties:
+        employeeId:
+          type: integer
+          example: 1
+
+        designatiom:
+          type: string
+          example: Manager
+
+    GetEmployeeResponse:
+      type: object
+      properties:
+      branchId:
+        type: integer
+        example: 1
+      employeeId:
+        type: integer
+        example: 1
+
+      EmployeeName:
+        type: string
+        example: ChennaiBranch
+      designation:
+        type: string
+        example: Manager

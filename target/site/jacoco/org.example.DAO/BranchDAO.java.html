@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>BranchDAO.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">BankBranchManagement</a> &gt; <a href="index.source.html" class="el_package">org.example.DAO</a> &gt; <span class="el_source">BranchDAO.java</span></div><h1>BranchDAO.java</h1><pre class="source lang-java linenums">package org.example.DAO;
+
+import org.example.dbconfig.ConnectionClass;
+import org.example.exception.DataException;
+import org.example.model.Branch;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+
+<span class="fc" id="L16">public class BranchDAO {</span>
+<span class="fc" id="L17">    Logger LOG = LoggerFactory.getLogger(BranchDAO.class);</span>
+
+    static final int INSERT_BRANCH_ID=1;
+    static final int INSERT_BRANCH_NAME=2;
+    static final int INSERT_BRANCH_IFSCCODE=3;
+    static final int INSERT_BRANCH_CITY=4;
+    static final int INSERT_BRANCH_STATE=5;
+    static final int INSERT_BRANCH_PINCODE=6;
+    static final int INSERT_BRANCH_STATUS=7;
+
+    static final int DELETE_BRANCH_ID=1;
+
+    static final int UPDATE_BRANCH_IFSC=1;
+    static final int UPDATE_BRANCH_ID=2;
+
+
+
+
+<span class="fc" id="L35">    String InsertSQl = &quot;Insert into Branch (branchId ,branchName ,ifscCode ,city ,state ,pincode ,status) values(?,?,?,?,?,?,?) &quot;;</span>
+<span class="fc" id="L36">    String SelectAllSQL =&quot;select * from Branch&quot;;</span>
+<span class="fc" id="L37">    String DeleteSQL=&quot;Delete from Branch where branchId=?&quot;;</span>
+<span class="fc" id="L38">    String UpdateSQL=&quot;Update Branch set ifscCode =? where branchId=?&quot;;</span>
+
+    public void insert(Branch branch){
+
+<span class="fc" id="L42">        try(Connection con = ConnectionClass.getConnect().getConnection();</span>
+<span class="fc" id="L43">            PreparedStatement ps = con.prepareStatement(InsertSQl))</span>
+        {
+
+<span class="fc" id="L46">          ps.setInt(INSERT_BRANCH_ID,branch.getBranchId());</span>
+<span class="fc" id="L47">          ps.setString(INSERT_BRANCH_NAME,branch.getBranchName());</span>
+<span class="fc" id="L48">          ps.setString(INSERT_BRANCH_IFSCCODE,branch.getIfscCode());</span>
+<span class="fc" id="L49">          ps.setString(INSERT_BRANCH_CITY,branch.getCity());</span>
+<span class="fc" id="L50">          ps.setString(INSERT_BRANCH_STATE,branch.getState());</span>
+<span class="fc" id="L51">          ps.setString(INSERT_BRANCH_PINCODE,branch.getPincode());</span>
+<span class="fc" id="L52">          ps.setString(INSERT_BRANCH_STATUS,branch.getStatus());</span>
+
+<span class="fc" id="L54">            int affectedRows = ps.executeUpdate();</span>
+<span class="pc bpc" id="L55" title="1 of 2 branches missed.">            if (affectedRows == 0) {</span>
+<span class="nc" id="L56">                LOG.error(&quot;Insert failed, no rows affected for Branch: {}&quot;, branch.getBranchId());</span>
+
+            } else {
+<span class="fc" id="L59">                LOG.info(&quot;Successfully inserted account: {}&quot;, branch.getBranchId());</span>
+            }
+
+        }
+<span class="fc" id="L63">        catch (SQLException e)</span>
+        {
+
+<span class="fc" id="L66">            throw new DataException(&quot;Failed:&quot;,e);</span>
+<span class="fc" id="L67">        }</span>
+
+
+<span class="fc" id="L70">    }</span>
+
+    public List&lt;Branch&gt; findAll()
+    {
+<span class="fc" id="L74">        List&lt;Branch&gt; branchList =new ArrayList&lt;&gt;();</span>
+<span class="fc" id="L75">        try (Connection con = ConnectionClass.getConnect().getConnection();</span>
+<span class="fc" id="L76">             PreparedStatement ps = con.prepareStatement(SelectAllSQL)){</span>
+
+<span class="fc" id="L78">            ResultSet rs =ps.executeQuery();</span>
+<span class="fc bfc" id="L79" title="All 2 branches covered.">            while (rs.next()) {</span>
+<span class="fc" id="L80">                branchList.add(mapping(rs));</span>
+            }
+
+<span class="fc" id="L83">            LOG.info(&quot;Successfully fetched all Branch, count={}&quot;, branchList.size());</span>
+<span class="fc" id="L84">            return branchList;</span>
+        }
+
+
+<span class="nc" id="L88">        catch (SQLException e ) {</span>
+
+<span class="nc" id="L90">            throw new DataException(&quot;Failed to fetch Branch &quot;,e);</span>
+        }
+    }
+    public Branch mapping(ResultSet rs)throws SQLException{
+<span class="fc" id="L94">        Branch branch =new Branch();</span>
+<span class="fc" id="L95">        branch.setBranchId(rs.getInt(&quot;branchId&quot;));</span>
+<span class="fc" id="L96">        branch.setBranchName(rs.getString(&quot;branchName&quot;));</span>
+<span class="fc" id="L97">        branch.setIfscCode(rs.getString(&quot;ifscCode&quot;));</span>
+<span class="fc" id="L98">        branch.setCity(rs.getString(&quot;city&quot;));</span>
+<span class="fc" id="L99">        branch.setState(rs.getString(&quot;state&quot;));</span>
+<span class="fc" id="L100">        branch.setPincode(rs.getString(&quot;pincode&quot;));</span>
+<span class="fc" id="L101">        branch.setStatus(rs.getString(&quot;status&quot;));</span>
+<span class="fc" id="L102">        return branch;</span>
+    }
+
+    public void delete(int id)
+    {
+<span class="fc" id="L107">        try(Connection con = ConnectionClass.getConnect().getConnection();</span>
+<span class="fc" id="L108">            PreparedStatement ps = con.prepareStatement(DeleteSQL)){</span>
+<span class="fc" id="L109">            ps.setInt(DELETE_BRANCH_ID,id);</span>
+
+<span class="fc" id="L111">            int rows = ps.executeUpdate();</span>
+<span class="pc bpc" id="L112" title="1 of 2 branches missed.">            if (rows == 0) {</span>
+<span class="nc" id="L113">                LOG.error(&quot;Delete failed: no Branch found with this id:{}&quot;, id);</span>
+
+            } else {
+<span class="fc" id="L116">                LOG.info(&quot;Successfully deleted Branch with id:{}&quot;, id);</span>
+
+            }
+
+
+        }
+<span class="nc" id="L122">        catch (SQLException e)</span>
+        {
+<span class="nc" id="L124">            throw new DataException(&quot;Failed to Delete Branch &quot;,e);</span>
+<span class="fc" id="L125">        }</span>
+<span class="fc" id="L126">    }</span>
+
+    public void updateBranch(String ifsc ,int id)  {
+<span class="fc" id="L129">        try(Connection con = ConnectionClass.getConnect().getConnection();</span>
+<span class="fc" id="L130">            PreparedStatement ps =con.prepareStatement(UpdateSQL)){</span>
+<span class="fc" id="L131">            ps.setString(UPDATE_BRANCH_IFSC,ifsc);</span>
+<span class="fc" id="L132">            ps.setInt(UPDATE_BRANCH_ID,id);</span>
+
+<span class="fc" id="L134">            int rows = ps.executeUpdate();</span>
+<span class="pc bpc" id="L135" title="1 of 2 branches missed.">            if (rows == 0) {</span>
+<span class="nc" id="L136">                LOG.error(&quot;Update failed&quot;);</span>
+
+            } else {
+<span class="fc" id="L139">                LOG.info(&quot;Successfully updated account with id={}&quot;, id);</span>
+            }
+        }
+<span class="nc" id="L142">        catch (SQLException e)</span>
+        {
+
+<span class="nc" id="L145">            throw new DataException(&quot;Failed to Update&quot;,e);</span>
+<span class="fc" id="L146">        }</span>
+<span class="fc" id="L147">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>

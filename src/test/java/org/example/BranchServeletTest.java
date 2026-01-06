@@ -4,7 +4,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import org.example.exception.DataException;
 import org.example.model.Branch;
 import org.example.model.BranchUpdate;
-import org.example.servelet.BranchServelet;
+import org.example.servlet.BranchServelet;
 import org.example.service.BranchService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -18,7 +18,6 @@ import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.StringWriter;
-import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
@@ -82,10 +81,6 @@ public class BranchServeletTest {
     @Test
     void testDoGet() throws Exception {
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 59d16ef8beae7c21a466af8db2e5165cba254a2c
 
         StringWriter writer = new StringWriter();
         when(response.getWriter()).thenReturn(new PrintWriter(writer));
