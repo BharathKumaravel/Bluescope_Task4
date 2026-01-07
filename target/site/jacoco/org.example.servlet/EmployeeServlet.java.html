@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>EmployeeServlet.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">BankBranchManagement</a> &gt; <a href="index.source.html" class="el_package">org.example.servlet</a> &gt; <span class="el_source">EmployeeServlet.java</span></div><h1>EmployeeServlet.java</h1><pre class="source lang-java linenums">package org.example.servlet;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import org.example.model.Employee;
+import org.example.model.EmployeeUpdate;
+import org.example.service.EmployeeService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+//import javax.servlet.annotation.WebServlet;
+//import javax.servlet.http.HttpServlet;
+//import javax.servlet.http.HttpServletRequest;
+//import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.util.List;
+
+
+<span class="fc" id="L22">public class EmployeeServlet extends HttpServlet {</span>
+    private static final long serialVersionUID=1L;
+<span class="fc" id="L24">   private static final Logger LOG = LoggerFactory.getLogger(EmployeeServlet.class);</span>
+
+<span class="fc" id="L26">    private static final ObjectMapper objectMapper = new ObjectMapper();</span>
+
+<span class="fc" id="L28">    final EmployeeService employeeService =new EmployeeService();</span>
+
+  @Override
+    public void doPost(HttpServletRequest request , HttpServletResponse response) {
+      try {
+<span class="fc" id="L33">            Employee employee  = objectMapper.readValue(request.getInputStream(), Employee.class);</span>
+<span class="fc" id="L34">            employeeService.insert(employee);</span>
+<span class="fc" id="L35">            response.setStatus(HttpServletResponse.SC_ACCEPTED);</span>
+<span class="fc" id="L36">            LOG.info(&quot;Employee created successfully: {}&quot;, employee.getEmployeeId());</span>
+<span class="fc" id="L37">        } catch (IOException e) {</span>
+<span class="fc" id="L38">            response.setStatus(HttpServletResponse.SC_BAD_REQUEST);</span>
+<span class="fc" id="L39">            LOG.error(&quot;Failed to insert Employee&quot;,e);</span>
+<span class="fc" id="L40">        }</span>
+<span class="fc" id="L41">    }</span>
+    @Override
+    public void doDelete(HttpServletRequest request , HttpServletResponse response){
+        try{
+<span class="fc" id="L45">            int id = Integer.parseInt(request.getParameter(&quot;id&quot;));</span>
+<span class="fc" id="L46">            employeeService.delete(id);</span>
+<span class="fc" id="L47">            response.setStatus(HttpServletResponse.SC_ACCEPTED);</span>
+<span class="fc" id="L48">            LOG.info(&quot;Employee Deleted Successfully..&quot;);</span>
+<span class="fc" id="L49">        } catch (Exception e) {</span>
+<span class="fc" id="L50">            response.setStatus(HttpServletResponse.SC_BAD_REQUEST);</span>
+<span class="fc" id="L51">            LOG.error(&quot;Failed to Delete Employee&quot;,e);</span>
+<span class="fc" id="L52">        }</span>
+<span class="fc" id="L53">    }</span>
+
+    @Override
+    public void doPut(HttpServletRequest request , HttpServletResponse response){
+        try{
+<span class="fc" id="L58">            EmployeeUpdate employeeUpdate = objectMapper.readValue(request.getInputStream(), EmployeeUpdate.class);</span>
+<span class="fc" id="L59">            employeeService.updateEmployee(employeeUpdate.getDesignation(),employeeUpdate.getId());</span>
+<span class="fc" id="L60">            response.setStatus(HttpServletResponse.SC_ACCEPTED);</span>
+<span class="fc" id="L61">            LOG.info(&quot;Updated Successfully&quot;);</span>
+<span class="fc" id="L62">        } catch (Exception e) {</span>
+<span class="fc" id="L63">            response.setStatus(HttpServletResponse.SC_BAD_REQUEST);</span>
+<span class="fc" id="L64">            LOG.error(&quot;Failed to Update Employee&quot;,e);</span>
+<span class="fc" id="L65">        }</span>
+<span class="fc" id="L66">    }</span>
+
+    @Override
+    public void doGet(HttpServletRequest request,HttpServletResponse response) {
+        try{
+<span class="nc" id="L71">            int branchId = Integer.parseInt(request.getParameter(&quot;branchId&quot;));</span>
+<span class="nc" id="L72">            List&lt;Employee&gt; employees = employeeService.getByBranchId(branchId);</span>
+
+<span class="nc" id="L74">            ObjectMapper mapper = new ObjectMapper();</span>
+<span class="nc" id="L75">            String json = mapper.writeValueAsString(employees);</span>
+
+<span class="nc" id="L77">            response.setStatus(HttpServletResponse.SC_OK);</span>
+<span class="nc" id="L78">            response.getWriter().write(json);</span>
+<span class="nc" id="L79">        } catch (Exception e) {</span>
+<span class="nc" id="L80">            LOG.error(&quot;Failed :&quot;,e);</span>
+<span class="nc" id="L81">        }</span>
+<span class="nc" id="L82">    }</span>
+
+
+}
+
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>

@@ -1,19 +1,19 @@
-2026-01-02 12:03:28 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2026-01-02 12:03:28 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2026-01-02 12:03:28 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2026-01-02 12:03:28 INFO  org.example.DAO.BranchDAO - Successfully updated account with id=1
-2026-01-02 12:03:28 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2026-01-02 12:03:28 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2026-01-02 12:03:29 INFO  org.example.DAO.BranchDAO - Successfully deleted Branch with id:1
-2026-01-02 12:03:29 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=0
-2026-01-02 12:03:29 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2026-01-02 12:03:29 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2026-01-02 12:03:30 ERROR org.example.servlet.BranchServelet - Failed to delete Branch, EXCEPTION:
+2026-01-02 12:03:28 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2026-01-02 12:03:28 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2026-01-02 12:03:28 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2026-01-02 12:03:28 INFO  org.example.dao.BranchDAO - Successfully updated account with id=1
+2026-01-02 12:03:28 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2026-01-02 12:03:28 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2026-01-02 12:03:29 INFO  org.example.dao.BranchDAO - Successfully deleted Branch with id:1
+2026-01-02 12:03:29 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=0
+2026-01-02 12:03:29 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2026-01-02 12:03:29 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2026-01-02 12:03:30 ERROR org.example.servlet.BranchServlet - Failed to delete Branch, EXCEPTION:
 java.lang.NumberFormatException: Cannot parse null string
 	at java.base/java.lang.Integer.parseInt(Integer.java:624)
 	at java.base/java.lang.Integer.parseInt(Integer.java:778)
-	at org.example.servlet.BranchServelet.doDelete(BranchServelet.java:77)
-	at org.example.BranchServeletTest.testDoDeleteInvalid(BranchServeletTest.java:112)
+	at org.example.servlet.BranchServlet.doDelete(BranchServelet.java:77)
+	at org.example.BranchServletTest.testDoDeleteInvalid(BranchServeletTest.java:112)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
@@ -83,31 +83,31 @@ java.lang.NumberFormatException: Cannot parse null string
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-2026-01-02 12:03:30 INFO  org.example.servlet.BranchServelet - Fetched all Branches successfully
-2026-01-02 12:03:30 INFO  org.example.servlet.BranchServelet - Updated Successfully
-2026-01-02 12:03:30 ERROR org.example.servlet.BranchServelet - Failed to Update Branch , EXCEPTION:
+2026-01-02 12:03:30 INFO  org.example.servlet.BranchServlet - Fetched all Branches successfully
+2026-01-02 12:03:30 INFO  org.example.servlet.BranchServlet - Updated Successfully
+2026-01-02 12:03:30 ERROR org.example.servlet.BranchServlet - Failed to Update Branch , EXCEPTION:
 java.io.IOException: null
-2026-01-02 12:03:30 ERROR org.example.servlet.BranchServelet - Failed to insert Branch, EXCEPTION:
+2026-01-02 12:03:30 ERROR org.example.servlet.BranchServlet - Failed to insert Branch, EXCEPTION:
 java.io.IOException: null
-2026-01-02 12:03:30 INFO  org.example.servlet.BranchServelet - Branch created successfully: 1
-2026-01-02 12:03:30 INFO  org.example.servlet.BranchServelet - Branch Deleted Successfully..
-2026-01-02 12:03:30 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2026-01-02 12:03:31 ERROR org.example.DAO.EmployeeDAO - Delete failed: no Employee found with this id:-1
-2026-01-02 12:03:31 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2026-01-02 12:03:31 INFO  org.example.DAO.EmployeeDAO - Successfully deleted Employee with id:1
-2026-01-02 12:03:31 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2026-01-02 12:03:31 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2026-01-02 12:03:31 INFO  org.example.DAO.EmployeeDAO - Successfully updated employee with id=1
-2026-01-02 12:03:31 INFO  org.example.servlet.EmployeeServelet - Employee created successfully: 1
-2026-01-02 12:03:31 INFO  org.example.servlet.EmployeeServelet - Updated Successfully
-2026-01-02 12:03:31 ERROR org.example.servlet.EmployeeServelet - Failed to insert Employee
+2026-01-02 12:03:30 INFO  org.example.servlet.BranchServlet - Branch created successfully: 1
+2026-01-02 12:03:30 INFO  org.example.servlet.BranchServlet - Branch Deleted Successfully..
+2026-01-02 12:03:30 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2026-01-02 12:03:31 ERROR org.example.dao.EmployeeDAO - Delete failed: no Employee found with this id:-1
+2026-01-02 12:03:31 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2026-01-02 12:03:31 INFO  org.example.dao.EmployeeDAO - Successfully deleted Employee with id:1
+2026-01-02 12:03:31 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2026-01-02 12:03:31 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2026-01-02 12:03:31 INFO  org.example.dao.EmployeeDAO - Successfully updated employee with id=1
+2026-01-02 12:03:31 INFO  org.example.servlet.EmployeeServlet - Employee created successfully: 1
+2026-01-02 12:03:31 INFO  org.example.servlet.EmployeeServlet - Updated Successfully
+2026-01-02 12:03:31 ERROR org.example.servlet.EmployeeServlet - Failed to insert Employee
 java.io.IOException: null
-2026-01-02 12:03:31 ERROR org.example.servlet.EmployeeServelet - Failed to Delete Employee
+2026-01-02 12:03:31 ERROR org.example.servlet.EmployeeServlet - Failed to Delete Employee
 java.lang.NumberFormatException: Cannot parse null string
 	at java.base/java.lang.Integer.parseInt(Integer.java:624)
 	at java.base/java.lang.Integer.parseInt(Integer.java:778)
-	at org.example.servlet.EmployeeServelet.doDelete(EmployeeServelet.java:46)
-	at org.example.EmployeeServeletTest.testdoDeleteInvalid(EmployeeServeletTest.java:88)
+	at org.example.servlet.EmployeeServlet.doDelete(EmployeeServelet.java:46)
+	at org.example.EmployeeServletTest.testdoDeleteInvalid(EmployeeServeletTest.java:88)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
@@ -177,17 +177,17 @@ java.lang.NumberFormatException: Cannot parse null string
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-2026-01-02 12:03:31 ERROR org.example.servlet.EmployeeServelet - Failed to Update Employee
+2026-01-02 12:03:31 ERROR org.example.servlet.EmployeeServlet - Failed to Update Employee
 java.io.IOException: null
-2026-01-02 12:03:31 INFO  org.example.servlet.EmployeeServelet - Employee Deleted Successfully..
-2026-01-02 12:25:07 INFO  org.example.servlet.BranchServelet - Fetched all Branches successfully
+2026-01-02 12:03:31 INFO  org.example.servlet.EmployeeServlet - Employee Deleted Successfully..
+2026-01-02 12:25:07 INFO  org.example.servlet.BranchServlet - Fetched all Branches successfully
 2026-01-02 13:48:51 INFO  com.zaxxer.hikari.HikariDataSource - MyHikariCP - Starting...
-2026-01-02 13:48:54 ERROR org.example.servlet.BranchServelet - Failed to delete Branch, EXCEPTION:
+2026-01-02 13:48:54 ERROR org.example.servlet.BranchServlet - Failed to delete Branch, EXCEPTION:
 java.lang.NumberFormatException: Cannot parse null string
 	at java.base/java.lang.Integer.parseInt(Integer.java:624)
 	at java.base/java.lang.Integer.parseInt(Integer.java:778)
-	at org.example.servlet.BranchServelet.doDelete(BranchServelet.java:77)
-	at org.example.BranchServeletTest.testDoDeleteInvalid(BranchServeletTest.java:111)
+	at org.example.servlet.BranchServlet.doDelete(BranchServelet.java:77)
+	at org.example.BranchServletTest.testDoDeleteInvalid(BranchServeletTest.java:111)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
@@ -257,24 +257,24 @@ java.lang.NumberFormatException: Cannot parse null string
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-2026-01-02 13:48:54 INFO  org.example.servlet.BranchServelet - Fetched all Branches successfully
-2026-01-02 13:48:54 INFO  org.example.servlet.BranchServelet - Updated Successfully
-2026-01-02 13:48:54 ERROR org.example.servlet.BranchServelet - Failed to Update Branch , EXCEPTION:
+2026-01-02 13:48:54 INFO  org.example.servlet.BranchServlet - Fetched all Branches successfully
+2026-01-02 13:48:54 INFO  org.example.servlet.BranchServlet - Updated Successfully
+2026-01-02 13:48:54 ERROR org.example.servlet.BranchServlet - Failed to Update Branch , EXCEPTION:
 java.io.IOException: null
-2026-01-02 13:48:54 ERROR org.example.servlet.BranchServelet - Failed to insert Branch, EXCEPTION:
+2026-01-02 13:48:54 ERROR org.example.servlet.BranchServlet - Failed to insert Branch, EXCEPTION:
 java.io.IOException: null
-2026-01-02 13:48:54 INFO  org.example.servlet.BranchServelet - Branch created successfully: 1
-2026-01-02 13:48:54 INFO  org.example.servlet.BranchServelet - Branch Deleted Successfully..
-2026-01-02 13:48:54 INFO  org.example.servlet.EmployeeServelet - Employee created successfully: 1
-2026-01-02 13:48:54 INFO  org.example.servlet.EmployeeServelet - Updated Successfully
-2026-01-02 13:48:54 ERROR org.example.servlet.EmployeeServelet - Failed to insert Employee
+2026-01-02 13:48:54 INFO  org.example.servlet.BranchServlet - Branch created successfully: 1
+2026-01-02 13:48:54 INFO  org.example.servlet.BranchServlet - Branch Deleted Successfully..
+2026-01-02 13:48:54 INFO  org.example.servlet.EmployeeServlet - Employee created successfully: 1
+2026-01-02 13:48:54 INFO  org.example.servlet.EmployeeServlet - Updated Successfully
+2026-01-02 13:48:54 ERROR org.example.servlet.EmployeeServlet - Failed to insert Employee
 java.io.IOException: null
-2026-01-02 13:48:54 ERROR org.example.servlet.EmployeeServelet - Failed to Delete Employee
+2026-01-02 13:48:54 ERROR org.example.servlet.EmployeeServlet - Failed to Delete Employee
 java.lang.NumberFormatException: Cannot parse null string
 	at java.base/java.lang.Integer.parseInt(Integer.java:624)
 	at java.base/java.lang.Integer.parseInt(Integer.java:778)
-	at org.example.servlet.EmployeeServelet.doDelete(EmployeeServelet.java:46)
-	at org.example.EmployeeServeletTest.testdoDeleteInvalid(EmployeeServeletTest.java:88)
+	at org.example.servlet.EmployeeServlet.doDelete(EmployeeServelet.java:46)
+	at org.example.EmployeeServletTest.testdoDeleteInvalid(EmployeeServeletTest.java:88)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
@@ -344,16 +344,16 @@ java.lang.NumberFormatException: Cannot parse null string
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-2026-01-02 13:48:54 ERROR org.example.servlet.EmployeeServelet - Failed to Update Employee
+2026-01-02 13:48:54 ERROR org.example.servlet.EmployeeServlet - Failed to Update Employee
 java.io.IOException: null
-2026-01-02 13:48:54 INFO  org.example.servlet.EmployeeServelet - Employee Deleted Successfully..
+2026-01-02 13:48:54 INFO  org.example.servlet.EmployeeServlet - Employee Deleted Successfully..
 2026-01-02 14:34:37 INFO  com.zaxxer.hikari.HikariDataSource - MyHikariCP - Starting...
-2026-01-02 14:34:40 ERROR org.example.servlet.BranchServelet - Failed to delete Branch, EXCEPTION:
+2026-01-02 14:34:40 ERROR org.example.servlet.BranchServlet - Failed to delete Branch, EXCEPTION:
 java.lang.NumberFormatException: Cannot parse null string
 	at java.base/java.lang.Integer.parseInt(Integer.java:624)
 	at java.base/java.lang.Integer.parseInt(Integer.java:778)
-	at org.example.servlet.BranchServelet.doDelete(BranchServelet.java:77)
-	at org.example.BranchServeletTest.testDoDeleteInvalid(BranchServeletTest.java:111)
+	at org.example.servlet.BranchServlet.doDelete(BranchServelet.java:77)
+	at org.example.BranchServletTest.testDoDeleteInvalid(BranchServeletTest.java:111)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
@@ -423,24 +423,24 @@ java.lang.NumberFormatException: Cannot parse null string
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-2026-01-02 14:34:40 INFO  org.example.servlet.BranchServelet - Fetched all Branches successfully
-2026-01-02 14:34:41 INFO  org.example.servlet.BranchServelet - Updated Successfully
-2026-01-02 14:34:41 ERROR org.example.servlet.BranchServelet - Failed to Update Branch , EXCEPTION:
+2026-01-02 14:34:40 INFO  org.example.servlet.BranchServlet - Fetched all Branches successfully
+2026-01-02 14:34:41 INFO  org.example.servlet.BranchServlet - Updated Successfully
+2026-01-02 14:34:41 ERROR org.example.servlet.BranchServlet - Failed to Update Branch , EXCEPTION:
 java.io.IOException: null
-2026-01-02 14:34:41 ERROR org.example.servlet.BranchServelet - Failed to insert Branch, EXCEPTION:
+2026-01-02 14:34:41 ERROR org.example.servlet.BranchServlet - Failed to insert Branch, EXCEPTION:
 java.io.IOException: null
-2026-01-02 14:34:41 INFO  org.example.servlet.BranchServelet - Branch created successfully: 1
-2026-01-02 14:34:41 INFO  org.example.servlet.BranchServelet - Branch Deleted Successfully..
-2026-01-02 14:34:41 INFO  org.example.servlet.EmployeeServelet - Employee created successfully: 1
-2026-01-02 14:34:41 INFO  org.example.servlet.EmployeeServelet - Updated Successfully
-2026-01-02 14:34:41 ERROR org.example.servlet.EmployeeServelet - Failed to insert Employee
+2026-01-02 14:34:41 INFO  org.example.servlet.BranchServlet - Branch created successfully: 1
+2026-01-02 14:34:41 INFO  org.example.servlet.BranchServlet - Branch Deleted Successfully..
+2026-01-02 14:34:41 INFO  org.example.servlet.EmployeeServlet - Employee created successfully: 1
+2026-01-02 14:34:41 INFO  org.example.servlet.EmployeeServlet - Updated Successfully
+2026-01-02 14:34:41 ERROR org.example.servlet.EmployeeServlet - Failed to insert Employee
 java.io.IOException: null
-2026-01-02 14:34:41 ERROR org.example.servlet.EmployeeServelet - Failed to Delete Employee
+2026-01-02 14:34:41 ERROR org.example.servlet.EmployeeServlet - Failed to Delete Employee
 java.lang.NumberFormatException: Cannot parse null string
 	at java.base/java.lang.Integer.parseInt(Integer.java:624)
 	at java.base/java.lang.Integer.parseInt(Integer.java:778)
-	at org.example.servlet.EmployeeServelet.doDelete(EmployeeServelet.java:46)
-	at org.example.EmployeeServeletTest.testdoDeleteInvalid(EmployeeServeletTest.java:88)
+	at org.example.servlet.EmployeeServlet.doDelete(EmployeeServelet.java:46)
+	at org.example.EmployeeServletTest.testdoDeleteInvalid(EmployeeServeletTest.java:88)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
@@ -510,16 +510,16 @@ java.lang.NumberFormatException: Cannot parse null string
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-2026-01-02 14:34:41 ERROR org.example.servlet.EmployeeServelet - Failed to Update Employee
+2026-01-02 14:34:41 ERROR org.example.servlet.EmployeeServlet - Failed to Update Employee
 java.io.IOException: null
-2026-01-02 14:34:41 INFO  org.example.servlet.EmployeeServelet - Employee Deleted Successfully..
+2026-01-02 14:34:41 INFO  org.example.servlet.EmployeeServlet - Employee Deleted Successfully..
 2026-01-02 14:36:08 INFO  com.zaxxer.hikari.HikariDataSource - MyHikariCP - Starting...
-2026-01-02 14:36:11 ERROR org.example.servlet.BranchServelet - Failed to delete Branch, EXCEPTION:
+2026-01-02 14:36:11 ERROR org.example.servlet.BranchServlet - Failed to delete Branch, EXCEPTION:
 java.lang.NumberFormatException: Cannot parse null string
 	at java.base/java.lang.Integer.parseInt(Integer.java:624)
 	at java.base/java.lang.Integer.parseInt(Integer.java:778)
-	at org.example.servlet.BranchServelet.doDelete(BranchServelet.java:77)
-	at org.example.BranchServeletTest.testDoDeleteInvalid(BranchServeletTest.java:111)
+	at org.example.servlet.BranchServlet.doDelete(BranchServelet.java:77)
+	at org.example.BranchServletTest.testDoDeleteInvalid(BranchServeletTest.java:111)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
@@ -589,24 +589,24 @@ java.lang.NumberFormatException: Cannot parse null string
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-2026-01-02 14:36:11 INFO  org.example.servlet.BranchServelet - Fetched all Branches successfully
-2026-01-02 14:36:11 INFO  org.example.servlet.BranchServelet - Updated Successfully
-2026-01-02 14:36:11 ERROR org.example.servlet.BranchServelet - Failed to Update Branch , EXCEPTION:
+2026-01-02 14:36:11 INFO  org.example.servlet.BranchServlet - Fetched all Branches successfully
+2026-01-02 14:36:11 INFO  org.example.servlet.BranchServlet - Updated Successfully
+2026-01-02 14:36:11 ERROR org.example.servlet.BranchServlet - Failed to Update Branch , EXCEPTION:
 java.io.IOException: null
-2026-01-02 14:36:11 ERROR org.example.servlet.BranchServelet - Failed to insert Branch, EXCEPTION:
+2026-01-02 14:36:11 ERROR org.example.servlet.BranchServlet - Failed to insert Branch, EXCEPTION:
 java.io.IOException: null
-2026-01-02 14:36:11 INFO  org.example.servlet.BranchServelet - Branch created successfully: 1
-2026-01-02 14:36:11 INFO  org.example.servlet.BranchServelet - Branch Deleted Successfully..
-2026-01-02 14:36:12 INFO  org.example.servlet.EmployeeServelet - Employee created successfully: 1
-2026-01-02 14:36:12 INFO  org.example.servlet.EmployeeServelet - Updated Successfully
-2026-01-02 14:36:12 ERROR org.example.servlet.EmployeeServelet - Failed to insert Employee
+2026-01-02 14:36:11 INFO  org.example.servlet.BranchServlet - Branch created successfully: 1
+2026-01-02 14:36:11 INFO  org.example.servlet.BranchServlet - Branch Deleted Successfully..
+2026-01-02 14:36:12 INFO  org.example.servlet.EmployeeServlet - Employee created successfully: 1
+2026-01-02 14:36:12 INFO  org.example.servlet.EmployeeServlet - Updated Successfully
+2026-01-02 14:36:12 ERROR org.example.servlet.EmployeeServlet - Failed to insert Employee
 java.io.IOException: null
-2026-01-02 14:36:12 ERROR org.example.servlet.EmployeeServelet - Failed to Delete Employee
+2026-01-02 14:36:12 ERROR org.example.servlet.EmployeeServlet - Failed to Delete Employee
 java.lang.NumberFormatException: Cannot parse null string
 	at java.base/java.lang.Integer.parseInt(Integer.java:624)
 	at java.base/java.lang.Integer.parseInt(Integer.java:778)
-	at org.example.servlet.EmployeeServelet.doDelete(EmployeeServelet.java:46)
-	at org.example.EmployeeServeletTest.testdoDeleteInvalid(EmployeeServeletTest.java:88)
+	at org.example.servlet.EmployeeServlet.doDelete(EmployeeServelet.java:46)
+	at org.example.EmployeeServletTest.testdoDeleteInvalid(EmployeeServeletTest.java:88)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
@@ -676,16 +676,16 @@ java.lang.NumberFormatException: Cannot parse null string
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-2026-01-02 14:36:12 ERROR org.example.servlet.EmployeeServelet - Failed to Update Employee
+2026-01-02 14:36:12 ERROR org.example.servlet.EmployeeServlet - Failed to Update Employee
 java.io.IOException: null
-2026-01-02 14:36:12 INFO  org.example.servlet.EmployeeServelet - Employee Deleted Successfully..
+2026-01-02 14:36:12 INFO  org.example.servlet.EmployeeServlet - Employee Deleted Successfully..
 2026-01-02 14:43:29 INFO  com.zaxxer.hikari.HikariDataSource - MyHikariCP - Starting...
-2026-01-02 14:43:32 ERROR org.example.servlet.BranchServelet - Failed to delete Branch, EXCEPTION:
+2026-01-02 14:43:32 ERROR org.example.servlet.BranchServlet - Failed to delete Branch, EXCEPTION:
 java.lang.NumberFormatException: Cannot parse null string
 	at java.base/java.lang.Integer.parseInt(Integer.java:624)
 	at java.base/java.lang.Integer.parseInt(Integer.java:778)
-	at org.example.servlet.BranchServelet.doDelete(BranchServelet.java:77)
-	at org.example.BranchServeletTest.testDoDeleteInvalid(BranchServeletTest.java:111)
+	at org.example.servlet.BranchServlet.doDelete(BranchServelet.java:77)
+	at org.example.BranchServletTest.testDoDeleteInvalid(BranchServeletTest.java:111)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
@@ -755,24 +755,24 @@ java.lang.NumberFormatException: Cannot parse null string
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-2026-01-02 14:43:32 INFO  org.example.servlet.BranchServelet - Fetched all Branches successfully
-2026-01-02 14:43:32 INFO  org.example.servlet.BranchServelet - Updated Successfully
-2026-01-02 14:43:32 ERROR org.example.servlet.BranchServelet - Failed to Update Branch , EXCEPTION:
+2026-01-02 14:43:32 INFO  org.example.servlet.BranchServlet - Fetched all Branches successfully
+2026-01-02 14:43:32 INFO  org.example.servlet.BranchServlet - Updated Successfully
+2026-01-02 14:43:32 ERROR org.example.servlet.BranchServlet - Failed to Update Branch , EXCEPTION:
 java.io.IOException: null
-2026-01-02 14:43:32 ERROR org.example.servlet.BranchServelet - Failed to insert Branch, EXCEPTION:
+2026-01-02 14:43:32 ERROR org.example.servlet.BranchServlet - Failed to insert Branch, EXCEPTION:
 java.io.IOException: null
-2026-01-02 14:43:32 INFO  org.example.servlet.BranchServelet - Branch created successfully: 1
-2026-01-02 14:43:32 INFO  org.example.servlet.BranchServelet - Branch Deleted Successfully..
-2026-01-02 14:43:33 INFO  org.example.servlet.EmployeeServelet - Employee created successfully: 1
-2026-01-02 14:43:33 INFO  org.example.servlet.EmployeeServelet - Updated Successfully
-2026-01-02 14:43:33 ERROR org.example.servlet.EmployeeServelet - Failed to insert Employee
+2026-01-02 14:43:32 INFO  org.example.servlet.BranchServlet - Branch created successfully: 1
+2026-01-02 14:43:32 INFO  org.example.servlet.BranchServlet - Branch Deleted Successfully..
+2026-01-02 14:43:33 INFO  org.example.servlet.EmployeeServlet - Employee created successfully: 1
+2026-01-02 14:43:33 INFO  org.example.servlet.EmployeeServlet - Updated Successfully
+2026-01-02 14:43:33 ERROR org.example.servlet.EmployeeServlet - Failed to insert Employee
 java.io.IOException: null
-2026-01-02 14:43:33 ERROR org.example.servlet.EmployeeServelet - Failed to Delete Employee
+2026-01-02 14:43:33 ERROR org.example.servlet.EmployeeServlet - Failed to Delete Employee
 java.lang.NumberFormatException: Cannot parse null string
 	at java.base/java.lang.Integer.parseInt(Integer.java:624)
 	at java.base/java.lang.Integer.parseInt(Integer.java:778)
-	at org.example.servlet.EmployeeServelet.doDelete(EmployeeServelet.java:46)
-	at org.example.EmployeeServeletTest.testdoDeleteInvalid(EmployeeServeletTest.java:88)
+	at org.example.servlet.EmployeeServlet.doDelete(EmployeeServelet.java:46)
+	at org.example.EmployeeServletTest.testdoDeleteInvalid(EmployeeServeletTest.java:88)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
@@ -842,16 +842,16 @@ java.lang.NumberFormatException: Cannot parse null string
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-2026-01-02 14:43:33 ERROR org.example.servlet.EmployeeServelet - Failed to Update Employee
+2026-01-02 14:43:33 ERROR org.example.servlet.EmployeeServlet - Failed to Update Employee
 java.io.IOException: null
-2026-01-02 14:43:33 INFO  org.example.servlet.EmployeeServelet - Employee Deleted Successfully..
+2026-01-02 14:43:33 INFO  org.example.servlet.EmployeeServlet - Employee Deleted Successfully..
 2026-01-02 14:45:43 INFO  com.zaxxer.hikari.HikariDataSource - MyHikariCP - Starting...
-2026-01-02 14:45:46 ERROR org.example.servlet.BranchServelet - Failed to delete Branch, EXCEPTION:
+2026-01-02 14:45:46 ERROR org.example.servlet.BranchServlet - Failed to delete Branch, EXCEPTION:
 java.lang.NumberFormatException: Cannot parse null string
 	at java.base/java.lang.Integer.parseInt(Integer.java:624)
 	at java.base/java.lang.Integer.parseInt(Integer.java:778)
-	at org.example.servlet.BranchServelet.doDelete(BranchServelet.java:77)
-	at org.example.BranchServeletTest.testDoDeleteInvalid(BranchServeletTest.java:111)
+	at org.example.servlet.BranchServlet.doDelete(BranchServelet.java:77)
+	at org.example.BranchServletTest.testDoDeleteInvalid(BranchServeletTest.java:111)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
@@ -921,24 +921,24 @@ java.lang.NumberFormatException: Cannot parse null string
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-2026-01-02 14:45:46 INFO  org.example.servlet.BranchServelet - Fetched all Branches successfully
-2026-01-02 14:45:46 INFO  org.example.servlet.BranchServelet - Updated Successfully
-2026-01-02 14:45:46 ERROR org.example.servlet.BranchServelet - Failed to Update Branch , EXCEPTION:
+2026-01-02 14:45:46 INFO  org.example.servlet.BranchServlet - Fetched all Branches successfully
+2026-01-02 14:45:46 INFO  org.example.servlet.BranchServlet - Updated Successfully
+2026-01-02 14:45:46 ERROR org.example.servlet.BranchServlet - Failed to Update Branch , EXCEPTION:
 java.io.IOException: null
-2026-01-02 14:45:46 ERROR org.example.servlet.BranchServelet - Failed to insert Branch, EXCEPTION:
+2026-01-02 14:45:46 ERROR org.example.servlet.BranchServlet - Failed to insert Branch, EXCEPTION:
 java.io.IOException: null
-2026-01-02 14:45:46 INFO  org.example.servlet.BranchServelet - Branch created successfully: 1
-2026-01-02 14:45:46 INFO  org.example.servlet.BranchServelet - Branch Deleted Successfully..
-2026-01-02 14:45:46 INFO  org.example.servlet.EmployeeServelet - Employee created successfully: 1
-2026-01-02 14:45:46 INFO  org.example.servlet.EmployeeServelet - Updated Successfully
-2026-01-02 14:45:46 ERROR org.example.servlet.EmployeeServelet - Failed to insert Employee
+2026-01-02 14:45:46 INFO  org.example.servlet.BranchServlet - Branch created successfully: 1
+2026-01-02 14:45:46 INFO  org.example.servlet.BranchServlet - Branch Deleted Successfully..
+2026-01-02 14:45:46 INFO  org.example.servlet.EmployeeServlet - Employee created successfully: 1
+2026-01-02 14:45:46 INFO  org.example.servlet.EmployeeServlet - Updated Successfully
+2026-01-02 14:45:46 ERROR org.example.servlet.EmployeeServlet - Failed to insert Employee
 java.io.IOException: null
-2026-01-02 14:45:46 ERROR org.example.servlet.EmployeeServelet - Failed to Delete Employee
+2026-01-02 14:45:46 ERROR org.example.servlet.EmployeeServlet - Failed to Delete Employee
 java.lang.NumberFormatException: Cannot parse null string
 	at java.base/java.lang.Integer.parseInt(Integer.java:624)
 	at java.base/java.lang.Integer.parseInt(Integer.java:778)
-	at org.example.servlet.EmployeeServelet.doDelete(EmployeeServelet.java:46)
-	at org.example.EmployeeServeletTest.testdoDeleteInvalid(EmployeeServeletTest.java:88)
+	at org.example.servlet.EmployeeServlet.doDelete(EmployeeServelet.java:46)
+	at org.example.EmployeeServletTest.testdoDeleteInvalid(EmployeeServeletTest.java:88)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
@@ -1008,28 +1008,28 @@ java.lang.NumberFormatException: Cannot parse null string
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-2026-01-02 14:45:46 ERROR org.example.servlet.EmployeeServelet - Failed to Update Employee
+2026-01-02 14:45:46 ERROR org.example.servlet.EmployeeServlet - Failed to Update Employee
 java.io.IOException: null
-2026-01-02 14:45:46 INFO  org.example.servlet.EmployeeServelet - Employee Deleted Successfully..
+2026-01-02 14:45:46 INFO  org.example.servlet.EmployeeServlet - Employee Deleted Successfully..
 2026-01-02 14:50:27 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
 2026-01-02 14:50:27 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2b62475a
 2026-01-02 14:50:27 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2026-01-02 14:50:27 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2026-01-02 14:50:27 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2026-01-02 14:50:27 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2026-01-02 14:50:27 INFO  org.example.DAO.BranchDAO - Successfully updated account with id=1
-2026-01-02 14:50:27 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2026-01-02 14:50:27 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2026-01-02 14:50:27 INFO  org.example.DAO.BranchDAO - Successfully deleted Branch with id:1
-2026-01-02 14:50:27 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=0
-2026-01-02 14:50:27 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2026-01-02 14:50:27 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2026-01-02 14:50:29 ERROR org.example.servlet.BranchServelet - Failed to delete Branch, EXCEPTION:
+2026-01-02 14:50:27 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2026-01-02 14:50:27 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2026-01-02 14:50:27 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2026-01-02 14:50:27 INFO  org.example.dao.BranchDAO - Successfully updated account with id=1
+2026-01-02 14:50:27 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2026-01-02 14:50:27 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2026-01-02 14:50:27 INFO  org.example.dao.BranchDAO - Successfully deleted Branch with id:1
+2026-01-02 14:50:27 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=0
+2026-01-02 14:50:27 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2026-01-02 14:50:27 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2026-01-02 14:50:29 ERROR org.example.servlet.BranchServlet - Failed to delete Branch, EXCEPTION:
 java.lang.NumberFormatException: Cannot parse null string
 	at java.base/java.lang.Integer.parseInt(Integer.java:624)
 	at java.base/java.lang.Integer.parseInt(Integer.java:778)
-	at org.example.servlet.BranchServelet.doDelete(BranchServelet.java:77)
-	at org.example.BranchServeletTest.testDoDeleteInvalid(BranchServeletTest.java:111)
+	at org.example.servlet.BranchServlet.doDelete(BranchServelet.java:77)
+	at org.example.BranchServletTest.testDoDeleteInvalid(BranchServeletTest.java:111)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
@@ -1099,31 +1099,31 @@ java.lang.NumberFormatException: Cannot parse null string
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-2026-01-02 14:50:29 INFO  org.example.servlet.BranchServelet - Fetched all Branches successfully
-2026-01-02 14:50:29 INFO  org.example.servlet.BranchServelet - Updated Successfully
-2026-01-02 14:50:29 ERROR org.example.servlet.BranchServelet - Failed to Update Branch , EXCEPTION:
+2026-01-02 14:50:29 INFO  org.example.servlet.BranchServlet - Fetched all Branches successfully
+2026-01-02 14:50:29 INFO  org.example.servlet.BranchServlet - Updated Successfully
+2026-01-02 14:50:29 ERROR org.example.servlet.BranchServlet - Failed to Update Branch , EXCEPTION:
 java.io.IOException: null
-2026-01-02 14:50:29 ERROR org.example.servlet.BranchServelet - Failed to insert Branch, EXCEPTION:
+2026-01-02 14:50:29 ERROR org.example.servlet.BranchServlet - Failed to insert Branch, EXCEPTION:
 java.io.IOException: null
-2026-01-02 14:50:29 INFO  org.example.servlet.BranchServelet - Branch created successfully: 1
-2026-01-02 14:50:29 INFO  org.example.servlet.BranchServelet - Branch Deleted Successfully..
-2026-01-02 14:50:29 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2026-01-02 14:50:29 ERROR org.example.DAO.EmployeeDAO - Delete failed: no Employee found with this id:-1
-2026-01-02 14:50:29 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2026-01-02 14:50:29 INFO  org.example.DAO.EmployeeDAO - Successfully deleted Employee with id:1
-2026-01-02 14:50:29 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2026-01-02 14:50:29 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2026-01-02 14:50:29 INFO  org.example.DAO.EmployeeDAO - Successfully updated employee with id=1
-2026-01-02 14:50:29 INFO  org.example.servlet.EmployeeServelet - Employee created successfully: 1
-2026-01-02 14:50:29 INFO  org.example.servlet.EmployeeServelet - Updated Successfully
-2026-01-02 14:50:29 ERROR org.example.servlet.EmployeeServelet - Failed to insert Employee
+2026-01-02 14:50:29 INFO  org.example.servlet.BranchServlet - Branch created successfully: 1
+2026-01-02 14:50:29 INFO  org.example.servlet.BranchServlet - Branch Deleted Successfully..
+2026-01-02 14:50:29 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2026-01-02 14:50:29 ERROR org.example.dao.EmployeeDAO - Delete failed: no Employee found with this id:-1
+2026-01-02 14:50:29 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2026-01-02 14:50:29 INFO  org.example.dao.EmployeeDAO - Successfully deleted Employee with id:1
+2026-01-02 14:50:29 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2026-01-02 14:50:29 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2026-01-02 14:50:29 INFO  org.example.dao.EmployeeDAO - Successfully updated employee with id=1
+2026-01-02 14:50:29 INFO  org.example.servlet.EmployeeServlet - Employee created successfully: 1
+2026-01-02 14:50:29 INFO  org.example.servlet.EmployeeServlet - Updated Successfully
+2026-01-02 14:50:29 ERROR org.example.servlet.EmployeeServlet - Failed to insert Employee
 java.io.IOException: null
-2026-01-02 14:50:29 ERROR org.example.servlet.EmployeeServelet - Failed to Delete Employee
+2026-01-02 14:50:29 ERROR org.example.servlet.EmployeeServlet - Failed to Delete Employee
 java.lang.NumberFormatException: Cannot parse null string
 	at java.base/java.lang.Integer.parseInt(Integer.java:624)
 	at java.base/java.lang.Integer.parseInt(Integer.java:778)
-	at org.example.servlet.EmployeeServelet.doDelete(EmployeeServelet.java:46)
-	at org.example.EmployeeServeletTest.testdoDeleteInvalid(EmployeeServeletTest.java:88)
+	at org.example.servlet.EmployeeServlet.doDelete(EmployeeServelet.java:46)
+	at org.example.EmployeeServletTest.testdoDeleteInvalid(EmployeeServeletTest.java:88)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
@@ -1193,28 +1193,28 @@ java.lang.NumberFormatException: Cannot parse null string
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-2026-01-02 14:50:29 ERROR org.example.servlet.EmployeeServelet - Failed to Update Employee
+2026-01-02 14:50:29 ERROR org.example.servlet.EmployeeServlet - Failed to Update Employee
 java.io.IOException: null
-2026-01-02 14:50:29 INFO  org.example.servlet.EmployeeServelet - Employee Deleted Successfully..
+2026-01-02 14:50:29 INFO  org.example.servlet.EmployeeServlet - Employee Deleted Successfully..
 2026-01-02 14:50:55 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
 2026-01-02 14:50:55 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2b62475a
 2026-01-02 14:50:55 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2026-01-02 14:50:55 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2026-01-02 14:50:55 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2026-01-02 14:50:55 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2026-01-02 14:50:55 INFO  org.example.DAO.BranchDAO - Successfully updated account with id=1
-2026-01-02 14:50:55 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2026-01-02 14:50:55 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2026-01-02 14:50:55 INFO  org.example.DAO.BranchDAO - Successfully deleted Branch with id:1
-2026-01-02 14:50:55 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=0
-2026-01-02 14:50:55 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2026-01-02 14:50:55 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2026-01-02 14:50:56 ERROR org.example.servlet.BranchServelet - Failed to delete Branch, EXCEPTION:
+2026-01-02 14:50:55 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2026-01-02 14:50:55 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2026-01-02 14:50:55 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2026-01-02 14:50:55 INFO  org.example.dao.BranchDAO - Successfully updated account with id=1
+2026-01-02 14:50:55 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2026-01-02 14:50:55 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2026-01-02 14:50:55 INFO  org.example.dao.BranchDAO - Successfully deleted Branch with id:1
+2026-01-02 14:50:55 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=0
+2026-01-02 14:50:55 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2026-01-02 14:50:55 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2026-01-02 14:50:56 ERROR org.example.servlet.BranchServlet - Failed to delete Branch, EXCEPTION:
 java.lang.NumberFormatException: Cannot parse null string
 	at java.base/java.lang.Integer.parseInt(Integer.java:624)
 	at java.base/java.lang.Integer.parseInt(Integer.java:778)
-	at org.example.servlet.BranchServelet.doDelete(BranchServelet.java:77)
-	at org.example.BranchServeletTest.testDoDeleteInvalid(BranchServeletTest.java:111)
+	at org.example.servlet.BranchServlet.doDelete(BranchServelet.java:77)
+	at org.example.BranchServletTest.testDoDeleteInvalid(BranchServeletTest.java:111)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
@@ -1284,31 +1284,31 @@ java.lang.NumberFormatException: Cannot parse null string
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-2026-01-02 14:50:56 INFO  org.example.servlet.BranchServelet - Fetched all Branches successfully
-2026-01-02 14:50:57 INFO  org.example.servlet.BranchServelet - Updated Successfully
-2026-01-02 14:50:57 ERROR org.example.servlet.BranchServelet - Failed to Update Branch , EXCEPTION:
+2026-01-02 14:50:56 INFO  org.example.servlet.BranchServlet - Fetched all Branches successfully
+2026-01-02 14:50:57 INFO  org.example.servlet.BranchServlet - Updated Successfully
+2026-01-02 14:50:57 ERROR org.example.servlet.BranchServlet - Failed to Update Branch , EXCEPTION:
 java.io.IOException: null
-2026-01-02 14:50:57 ERROR org.example.servlet.BranchServelet - Failed to insert Branch, EXCEPTION:
+2026-01-02 14:50:57 ERROR org.example.servlet.BranchServlet - Failed to insert Branch, EXCEPTION:
 java.io.IOException: null
-2026-01-02 14:50:57 INFO  org.example.servlet.BranchServelet - Branch created successfully: 1
-2026-01-02 14:50:57 INFO  org.example.servlet.BranchServelet - Branch Deleted Successfully..
-2026-01-02 14:50:57 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2026-01-02 14:50:57 ERROR org.example.DAO.EmployeeDAO - Delete failed: no Employee found with this id:-1
-2026-01-02 14:50:57 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2026-01-02 14:50:57 INFO  org.example.DAO.EmployeeDAO - Successfully deleted Employee with id:1
-2026-01-02 14:50:57 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2026-01-02 14:50:57 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2026-01-02 14:50:57 INFO  org.example.DAO.EmployeeDAO - Successfully updated employee with id=1
-2026-01-02 14:50:57 INFO  org.example.servlet.EmployeeServelet - Employee created successfully: 1
-2026-01-02 14:50:57 INFO  org.example.servlet.EmployeeServelet - Updated Successfully
-2026-01-02 14:50:57 ERROR org.example.servlet.EmployeeServelet - Failed to insert Employee
+2026-01-02 14:50:57 INFO  org.example.servlet.BranchServlet - Branch created successfully: 1
+2026-01-02 14:50:57 INFO  org.example.servlet.BranchServlet - Branch Deleted Successfully..
+2026-01-02 14:50:57 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2026-01-02 14:50:57 ERROR org.example.dao.EmployeeDAO - Delete failed: no Employee found with this id:-1
+2026-01-02 14:50:57 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2026-01-02 14:50:57 INFO  org.example.dao.EmployeeDAO - Successfully deleted Employee with id:1
+2026-01-02 14:50:57 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2026-01-02 14:50:57 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2026-01-02 14:50:57 INFO  org.example.dao.EmployeeDAO - Successfully updated employee with id=1
+2026-01-02 14:50:57 INFO  org.example.servlet.EmployeeServlet - Employee created successfully: 1
+2026-01-02 14:50:57 INFO  org.example.servlet.EmployeeServlet - Updated Successfully
+2026-01-02 14:50:57 ERROR org.example.servlet.EmployeeServlet - Failed to insert Employee
 java.io.IOException: null
-2026-01-02 14:50:57 ERROR org.example.servlet.EmployeeServelet - Failed to Delete Employee
+2026-01-02 14:50:57 ERROR org.example.servlet.EmployeeServlet - Failed to Delete Employee
 java.lang.NumberFormatException: Cannot parse null string
 	at java.base/java.lang.Integer.parseInt(Integer.java:624)
 	at java.base/java.lang.Integer.parseInt(Integer.java:778)
-	at org.example.servlet.EmployeeServelet.doDelete(EmployeeServelet.java:46)
-	at org.example.EmployeeServeletTest.testdoDeleteInvalid(EmployeeServeletTest.java:88)
+	at org.example.servlet.EmployeeServlet.doDelete(EmployeeServelet.java:46)
+	at org.example.EmployeeServletTest.testdoDeleteInvalid(EmployeeServeletTest.java:88)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
@@ -1378,29 +1378,29 @@ java.lang.NumberFormatException: Cannot parse null string
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-2026-01-02 14:50:57 ERROR org.example.servlet.EmployeeServelet - Failed to Update Employee
+2026-01-02 14:50:57 ERROR org.example.servlet.EmployeeServlet - Failed to Update Employee
 java.io.IOException: null
-2026-01-02 14:50:57 INFO  org.example.servlet.EmployeeServelet - Employee Deleted Successfully..
+2026-01-02 14:50:57 INFO  org.example.servlet.EmployeeServlet - Employee Deleted Successfully..
 2026-01-02 15:09:40 WARN  com.zaxxer.hikari.HikariConfig - HikariPool-1 - idleTimeout is less than 10000ms, setting to default 600000ms.
 2026-01-02 15:09:40 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
 2026-01-02 15:09:41 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2b62475a
 2026-01-02 15:09:41 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2026-01-02 15:09:41 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2026-01-02 15:09:41 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2026-01-02 15:09:41 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2026-01-02 15:09:41 INFO  org.example.DAO.BranchDAO - Successfully updated account with id=1
-2026-01-02 15:09:41 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2026-01-02 15:09:41 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2026-01-02 15:09:41 INFO  org.example.DAO.BranchDAO - Successfully deleted Branch with id:1
-2026-01-02 15:09:41 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=0
-2026-01-02 15:09:41 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2026-01-02 15:09:41 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2026-01-02 15:09:42 ERROR org.example.servlet.BranchServelet - Failed to delete Branch, EXCEPTION:
+2026-01-02 15:09:41 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2026-01-02 15:09:41 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2026-01-02 15:09:41 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2026-01-02 15:09:41 INFO  org.example.dao.BranchDAO - Successfully updated account with id=1
+2026-01-02 15:09:41 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2026-01-02 15:09:41 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2026-01-02 15:09:41 INFO  org.example.dao.BranchDAO - Successfully deleted Branch with id:1
+2026-01-02 15:09:41 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=0
+2026-01-02 15:09:41 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2026-01-02 15:09:41 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2026-01-02 15:09:42 ERROR org.example.servlet.BranchServlet - Failed to delete Branch, EXCEPTION:
 java.lang.NumberFormatException: Cannot parse null string
 	at java.base/java.lang.Integer.parseInt(Integer.java:624)
 	at java.base/java.lang.Integer.parseInt(Integer.java:778)
-	at org.example.servlet.BranchServelet.doDelete(BranchServelet.java:77)
-	at org.example.BranchServeletTest.testDoDeleteInvalid(BranchServeletTest.java:111)
+	at org.example.servlet.BranchServlet.doDelete(BranchServelet.java:77)
+	at org.example.BranchServletTest.testDoDeleteInvalid(BranchServeletTest.java:111)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
@@ -1470,31 +1470,31 @@ java.lang.NumberFormatException: Cannot parse null string
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-2026-01-02 15:09:42 INFO  org.example.servlet.BranchServelet - Fetched all Branches successfully
-2026-01-02 15:09:42 INFO  org.example.servlet.BranchServelet - Updated Successfully
-2026-01-02 15:09:42 ERROR org.example.servlet.BranchServelet - Failed to Update Branch , EXCEPTION:
+2026-01-02 15:09:42 INFO  org.example.servlet.BranchServlet - Fetched all Branches successfully
+2026-01-02 15:09:42 INFO  org.example.servlet.BranchServlet - Updated Successfully
+2026-01-02 15:09:42 ERROR org.example.servlet.BranchServlet - Failed to Update Branch , EXCEPTION:
 java.io.IOException: null
-2026-01-02 15:09:42 ERROR org.example.servlet.BranchServelet - Failed to insert Branch, EXCEPTION:
+2026-01-02 15:09:42 ERROR org.example.servlet.BranchServlet - Failed to insert Branch, EXCEPTION:
 java.io.IOException: null
-2026-01-02 15:09:42 INFO  org.example.servlet.BranchServelet - Branch created successfully: 1
-2026-01-02 15:09:42 INFO  org.example.servlet.BranchServelet - Branch Deleted Successfully..
-2026-01-02 15:09:42 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2026-01-02 15:09:43 ERROR org.example.DAO.EmployeeDAO - Delete failed: no Employee found with this id:-1
-2026-01-02 15:09:43 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2026-01-02 15:09:43 INFO  org.example.DAO.EmployeeDAO - Successfully deleted Employee with id:1
-2026-01-02 15:09:43 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2026-01-02 15:09:43 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2026-01-02 15:09:43 INFO  org.example.DAO.EmployeeDAO - Successfully updated employee with id=1
-2026-01-02 15:09:43 INFO  org.example.servlet.EmployeeServelet - Employee created successfully: 1
-2026-01-02 15:09:43 INFO  org.example.servlet.EmployeeServelet - Updated Successfully
-2026-01-02 15:09:43 ERROR org.example.servlet.EmployeeServelet - Failed to insert Employee
+2026-01-02 15:09:42 INFO  org.example.servlet.BranchServlet - Branch created successfully: 1
+2026-01-02 15:09:42 INFO  org.example.servlet.BranchServlet - Branch Deleted Successfully..
+2026-01-02 15:09:42 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2026-01-02 15:09:43 ERROR org.example.dao.EmployeeDAO - Delete failed: no Employee found with this id:-1
+2026-01-02 15:09:43 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2026-01-02 15:09:43 INFO  org.example.dao.EmployeeDAO - Successfully deleted Employee with id:1
+2026-01-02 15:09:43 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2026-01-02 15:09:43 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2026-01-02 15:09:43 INFO  org.example.dao.EmployeeDAO - Successfully updated employee with id=1
+2026-01-02 15:09:43 INFO  org.example.servlet.EmployeeServlet - Employee created successfully: 1
+2026-01-02 15:09:43 INFO  org.example.servlet.EmployeeServlet - Updated Successfully
+2026-01-02 15:09:43 ERROR org.example.servlet.EmployeeServlet - Failed to insert Employee
 java.io.IOException: null
-2026-01-02 15:09:43 ERROR org.example.servlet.EmployeeServelet - Failed to Delete Employee
+2026-01-02 15:09:43 ERROR org.example.servlet.EmployeeServlet - Failed to Delete Employee
 java.lang.NumberFormatException: Cannot parse null string
 	at java.base/java.lang.Integer.parseInt(Integer.java:624)
 	at java.base/java.lang.Integer.parseInt(Integer.java:778)
-	at org.example.servlet.EmployeeServelet.doDelete(EmployeeServelet.java:46)
-	at org.example.EmployeeServeletTest.testdoDeleteInvalid(EmployeeServeletTest.java:88)
+	at org.example.servlet.EmployeeServlet.doDelete(EmployeeServelet.java:46)
+	at org.example.EmployeeServletTest.testdoDeleteInvalid(EmployeeServeletTest.java:88)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
@@ -1564,6 +1564,6 @@ java.lang.NumberFormatException: Cannot parse null string
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-2026-01-02 15:09:43 ERROR org.example.servlet.EmployeeServelet - Failed to Update Employee
+2026-01-02 15:09:43 ERROR org.example.servlet.EmployeeServlet - Failed to Update Employee
 java.io.IOException: null
-2026-01-02 15:09:43 INFO  org.example.servlet.EmployeeServelet - Employee Deleted Successfully..
+2026-01-02 15:09:43 INFO  org.example.servlet.EmployeeServlet - Employee Deleted Successfully..

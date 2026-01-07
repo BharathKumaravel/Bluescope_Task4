@@ -22,13 +22,15 @@
     </properties>
 
     <dependencies>
-
       <dependency>
-        <groupId>javax.servlet</groupId>
-        <artifactId>javax.servlet-api</artifactId>
-        <version>4.0.1</version>
+        <groupId>jakarta.servlet</groupId>
+        <artifactId>jakarta.servlet-api</artifactId>
+        <version>6.1.0</version>
         <scope>provided</scope>
       </dependency>
+
+
+
 
       <dependency>
         <groupId>com.mysql</groupId>
@@ -93,7 +95,30 @@
         <artifactId>liquibase-core</artifactId>
         <version>4.25.1</version>
       </dependency>
+        <dependency>
+            <groupId>de.svenkubiak</groupId>
+            <artifactId>jBCrypt</artifactId>
+            <version>0.4.3</version>
+        </dependency>
+      <dependency>
+        <groupId>io.jsonwebtoken</groupId>
+        <artifactId>jjwt-api</artifactId>
+        <version>0.12.6</version>
+      </dependency>
 
+      <dependency>
+        <groupId>io.jsonwebtoken</groupId>
+        <artifactId>jjwt-impl</artifactId>
+        <version>0.12.6</version>
+        <scope>runtime</scope>
+      </dependency>
+
+      <dependency>
+        <groupId>io.jsonwebtoken</groupId>
+        <artifactId>jjwt-jackson</artifactId>
+        <version>0.12.6</version>
+        <scope>runtime</scope>
+      </dependency>
     </dependencies>
 
     <build>
@@ -116,19 +141,7 @@
           </configuration>
         </plugin>
 
-<!--        <plugin>-->
-<!--          <groupId>org.liquibase</groupId>-->
-<!--          <artifactId>liquibase-maven-plugin</artifactId>-->
-<!--          <version>4.27.0</version>-->
-<!--          <configuration>-->
-<!--            <outputChangeLogFile>src/main/resources/db/changelog/db.changelog-master.xml</outputChangeLogFile>-->
-<!--            <changeLogFile>src/main/resources/db/changelog/db.changelog-master.xml</changeLogFile>-->
-<!--            <url>jdbc:mysql://localhost:3306/BankBranchManagement</url>-->
-<!--            <username>root</username>-->
-<!--            <password>root</password>-->
-<!--            <driver>com.mysql.cj.jdbc.Driver</driver>-->
-<!--          </configuration>-->
-<!--        </plugin>-->
+
 
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>

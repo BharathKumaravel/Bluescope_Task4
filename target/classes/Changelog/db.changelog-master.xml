@@ -9,5 +9,6 @@
     <include file="src/main/resources/Changelog/changes/create-Branch-table.xml"/>
     <include file="src/main/resources/Changelog/changes/create-Employee-table.xml"/>
     <include file="src/main/resources/Changelog/changes/create-Employee-detail-table.xml"/>
+    <include file="src/main/resources/Changelog/changes/create-user-table.xml"/>
 
 </databaseChangeLog>

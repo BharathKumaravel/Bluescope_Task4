@@ -2,11 +2,11 @@ package org.example.model;
 
 public class EmployeeUpdate {
     private int id;
-    private String Designation;
+    private String designation;
    public EmployeeUpdate(){}
     public EmployeeUpdate(int id, String designation) {
         this.id = id;
-        Designation = designation;
+        this.designation = designation;
     }
 
     public int getId() {
@@ -18,10 +18,10 @@ public class EmployeeUpdate {
     }
 
     public String getDesignation() {
-        return Designation;
+        return designation;
     }
 
     public void setDesignation(String designation) {
-        Designation = designation;
+        this.designation = designation;
     }
 }

@@ -1,6 +1,6 @@
 package org.example;
 
-import org.example.DAO.BranchDAO;
+import org.example.dao.BranchDAO;
 import org.example.model.Branch;
 import org.example.service.BranchService;
 import org.junit.jupiter.api.BeforeEach;

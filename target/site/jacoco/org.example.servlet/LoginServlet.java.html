@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>LoginServlet.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">BankBranchManagement</a> &gt; <a href="index.source.html" class="el_package">org.example.servlet</a> &gt; <span class="el_source">LoginServlet.java</span></div><h1>LoginServlet.java</h1><pre class="source lang-java linenums">package org.example.servlet;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import org.example.model.User;
+import org.example.service.UserService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import java.io.IOException;
+
+<span class="nc" id="L15">public class LoginServlet extends HttpServlet {</span>
+<span class="nc" id="L16">    ObjectMapper objectMapper = new ObjectMapper();</span>
+<span class="nc" id="L17">    UserService userService = new UserService();</span>
+<span class="nc" id="L18">    private static final Logger LOG = LoggerFactory.getLogger(LoginServlet.class);</span>
+
+    @Override
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+<span class="nc" id="L22">        LOG.info(&quot;Registration started&quot;);</span>
+<span class="nc" id="L23">        User user = objectMapper.readValue(req.getInputStream(), User.class);</span>
+<span class="nc" id="L24">        userService.addUser(user);</span>
+<span class="nc" id="L25">        resp.setStatus(HttpServletResponse.SC_ACCEPTED);</span>
+<span class="nc" id="L26">        resp.getWriter().write(&quot;User Registered Successfully&quot;);</span>
+
+<span class="nc" id="L28">    }</span>
+
+    @Override
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) {
+        try {
+<span class="nc" id="L33">            LOG.info(&quot;Login request&quot;);</span>
+<span class="nc" id="L34">            String email =req.getParameter(&quot;mail&quot;);</span>
+<span class="nc" id="L35">            String password= req.getParameter(&quot;password&quot;);</span>
+<span class="nc" id="L36">            LOG.info(&quot;Parameter fetched&quot;);</span>
+<span class="nc" id="L37">            String token = userService.verify(email,password);</span>
+<span class="nc" id="L38">            resp.setStatus(HttpServletResponse.SC_ACCEPTED);</span>
+<span class="nc" id="L39">            resp.getWriter().write(&quot;Token: &quot; + token);</span>
+<span class="nc" id="L40">        }catch (Exception e)</span>
+        {
+<span class="nc" id="L42">            LOG.error(e.getMessage());</span>
+<span class="nc" id="L43">            resp.setStatus(HttpServletResponse.SC_BAD_REQUEST);</span>
+<span class="nc" id="L44">        }</span>
+<span class="nc" id="L45">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>

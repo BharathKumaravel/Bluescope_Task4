@@ -1,11 +1,11 @@
 2025-12-30 09:57:27 INFO  org.example.servlet.BankBranchManagement - Account created successfully: 1
-2025-12-30 09:59:31 INFO  org.example.DAO.BranchRepository - Successfully fetched all Branch, count=2
+2025-12-30 09:59:31 INFO  org.example.dao.BranchRepository - Successfully fetched all Branch, count=2
 2025-12-30 09:59:31 INFO  org.example.servlet.BankBranchManagement - Fetched all Branches successfully
-2025-12-30 09:59:31 INFO  org.example.DAO.BranchRepository - Successfully deleted Branch with id:1
+2025-12-30 09:59:31 INFO  org.example.dao.BranchRepository - Successfully deleted Branch with id:1
 2025-12-30 09:59:31 INFO  org.example.servlet.BankBranchManagement - Branch Deleted Successfully..
-2025-12-30 09:59:31 INFO  org.example.DAO.BranchRepository - Successfully inserted account: 1
+2025-12-30 09:59:31 INFO  org.example.dao.BranchRepository - Successfully inserted account: 1
 2025-12-30 09:59:31 INFO  org.example.servlet.BankBranchManagement - Account created successfully: 1
-2025-12-30 09:59:31 INFO  org.example.DAO.BranchRepository - Successfully updated account with id=1
+2025-12-30 09:59:31 INFO  org.example.dao.BranchRepository - Successfully updated account with id=1
 2025-12-30 09:59:31 INFO  org.example.servlet.BankBranchManagement - Updated Successfully
 2025-12-30 10:00:24 INFO  org.example.servlet.BankBranchManagement - Account created successfully: 1
 2025-12-30 10:01:59 INFO  org.example.servlet.BankBranchManagement - Fetched all Branches successfully
@@ -609,7 +609,7 @@ com.fasterxml.jackson.core.JsonParseException: Unexpected character ('b' (code 9
 2025-12-30 14:20:49 INFO  org.example.servlet.BankBranchManagement - Branch created successfully: 1
 2025-12-30 15:11:29 INFO  org.example.servlet.BankBranchManagement - Fetched all Branches successfully
 2025-12-30 15:11:29 INFO  org.example.servlet.BankBranchManagement - Updated Successfully
-2025-12-30 15:11:30 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
+2025-12-30 15:11:30 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
 2025-12-30 15:11:30 INFO  org.example.servlet.BankBranchManagement - Branch created successfully: 1
 2025-12-30 15:11:30 INFO  org.example.servlet.BankBranchManagement - Branch Deleted Successfully..
 2025-12-30 15:12:09 INFO  org.example.servlet.BankBranchManagement - Fetched all Branches successfully
@@ -640,750 +640,750 @@ com.fasterxml.jackson.core.JsonParseException: Unexpected character ('b' (code 9
 2025-12-30 15:41:03 INFO  org.example.servlet.BankBranchManagement - Updated Successfully
 2025-12-30 15:41:03 INFO  org.example.servlet.BankBranchManagement - Branch created successfully: 1
 2025-12-30 15:41:03 INFO  org.example.servlet.BankBranchManagement - Branch Deleted Successfully..
-2025-12-30 16:10:35 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2025-12-30 16:10:35 INFO  org.example.DAO.BranchDAO - Successfully updated account with id=1
+2025-12-30 16:10:35 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2025-12-30 16:10:35 INFO  org.example.dao.BranchDAO - Successfully updated account with id=1
 2025-12-30 16:10:35 INFO  org.example.servlet.BankBranchManagement - Updated Successfully
-2025-12-30 16:10:35 ERROR org.example.DAO.BranchDAO - Update failed
+2025-12-30 16:10:35 ERROR org.example.dao.BranchDAO - Update failed
 2025-12-30 16:10:35 INFO  org.example.servlet.BankBranchManagement - Updated Successfully
-2025-12-30 16:10:36 INFO  org.example.DAO.BranchDAO - Successfully deleted Branch with id:1
+2025-12-30 16:10:36 INFO  org.example.dao.BranchDAO - Successfully deleted Branch with id:1
 2025-12-30 16:10:36 INFO  org.example.servlet.BankBranchManagement - Branch Deleted Successfully..
-2025-12-30 16:11:59 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
+2025-12-30 16:11:59 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
 2025-12-30 16:11:59 INFO  org.example.servlet.BankBranchManagement - Branch created successfully: 1
-2025-12-30 16:12:12 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2025-12-30 16:12:18 INFO  org.example.DAO.BranchDAO - Successfully deleted Branch with id:1
+2025-12-30 16:12:12 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2025-12-30 16:12:18 INFO  org.example.dao.BranchDAO - Successfully deleted Branch with id:1
 2025-12-30 16:12:18 INFO  org.example.servlet.BankBranchManagement - Branch Deleted Successfully..
-2025-12-30 16:12:29 ERROR org.example.DAO.BranchDAO - Update failed
+2025-12-30 16:12:29 ERROR org.example.dao.BranchDAO - Update failed
 2025-12-30 16:12:29 INFO  org.example.servlet.BankBranchManagement - Updated Successfully
-2025-12-30 16:12:34 ERROR org.example.DAO.BranchDAO - Update failed
+2025-12-30 16:12:34 ERROR org.example.dao.BranchDAO - Update failed
 2025-12-30 16:12:34 INFO  org.example.servlet.BankBranchManagement - Updated Successfully
-2025-12-30 16:13:54 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=0
-2025-12-30 16:13:54 ERROR org.example.DAO.BranchDAO - Update failed
+2025-12-30 16:13:54 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=0
+2025-12-30 16:13:54 ERROR org.example.dao.BranchDAO - Update failed
 2025-12-30 16:13:54 INFO  org.example.servlet.BankBranchManagement - Updated Successfully
-2025-12-30 16:13:54 ERROR org.example.DAO.BranchDAO - Update failed
+2025-12-30 16:13:54 ERROR org.example.dao.BranchDAO - Update failed
 2025-12-30 16:13:54 INFO  org.example.servlet.BankBranchManagement - Updated Successfully
-2025-12-30 16:13:54 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
+2025-12-30 16:13:54 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
 2025-12-30 16:13:54 INFO  org.example.servlet.BankBranchManagement - Branch created successfully: 1
-2025-12-30 16:13:54 INFO  org.example.DAO.BranchDAO - Successfully deleted Branch with id:1
+2025-12-30 16:13:54 INFO  org.example.dao.BranchDAO - Successfully deleted Branch with id:1
 2025-12-30 16:13:54 INFO  org.example.servlet.BankBranchManagement - Branch Deleted Successfully..
 2025-12-30 16:15:06 INFO  org.example.servlet.BankBranchManagement - Fetched all Branches successfully
 2025-12-30 16:15:06 INFO  org.example.servlet.BankBranchManagement - Updated Successfully
 2025-12-30 16:15:06 INFO  org.example.servlet.BankBranchManagement - Updated Successfully
 2025-12-30 16:15:06 INFO  org.example.servlet.BankBranchManagement - Branch created successfully: 1
 2025-12-30 16:15:06 INFO  org.example.servlet.BankBranchManagement - Branch Deleted Successfully..
-2025-12-30 16:44:05 INFO  org.example.servlet.EmployeeServelet - Employee created successfully: 1
-2025-12-30 16:46:07 INFO  org.example.servlet.EmployeeServelet - Employee created successfully: 0
-2025-12-30 16:46:54 INFO  org.example.servlet.EmployeeServelet - Employee created successfully: 0
+2025-12-30 16:44:05 INFO  org.example.servlet.EmployeeServlet - Employee created successfully: 1
+2025-12-30 16:46:07 INFO  org.example.servlet.EmployeeServlet - Employee created successfully: 0
+2025-12-30 16:46:54 INFO  org.example.servlet.EmployeeServlet - Employee created successfully: 0
 2025-12-30 16:48:30 INFO  org.example.servlet.BankBranchManagement - Branch created successfully: 0
-2025-12-30 16:48:42 INFO  org.example.servlet.EmployeeServelet - Employee created successfully: 1
-2025-12-30 16:48:42 INFO  org.example.servlet.EmployeeServelet - Employee created successfully: 0
+2025-12-30 16:48:42 INFO  org.example.servlet.EmployeeServlet - Employee created successfully: 1
+2025-12-30 16:48:42 INFO  org.example.servlet.EmployeeServlet - Employee created successfully: 0
 2025-12-30 16:48:57 INFO  org.example.servlet.BankBranchManagement - Fetched all Branches successfully
 2025-12-30 16:48:57 INFO  org.example.servlet.BankBranchManagement - Updated Successfully
 2025-12-30 16:48:57 INFO  org.example.servlet.BankBranchManagement - Updated Successfully
 2025-12-30 16:48:57 INFO  org.example.servlet.BankBranchManagement - Branch created successfully: 0
 2025-12-30 16:48:57 INFO  org.example.servlet.BankBranchManagement - Branch created successfully: 1
 2025-12-30 16:48:57 INFO  org.example.servlet.BankBranchManagement - Branch Deleted Successfully..
-2025-12-30 16:48:57 INFO  org.example.servlet.EmployeeServelet - Employee created successfully: 1
-2025-12-30 16:48:57 INFO  org.example.servlet.EmployeeServelet - Employee created successfully: 0
-2025-12-30 16:50:16 INFO  org.example.servlet.EmployeeServelet - Employee created successfully: 1
-2025-12-30 16:52:31 INFO  org.example.servlet.EmployeeServelet - Employee Deleted Successfully..
+2025-12-30 16:48:57 INFO  org.example.servlet.EmployeeServlet - Employee created successfully: 1
+2025-12-30 16:48:57 INFO  org.example.servlet.EmployeeServlet - Employee created successfully: 0
+2025-12-30 16:50:16 INFO  org.example.servlet.EmployeeServlet - Employee created successfully: 1
+2025-12-30 16:52:31 INFO  org.example.servlet.EmployeeServlet - Employee Deleted Successfully..
 2025-12-30 16:55:55 INFO  org.example.servlet.BankBranchManagement - Fetched all Branches successfully
 2025-12-30 16:55:55 INFO  org.example.servlet.BankBranchManagement - Updated Successfully
 2025-12-30 16:55:55 INFO  org.example.servlet.BankBranchManagement - Updated Successfully
 2025-12-30 16:55:55 INFO  org.example.servlet.BankBranchManagement - Branch created successfully: 0
 2025-12-30 16:55:55 INFO  org.example.servlet.BankBranchManagement - Branch created successfully: 1
 2025-12-30 16:55:55 INFO  org.example.servlet.BankBranchManagement - Branch Deleted Successfully..
-2025-12-30 16:55:55 INFO  org.example.servlet.EmployeeServelet - Employee created successfully: 1
-2025-12-30 16:55:55 INFO  org.example.servlet.EmployeeServelet - Employee created successfully: 0
-2025-12-30 16:55:55 INFO  org.example.servlet.EmployeeServelet - Employee Deleted Successfully..
+2025-12-30 16:55:55 INFO  org.example.servlet.EmployeeServlet - Employee created successfully: 1
+2025-12-30 16:55:55 INFO  org.example.servlet.EmployeeServlet - Employee created successfully: 0
+2025-12-30 16:55:55 INFO  org.example.servlet.EmployeeServlet - Employee Deleted Successfully..
 2025-12-30 16:58:36 INFO  org.example.servlet.BankBranchManagement - Fetched all Branches successfully
 2025-12-30 16:58:36 INFO  org.example.servlet.BankBranchManagement - Updated Successfully
 2025-12-30 16:58:36 INFO  org.example.servlet.BankBranchManagement - Updated Successfully
 2025-12-30 16:58:36 INFO  org.example.servlet.BankBranchManagement - Branch created successfully: 1
 2025-12-30 16:58:36 INFO  org.example.servlet.BankBranchManagement - Branch Deleted Successfully..
-2025-12-30 16:58:36 INFO  org.example.servlet.EmployeeServelet - Employee created successfully: 1
-2025-12-30 16:58:36 INFO  org.example.servlet.EmployeeServelet - Employee Deleted Successfully..
-2025-12-30 17:09:22 INFO  org.example.servlet.EmployeeServelet - Updated Successfully
+2025-12-30 16:58:36 INFO  org.example.servlet.EmployeeServlet - Employee created successfully: 1
+2025-12-30 16:58:36 INFO  org.example.servlet.EmployeeServlet - Employee Deleted Successfully..
+2025-12-30 17:09:22 INFO  org.example.servlet.EmployeeServlet - Updated Successfully
 2025-12-30 17:13:06 INFO  org.example.servlet.BankBranchManagement - Fetched all Branches successfully
 2025-12-30 17:13:06 INFO  org.example.servlet.BankBranchManagement - Updated Successfully
 2025-12-30 17:13:06 INFO  org.example.servlet.BankBranchManagement - Branch created successfully: 1
 2025-12-30 17:13:06 INFO  org.example.servlet.BankBranchManagement - Branch Deleted Successfully..
-2025-12-30 17:13:06 INFO  org.example.servlet.EmployeeServelet - Employee created successfully: 1
-2025-12-30 17:13:06 INFO  org.example.servlet.EmployeeServelet - Updated Successfully
-2025-12-30 17:13:06 INFO  org.example.servlet.EmployeeServelet - Employee Deleted Successfully..
+2025-12-30 17:13:06 INFO  org.example.servlet.EmployeeServlet - Employee created successfully: 1
+2025-12-30 17:13:06 INFO  org.example.servlet.EmployeeServlet - Updated Successfully
+2025-12-30 17:13:06 INFO  org.example.servlet.EmployeeServlet - Employee Deleted Successfully..
 2025-12-30 22:36:07 INFO  org.example.servlet.BankBranchManagement - Fetched all Branches successfully
 2025-12-30 22:36:07 INFO  org.example.servlet.BankBranchManagement - Updated Successfully
 2025-12-30 22:36:07 INFO  org.example.servlet.BankBranchManagement - Branch created successfully: 1
 2025-12-30 22:36:07 INFO  org.example.servlet.BankBranchManagement - Branch Deleted Successfully..
-2025-12-30 22:36:08 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-30 22:36:09 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2025-12-30 22:36:09 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-30 22:36:09 INFO  org.example.DAO.BranchDAO - Successfully updated account with id=1
-2025-12-30 22:36:09 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2025-12-30 22:36:09 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-30 22:36:09 INFO  org.example.DAO.BranchDAO - Successfully deleted Branch with id:1
-2025-12-30 22:36:09 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=0
-2025-12-30 22:36:09 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-30 22:36:09 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2025-12-30 22:36:09 INFO  org.example.servlet.EmployeeServelet - Employee created successfully: 1
-2025-12-30 22:36:09 INFO  org.example.servlet.EmployeeServelet - Updated Successfully
-2025-12-30 22:36:09 INFO  org.example.servlet.EmployeeServelet - Employee Deleted Successfully..
+2025-12-30 22:36:08 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-30 22:36:09 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2025-12-30 22:36:09 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-30 22:36:09 INFO  org.example.dao.BranchDAO - Successfully updated account with id=1
+2025-12-30 22:36:09 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2025-12-30 22:36:09 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-30 22:36:09 INFO  org.example.dao.BranchDAO - Successfully deleted Branch with id:1
+2025-12-30 22:36:09 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=0
+2025-12-30 22:36:09 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-30 22:36:09 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2025-12-30 22:36:09 INFO  org.example.servlet.EmployeeServlet - Employee created successfully: 1
+2025-12-30 22:36:09 INFO  org.example.servlet.EmployeeServlet - Updated Successfully
+2025-12-30 22:36:09 INFO  org.example.servlet.EmployeeServlet - Employee Deleted Successfully..
 2025-12-31 09:38:58 INFO  org.example.servlet.BankBranchManagement - Fetched all Branches successfully
 2025-12-31 09:38:58 INFO  org.example.servlet.BankBranchManagement - Updated Successfully
 2025-12-31 09:38:58 INFO  org.example.servlet.BankBranchManagement - Branch created successfully: 1
 2025-12-31 09:38:58 INFO  org.example.servlet.BankBranchManagement - Branch Deleted Successfully..
-2025-12-31 09:38:59 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 09:38:59 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2025-12-31 09:38:59 INFO  org.example.servlet.EmployeeServelet - Employee created successfully: 1
-2025-12-31 09:38:59 INFO  org.example.servlet.EmployeeServelet - Updated Successfully
-2025-12-31 09:38:59 INFO  org.example.servlet.EmployeeServelet - Employee Deleted Successfully..
+2025-12-31 09:38:59 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 09:38:59 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2025-12-31 09:38:59 INFO  org.example.servlet.EmployeeServlet - Employee created successfully: 1
+2025-12-31 09:38:59 INFO  org.example.servlet.EmployeeServlet - Updated Successfully
+2025-12-31 09:38:59 INFO  org.example.servlet.EmployeeServlet - Employee Deleted Successfully..
 2025-12-31 09:39:26 INFO  org.example.servlet.BankBranchManagement - Fetched all Branches successfully
 2025-12-31 09:39:26 INFO  org.example.servlet.BankBranchManagement - Updated Successfully
 2025-12-31 09:39:26 INFO  org.example.servlet.BankBranchManagement - Branch created successfully: 1
 2025-12-31 09:39:26 INFO  org.example.servlet.BankBranchManagement - Branch Deleted Successfully..
-2025-12-31 09:39:27 INFO  org.example.servlet.EmployeeServelet - Employee created successfully: 1
-2025-12-31 09:39:27 INFO  org.example.servlet.EmployeeServelet - Updated Successfully
-2025-12-31 09:39:27 INFO  org.example.servlet.EmployeeServelet - Employee Deleted Successfully..
+2025-12-31 09:39:27 INFO  org.example.servlet.EmployeeServlet - Employee created successfully: 1
+2025-12-31 09:39:27 INFO  org.example.servlet.EmployeeServlet - Updated Successfully
+2025-12-31 09:39:27 INFO  org.example.servlet.EmployeeServlet - Employee Deleted Successfully..
 2025-12-31 09:42:55 INFO  org.example.servlet.BankBranchManagement - Fetched all Branches successfully
 2025-12-31 09:42:55 INFO  org.example.servlet.BankBranchManagement - Updated Successfully
 2025-12-31 09:42:55 INFO  org.example.servlet.BankBranchManagement - Branch created successfully: 1
 2025-12-31 09:42:55 INFO  org.example.servlet.BankBranchManagement - Branch Deleted Successfully..
-2025-12-31 09:42:56 INFO  org.example.servlet.EmployeeServelet - Employee created successfully: 1
-2025-12-31 09:42:56 INFO  org.example.servlet.EmployeeServelet - Updated Successfully
-2025-12-31 09:42:56 INFO  org.example.servlet.EmployeeServelet - Employee Deleted Successfully..
-2025-12-31 09:45:12 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 5
-2025-12-31 09:45:12 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=2
-2025-12-31 09:48:16 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 2
-2025-12-31 09:48:16 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=3
-2025-12-31 09:54:43 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 09:54:43 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2025-12-31 09:54:43 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 09:54:43 INFO  org.example.DAO.BranchDAO - Successfully updated account with id=1
-2025-12-31 09:54:43 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2025-12-31 09:54:43 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 09:54:43 INFO  org.example.DAO.BranchDAO - Successfully deleted Branch with id:1
-2025-12-31 09:54:43 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=0
-2025-12-31 09:54:43 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 09:54:43 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2025-12-31 09:54:57 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 09:54:57 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2025-12-31 09:54:57 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 09:54:57 INFO  org.example.DAO.BranchDAO - Successfully updated account with id=1
-2025-12-31 09:54:57 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2025-12-31 09:54:57 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 09:54:57 INFO  org.example.DAO.BranchDAO - Successfully deleted Branch with id:1
-2025-12-31 09:54:57 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=0
-2025-12-31 09:54:57 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 09:54:57 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2025-12-31 09:55:41 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 09:55:41 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2025-12-31 09:55:42 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 09:55:42 INFO  org.example.DAO.BranchDAO - Successfully updated account with id=1
-2025-12-31 09:55:42 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2025-12-31 09:55:42 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 09:55:42 INFO  org.example.DAO.BranchDAO - Successfully deleted Branch with id:1
-2025-12-31 09:55:42 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=0
-2025-12-31 09:55:42 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 09:55:42 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
+2025-12-31 09:42:56 INFO  org.example.servlet.EmployeeServlet - Employee created successfully: 1
+2025-12-31 09:42:56 INFO  org.example.servlet.EmployeeServlet - Updated Successfully
+2025-12-31 09:42:56 INFO  org.example.servlet.EmployeeServlet - Employee Deleted Successfully..
+2025-12-31 09:45:12 INFO  org.example.dao.BranchDAO - Successfully inserted account: 5
+2025-12-31 09:45:12 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=2
+2025-12-31 09:48:16 INFO  org.example.dao.BranchDAO - Successfully inserted account: 2
+2025-12-31 09:48:16 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=3
+2025-12-31 09:54:43 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 09:54:43 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2025-12-31 09:54:43 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 09:54:43 INFO  org.example.dao.BranchDAO - Successfully updated account with id=1
+2025-12-31 09:54:43 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2025-12-31 09:54:43 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 09:54:43 INFO  org.example.dao.BranchDAO - Successfully deleted Branch with id:1
+2025-12-31 09:54:43 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=0
+2025-12-31 09:54:43 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 09:54:43 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2025-12-31 09:54:57 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 09:54:57 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2025-12-31 09:54:57 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 09:54:57 INFO  org.example.dao.BranchDAO - Successfully updated account with id=1
+2025-12-31 09:54:57 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2025-12-31 09:54:57 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 09:54:57 INFO  org.example.dao.BranchDAO - Successfully deleted Branch with id:1
+2025-12-31 09:54:57 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=0
+2025-12-31 09:54:57 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 09:54:57 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2025-12-31 09:55:41 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 09:55:41 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2025-12-31 09:55:42 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 09:55:42 INFO  org.example.dao.BranchDAO - Successfully updated account with id=1
+2025-12-31 09:55:42 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2025-12-31 09:55:42 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 09:55:42 INFO  org.example.dao.BranchDAO - Successfully deleted Branch with id:1
+2025-12-31 09:55:42 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=0
+2025-12-31 09:55:42 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 09:55:42 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
 2025-12-31 09:56:39 INFO  org.example.servlet.BankBranchManagement - Fetched all Branches successfully
 2025-12-31 09:56:39 INFO  org.example.servlet.BankBranchManagement - Updated Successfully
 2025-12-31 09:56:39 INFO  org.example.servlet.BankBranchManagement - Branch created successfully: 1
 2025-12-31 09:56:39 INFO  org.example.servlet.BankBranchManagement - Branch Deleted Successfully..
-2025-12-31 09:56:40 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 09:56:40 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2025-12-31 09:56:40 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 09:56:40 INFO  org.example.DAO.BranchDAO - Successfully updated account with id=1
-2025-12-31 09:56:40 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2025-12-31 09:56:40 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 09:56:40 INFO  org.example.DAO.BranchDAO - Successfully deleted Branch with id:1
-2025-12-31 09:56:40 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=0
-2025-12-31 09:56:40 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 09:56:40 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2025-12-31 09:56:40 INFO  org.example.servlet.EmployeeServelet - Employee created successfully: 1
-2025-12-31 09:56:40 INFO  org.example.servlet.EmployeeServelet - Updated Successfully
-2025-12-31 09:56:40 INFO  org.example.servlet.EmployeeServelet - Employee Deleted Successfully..
+2025-12-31 09:56:40 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 09:56:40 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2025-12-31 09:56:40 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 09:56:40 INFO  org.example.dao.BranchDAO - Successfully updated account with id=1
+2025-12-31 09:56:40 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2025-12-31 09:56:40 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 09:56:40 INFO  org.example.dao.BranchDAO - Successfully deleted Branch with id:1
+2025-12-31 09:56:40 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=0
+2025-12-31 09:56:40 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 09:56:40 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2025-12-31 09:56:40 INFO  org.example.servlet.EmployeeServlet - Employee created successfully: 1
+2025-12-31 09:56:40 INFO  org.example.servlet.EmployeeServlet - Updated Successfully
+2025-12-31 09:56:40 INFO  org.example.servlet.EmployeeServlet - Employee Deleted Successfully..
 2025-12-31 10:13:22 INFO  org.example.servlet.BankBranchManagement - Fetched all Branches successfully
 2025-12-31 10:13:22 INFO  org.example.servlet.BankBranchManagement - Updated Successfully
 2025-12-31 10:13:22 INFO  org.example.servlet.BankBranchManagement - Branch created successfully: 1
 2025-12-31 10:13:22 INFO  org.example.servlet.BankBranchManagement - Branch Deleted Successfully..
-2025-12-31 10:13:23 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 10:13:23 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2025-12-31 10:13:23 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 10:13:23 INFO  org.example.DAO.BranchDAO - Successfully updated account with id=1
-2025-12-31 10:13:23 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2025-12-31 10:13:23 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 10:13:23 INFO  org.example.DAO.BranchDAO - Successfully deleted Branch with id:1
-2025-12-31 10:13:23 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=0
-2025-12-31 10:13:23 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 10:13:23 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2025-12-31 10:13:23 INFO  org.example.servlet.EmployeeServelet - Employee created successfully: 1
-2025-12-31 10:13:23 INFO  org.example.servlet.EmployeeServelet - Updated Successfully
-2025-12-31 10:13:23 INFO  org.example.servlet.EmployeeServelet - Employee Deleted Successfully..
+2025-12-31 10:13:23 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 10:13:23 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2025-12-31 10:13:23 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 10:13:23 INFO  org.example.dao.BranchDAO - Successfully updated account with id=1
+2025-12-31 10:13:23 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2025-12-31 10:13:23 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 10:13:23 INFO  org.example.dao.BranchDAO - Successfully deleted Branch with id:1
+2025-12-31 10:13:23 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=0
+2025-12-31 10:13:23 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 10:13:23 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2025-12-31 10:13:23 INFO  org.example.servlet.EmployeeServlet - Employee created successfully: 1
+2025-12-31 10:13:23 INFO  org.example.servlet.EmployeeServlet - Updated Successfully
+2025-12-31 10:13:23 INFO  org.example.servlet.EmployeeServlet - Employee Deleted Successfully..
 2025-12-31 10:38:38 INFO  org.example.servlet.BankBranchManagement - Fetched all Branches successfully
 2025-12-31 10:38:38 INFO  org.example.servlet.BankBranchManagement - Updated Successfully
 2025-12-31 10:38:38 INFO  org.example.servlet.BankBranchManagement - Branch created successfully: 1
 2025-12-31 10:38:38 INFO  org.example.servlet.BankBranchManagement - Branch Deleted Successfully..
-2025-12-31 10:38:38 INFO  org.example.servlet.EmployeeServelet - Employee created successfully: 1
-2025-12-31 10:38:38 INFO  org.example.servlet.EmployeeServelet - Updated Successfully
-2025-12-31 10:38:38 INFO  org.example.servlet.EmployeeServelet - Employee Deleted Successfully..
-2025-12-31 10:39:41 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 10:39:41 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2025-12-31 10:39:41 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 10:39:41 INFO  org.example.DAO.BranchDAO - Successfully updated account with id=1
-2025-12-31 10:39:41 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2025-12-31 10:39:41 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 10:39:41 INFO  org.example.DAO.BranchDAO - Successfully deleted Branch with id:1
-2025-12-31 10:39:41 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=0
-2025-12-31 10:39:41 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 10:39:41 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
+2025-12-31 10:38:38 INFO  org.example.servlet.EmployeeServlet - Employee created successfully: 1
+2025-12-31 10:38:38 INFO  org.example.servlet.EmployeeServlet - Updated Successfully
+2025-12-31 10:38:38 INFO  org.example.servlet.EmployeeServlet - Employee Deleted Successfully..
+2025-12-31 10:39:41 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 10:39:41 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2025-12-31 10:39:41 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 10:39:41 INFO  org.example.dao.BranchDAO - Successfully updated account with id=1
+2025-12-31 10:39:41 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2025-12-31 10:39:41 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 10:39:41 INFO  org.example.dao.BranchDAO - Successfully deleted Branch with id:1
+2025-12-31 10:39:41 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=0
+2025-12-31 10:39:41 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 10:39:41 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
 2025-12-31 10:40:01 INFO  org.example.servlet.BankBranchManagement - Fetched all Branches successfully
 2025-12-31 10:40:01 INFO  org.example.servlet.BankBranchManagement - Updated Successfully
 2025-12-31 10:40:01 INFO  org.example.servlet.BankBranchManagement - Branch created successfully: 1
 2025-12-31 10:40:01 INFO  org.example.servlet.BankBranchManagement - Branch Deleted Successfully..
-2025-12-31 10:40:01 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 10:40:02 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2025-12-31 10:40:02 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 10:40:02 INFO  org.example.DAO.BranchDAO - Successfully updated account with id=1
-2025-12-31 10:40:02 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2025-12-31 10:40:02 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 10:40:02 INFO  org.example.DAO.BranchDAO - Successfully deleted Branch with id:1
-2025-12-31 10:40:02 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=0
-2025-12-31 10:40:02 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 10:40:02 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2025-12-31 10:40:02 INFO  org.example.servlet.EmployeeServelet - Employee created successfully: 1
-2025-12-31 10:40:02 INFO  org.example.servlet.EmployeeServelet - Updated Successfully
-2025-12-31 10:40:02 INFO  org.example.servlet.EmployeeServelet - Employee Deleted Successfully..
-2025-12-31 10:58:56 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 11:02:17 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 11:02:17 INFO  org.example.DAO.EmployeeDAO - Successfully deleted Employee with id:1
-2025-12-31 11:05:03 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 11:05:03 INFO  org.example.DAO.EmployeeDAO - Successfully updated employee with id=1
-2025-12-31 11:08:19 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 11:09:09 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 11:09:10 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 11:09:10 INFO  org.example.DAO.EmployeeDAO - Successfully deleted Employee with id:1
-2025-12-31 11:09:10 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 11:09:10 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 11:09:10 INFO  org.example.DAO.EmployeeDAO - Successfully updated employee with id=1
-2025-12-31 11:09:21 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 11:09:21 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2025-12-31 11:09:21 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 11:09:21 INFO  org.example.DAO.BranchDAO - Successfully updated account with id=1
-2025-12-31 11:09:21 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2025-12-31 11:09:21 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 11:09:21 INFO  org.example.DAO.BranchDAO - Successfully deleted Branch with id:1
-2025-12-31 11:09:21 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=0
-2025-12-31 11:09:21 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 11:09:21 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2025-12-31 11:09:23 INFO  org.example.servlet.BranchServelet - Fetched all Branches successfully
-2025-12-31 11:09:23 INFO  org.example.servlet.BranchServelet - Updated Successfully
-2025-12-31 11:09:23 INFO  org.example.servlet.BranchServelet - Branch created successfully: 1
-2025-12-31 11:09:23 INFO  org.example.servlet.BranchServelet - Branch Deleted Successfully..
-2025-12-31 11:09:23 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 11:09:23 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 11:09:23 INFO  org.example.DAO.EmployeeDAO - Successfully deleted Employee with id:1
-2025-12-31 11:09:24 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 11:09:24 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 11:09:24 INFO  org.example.DAO.EmployeeDAO - Successfully updated employee with id=1
-2025-12-31 11:09:24 INFO  org.example.servlet.EmployeeServelet - Employee created successfully: 1
-2025-12-31 11:09:24 INFO  org.example.servlet.EmployeeServelet - Updated Successfully
-2025-12-31 11:09:24 INFO  org.example.servlet.EmployeeServelet - Employee Deleted Successfully..
-2025-12-31 11:11:02 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 11:11:02 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2025-12-31 11:11:02 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 11:11:02 INFO  org.example.DAO.BranchDAO - Successfully updated account with id=1
-2025-12-31 11:11:02 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2025-12-31 11:11:02 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 11:11:02 INFO  org.example.DAO.BranchDAO - Successfully deleted Branch with id:1
-2025-12-31 11:11:02 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=0
-2025-12-31 11:11:02 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 11:11:02 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2025-12-31 11:11:04 INFO  org.example.servlet.BranchServelet - Fetched all Branches successfully
-2025-12-31 11:11:04 INFO  org.example.servlet.BranchServelet - Updated Successfully
-2025-12-31 11:11:04 INFO  org.example.servlet.BranchServelet - Branch created successfully: 1
-2025-12-31 11:11:04 INFO  org.example.servlet.BranchServelet - Branch Deleted Successfully..
-2025-12-31 11:11:04 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 11:11:04 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 11:11:04 INFO  org.example.DAO.EmployeeDAO - Successfully deleted Employee with id:1
-2025-12-31 11:11:04 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 11:11:04 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 11:11:04 INFO  org.example.DAO.EmployeeDAO - Successfully updated employee with id=1
-2025-12-31 11:11:04 INFO  org.example.servlet.EmployeeServelet - Employee created successfully: 1
-2025-12-31 11:11:04 INFO  org.example.servlet.EmployeeServelet - Updated Successfully
-2025-12-31 11:11:04 INFO  org.example.servlet.EmployeeServelet - Employee Deleted Successfully..
-2025-12-31 12:13:50 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 12:13:51 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2025-12-31 12:13:51 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 12:13:51 INFO  org.example.DAO.BranchDAO - Successfully updated account with id=1
-2025-12-31 12:13:51 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2025-12-31 12:13:51 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 12:13:51 INFO  org.example.DAO.BranchDAO - Successfully deleted Branch with id:1
-2025-12-31 12:13:51 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=0
-2025-12-31 12:13:51 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 12:13:51 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2025-12-31 12:13:52 INFO  org.example.servlet.BranchServelet - Fetched all Branches successfully
-2025-12-31 12:13:52 INFO  org.example.servlet.BranchServelet - Updated Successfully
-2025-12-31 12:13:52 INFO  org.example.servlet.BranchServelet - Branch created successfully: 1
-2025-12-31 12:13:52 INFO  org.example.servlet.BranchServelet - Branch Deleted Successfully..
-2025-12-31 12:13:53 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 12:13:53 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 12:13:53 INFO  org.example.DAO.EmployeeDAO - Successfully deleted Employee with id:1
-2025-12-31 12:13:53 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 12:13:53 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 12:13:53 INFO  org.example.DAO.EmployeeDAO - Successfully updated employee with id=1
-2025-12-31 12:13:53 INFO  org.example.servlet.EmployeeServelet - Employee created successfully: 1
-2025-12-31 12:13:53 INFO  org.example.servlet.EmployeeServelet - Updated Successfully
-2025-12-31 12:13:53 INFO  org.example.servlet.EmployeeServelet - Employee Deleted Successfully..
-2025-12-31 12:17:49 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 12:17:49 INFO  org.example.DAO.EmployeeDAO - Successfully deleted Employee with id:1
-2025-12-31 12:20:26 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 12:20:26 INFO  org.example.DAO.EmployeeDAO - Successfully updated employee with id=1
-2025-12-31 12:20:46 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 12:20:46 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2025-12-31 12:20:46 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 12:20:46 INFO  org.example.DAO.BranchDAO - Successfully updated account with id=1
-2025-12-31 12:20:46 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2025-12-31 12:20:46 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 12:20:46 INFO  org.example.DAO.BranchDAO - Successfully deleted Branch with id:1
-2025-12-31 12:20:46 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=0
-2025-12-31 12:20:46 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 12:20:46 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2025-12-31 12:20:48 INFO  org.example.servlet.BranchServelet - Fetched all Branches successfully
-2025-12-31 12:20:48 INFO  org.example.servlet.BranchServelet - Updated Successfully
-2025-12-31 12:20:48 INFO  org.example.servlet.BranchServelet - Branch created successfully: 1
-2025-12-31 12:20:48 INFO  org.example.servlet.BranchServelet - Branch Deleted Successfully..
-2025-12-31 12:20:48 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 12:20:48 INFO  org.example.DAO.EmployeeDAO - Successfully updated employee with id=1
-2025-12-31 12:20:48 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 12:20:48 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 12:20:48 INFO  org.example.DAO.EmployeeDAO - Successfully deleted Employee with id:1
-2025-12-31 12:20:48 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 12:20:48 INFO  org.example.DAO.EmployeeDAO - Successfully deleted Employee with id:1
-2025-12-31 12:20:48 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 12:20:48 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 12:20:48 INFO  org.example.DAO.EmployeeDAO - Successfully updated employee with id=1
-2025-12-31 12:20:48 INFO  org.example.servlet.EmployeeServelet - Employee created successfully: 1
-2025-12-31 12:20:48 INFO  org.example.servlet.EmployeeServelet - Updated Successfully
-2025-12-31 12:20:48 INFO  org.example.servlet.EmployeeServelet - Employee Deleted Successfully..
-2025-12-31 12:22:06 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 12:22:06 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2025-12-31 12:22:06 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 12:22:06 INFO  org.example.DAO.BranchDAO - Successfully updated account with id=1
-2025-12-31 12:22:06 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2025-12-31 12:22:06 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 12:22:06 INFO  org.example.DAO.BranchDAO - Successfully deleted Branch with id:1
-2025-12-31 12:22:06 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=0
-2025-12-31 12:22:06 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 12:22:06 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2025-12-31 12:22:08 INFO  org.example.servlet.BranchServelet - Fetched all Branches successfully
-2025-12-31 12:22:08 INFO  org.example.servlet.BranchServelet - Updated Successfully
-2025-12-31 12:22:08 INFO  org.example.servlet.BranchServelet - Branch created successfully: 1
-2025-12-31 12:22:08 INFO  org.example.servlet.BranchServelet - Branch Deleted Successfully..
-2025-12-31 12:22:08 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 12:22:08 INFO  org.example.DAO.EmployeeDAO - Successfully updated employee with id=1
-2025-12-31 12:22:08 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 12:22:08 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 12:22:08 INFO  org.example.DAO.EmployeeDAO - Successfully deleted Employee with id:1
-2025-12-31 12:22:08 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 12:22:08 INFO  org.example.DAO.EmployeeDAO - Successfully deleted Employee with id:1
-2025-12-31 12:22:08 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 12:22:08 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 12:22:08 INFO  org.example.DAO.EmployeeDAO - Successfully updated employee with id=1
-2025-12-31 12:22:08 INFO  org.example.servlet.EmployeeServelet - Employee created successfully: 1
-2025-12-31 12:22:08 INFO  org.example.servlet.EmployeeServelet - Updated Successfully
-2025-12-31 12:22:08 INFO  org.example.servlet.EmployeeServelet - Employee Deleted Successfully..
-2025-12-31 12:26:42 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 12:26:42 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2025-12-31 12:26:42 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 12:26:42 INFO  org.example.DAO.BranchDAO - Successfully updated account with id=1
-2025-12-31 12:26:42 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2025-12-31 12:26:42 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 12:26:42 INFO  org.example.DAO.BranchDAO - Successfully deleted Branch with id:1
-2025-12-31 12:26:42 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=0
-2025-12-31 12:26:42 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 12:26:42 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2025-12-31 12:26:44 INFO  org.example.servlet.BranchServelet - Fetched all Branches successfully
-2025-12-31 12:26:44 INFO  org.example.servlet.BranchServelet - Updated Successfully
-2025-12-31 12:26:44 INFO  org.example.servlet.BranchServelet - Branch created successfully: 1
-2025-12-31 12:26:44 INFO  org.example.servlet.BranchServelet - Branch Deleted Successfully..
-2025-12-31 12:26:44 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 12:26:44 INFO  org.example.DAO.EmployeeDAO - Successfully updated employee with id=1
-2025-12-31 12:26:44 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 12:26:44 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 12:26:44 INFO  org.example.DAO.EmployeeDAO - Successfully deleted Employee with id:1
-2025-12-31 12:26:44 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 12:26:44 INFO  org.example.DAO.EmployeeDAO - Successfully deleted Employee with id:1
-2025-12-31 12:26:44 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 12:26:44 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 12:26:44 INFO  org.example.DAO.EmployeeDAO - Successfully updated employee with id=1
-2025-12-31 12:26:44 INFO  org.example.servlet.EmployeeServelet - Employee created successfully: 1
-2025-12-31 12:26:44 INFO  org.example.servlet.EmployeeServelet - Updated Successfully
-2025-12-31 12:26:44 INFO  org.example.servlet.EmployeeServelet - Employee Deleted Successfully..
-2025-12-31 12:31:41 ERROR org.example.DAO.EmployeeDAO - Delete failed: no Employee found with this id:0
-2025-12-31 12:31:52 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 12:31:52 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2025-12-31 12:31:52 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 12:31:52 INFO  org.example.DAO.BranchDAO - Successfully updated account with id=1
-2025-12-31 12:31:52 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2025-12-31 12:31:52 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 12:31:52 INFO  org.example.DAO.BranchDAO - Successfully deleted Branch with id:1
-2025-12-31 12:31:52 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=0
-2025-12-31 12:31:52 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 12:31:52 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2025-12-31 12:31:54 INFO  org.example.servlet.BranchServelet - Fetched all Branches successfully
-2025-12-31 12:31:54 INFO  org.example.servlet.BranchServelet - Updated Successfully
-2025-12-31 12:31:54 INFO  org.example.servlet.BranchServelet - Branch created successfully: 1
-2025-12-31 12:31:54 INFO  org.example.servlet.BranchServelet - Branch Deleted Successfully..
-2025-12-31 12:31:54 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 12:31:54 ERROR org.example.DAO.EmployeeDAO - Delete failed: no Employee found with this id:0
-2025-12-31 12:31:54 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 12:31:54 INFO  org.example.DAO.EmployeeDAO - Successfully deleted Employee with id:1
-2025-12-31 12:31:54 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 12:31:54 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 12:31:54 INFO  org.example.DAO.EmployeeDAO - Successfully updated employee with id=1
-2025-12-31 12:31:54 INFO  org.example.servlet.EmployeeServelet - Employee created successfully: 1
-2025-12-31 12:31:54 INFO  org.example.servlet.EmployeeServelet - Updated Successfully
-2025-12-31 12:31:54 INFO  org.example.servlet.EmployeeServelet - Employee Deleted Successfully..
-2025-12-31 12:33:07 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 12:33:07 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2025-12-31 12:33:07 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 12:33:07 INFO  org.example.DAO.BranchDAO - Successfully updated account with id=1
-2025-12-31 12:33:07 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2025-12-31 12:33:07 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 12:33:07 INFO  org.example.DAO.BranchDAO - Successfully deleted Branch with id:1
-2025-12-31 12:33:07 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=0
-2025-12-31 12:33:07 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 12:33:07 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2025-12-31 12:33:08 INFO  org.example.servlet.BranchServelet - Fetched all Branches successfully
-2025-12-31 12:33:08 INFO  org.example.servlet.BranchServelet - Updated Successfully
-2025-12-31 12:33:08 INFO  org.example.servlet.BranchServelet - Branch created successfully: 1
-2025-12-31 12:33:08 INFO  org.example.servlet.BranchServelet - Branch Deleted Successfully..
-2025-12-31 12:33:09 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 12:33:09 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 12:33:09 INFO  org.example.DAO.EmployeeDAO - Successfully deleted Employee with id:1
-2025-12-31 12:33:09 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 12:33:09 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 12:33:09 INFO  org.example.DAO.EmployeeDAO - Successfully updated employee with id=1
-2025-12-31 12:33:09 INFO  org.example.servlet.EmployeeServelet - Employee created successfully: 1
-2025-12-31 12:33:09 INFO  org.example.servlet.EmployeeServelet - Updated Successfully
-2025-12-31 12:33:09 INFO  org.example.servlet.EmployeeServelet - Employee Deleted Successfully..
-2025-12-31 12:33:26 ERROR org.example.DAO.EmployeeDAO - Delete failed: no Employee found with this id:0
-2025-12-31 12:33:47 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 12:33:47 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2025-12-31 12:33:47 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 12:33:47 INFO  org.example.DAO.BranchDAO - Successfully updated account with id=1
-2025-12-31 12:33:47 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2025-12-31 12:33:48 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 12:33:48 INFO  org.example.DAO.BranchDAO - Successfully deleted Branch with id:1
-2025-12-31 12:33:48 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=0
-2025-12-31 12:33:48 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 12:33:48 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2025-12-31 12:33:49 INFO  org.example.servlet.BranchServelet - Fetched all Branches successfully
-2025-12-31 12:33:49 INFO  org.example.servlet.BranchServelet - Updated Successfully
-2025-12-31 12:33:49 INFO  org.example.servlet.BranchServelet - Branch created successfully: 1
-2025-12-31 12:33:49 INFO  org.example.servlet.BranchServelet - Branch Deleted Successfully..
-2025-12-31 12:33:49 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 12:33:50 ERROR org.example.DAO.EmployeeDAO - Delete failed: no Employee found with this id:0
-2025-12-31 12:33:50 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 12:33:50 INFO  org.example.DAO.EmployeeDAO - Successfully deleted Employee with id:1
-2025-12-31 12:33:50 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 12:33:50 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 12:33:50 INFO  org.example.DAO.EmployeeDAO - Successfully updated employee with id=1
-2025-12-31 12:33:50 INFO  org.example.servlet.EmployeeServelet - Employee created successfully: 1
-2025-12-31 12:33:50 INFO  org.example.servlet.EmployeeServelet - Updated Successfully
-2025-12-31 12:33:50 INFO  org.example.servlet.EmployeeServelet - Employee Deleted Successfully..
-2025-12-31 12:38:21 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 12:38:21 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2025-12-31 12:38:21 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 12:38:21 INFO  org.example.DAO.BranchDAO - Successfully updated account with id=1
-2025-12-31 12:38:21 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2025-12-31 12:38:21 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 12:38:21 INFO  org.example.DAO.BranchDAO - Successfully deleted Branch with id:1
-2025-12-31 12:38:21 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=0
-2025-12-31 12:38:21 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 12:38:21 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2025-12-31 12:38:23 INFO  org.example.servlet.BranchServelet - Fetched all Branches successfully
-2025-12-31 12:38:23 INFO  org.example.servlet.BranchServelet - Updated Successfully
-2025-12-31 12:38:23 INFO  org.example.servlet.BranchServelet - Branch created successfully: 1
-2025-12-31 12:38:23 INFO  org.example.servlet.BranchServelet - Branch Deleted Successfully..
-2025-12-31 12:38:23 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 12:38:23 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 12:38:23 INFO  org.example.DAO.EmployeeDAO - Successfully deleted Employee with id:1
-2025-12-31 12:38:23 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 12:38:23 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 12:38:23 INFO  org.example.DAO.EmployeeDAO - Successfully updated employee with id=1
-2025-12-31 12:38:24 INFO  org.example.servlet.EmployeeServelet - Employee created successfully: 1
-2025-12-31 12:38:24 INFO  org.example.servlet.EmployeeServelet - Updated Successfully
-2025-12-31 12:38:24 INFO  org.example.servlet.EmployeeServelet - Employee Deleted Successfully..
-2025-12-31 12:43:51 ERROR org.example.DAO.EmployeeDAO - Delete failed: no Employee found with this id:-1
-2025-12-31 12:44:58 ERROR org.example.DAO.BranchDAO - Delete failed: no Branch found with this id:-1
-2025-12-31 12:45:13 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 12:45:13 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2025-12-31 12:45:13 ERROR org.example.DAO.BranchDAO - Delete failed: no Branch found with this id:-1
-2025-12-31 12:45:13 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 12:45:13 INFO  org.example.DAO.BranchDAO - Successfully updated account with id=1
-2025-12-31 12:45:13 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2025-12-31 12:45:13 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 12:45:13 INFO  org.example.DAO.BranchDAO - Successfully deleted Branch with id:1
-2025-12-31 12:45:13 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=0
-2025-12-31 12:45:13 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 12:45:13 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2025-12-31 12:45:15 INFO  org.example.servlet.BranchServelet - Fetched all Branches successfully
-2025-12-31 12:45:15 INFO  org.example.servlet.BranchServelet - Updated Successfully
-2025-12-31 12:45:15 INFO  org.example.servlet.BranchServelet - Branch created successfully: 1
-2025-12-31 12:45:15 INFO  org.example.servlet.BranchServelet - Branch Deleted Successfully..
-2025-12-31 12:45:15 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 12:45:15 ERROR org.example.DAO.EmployeeDAO - Delete failed: no Employee found with this id:-1
-2025-12-31 12:45:15 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 12:45:15 INFO  org.example.DAO.EmployeeDAO - Successfully deleted Employee with id:1
-2025-12-31 12:45:15 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 12:45:15 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 12:45:15 INFO  org.example.DAO.EmployeeDAO - Successfully updated employee with id=1
-2025-12-31 12:45:15 INFO  org.example.servlet.EmployeeServelet - Employee created successfully: 1
-2025-12-31 12:45:15 INFO  org.example.servlet.EmployeeServelet - Updated Successfully
-2025-12-31 12:45:15 INFO  org.example.servlet.EmployeeServelet - Employee Deleted Successfully..
-2025-12-31 12:50:45 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 12:50:45 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2025-12-31 12:50:45 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 12:50:45 INFO  org.example.DAO.BranchDAO - Successfully updated account with id=1
-2025-12-31 12:50:45 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2025-12-31 12:50:45 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 12:50:45 INFO  org.example.DAO.BranchDAO - Successfully deleted Branch with id:1
-2025-12-31 12:50:45 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=0
-2025-12-31 12:50:45 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 12:50:45 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2025-12-31 12:50:47 INFO  org.example.servlet.BranchServelet - Fetched all Branches successfully
-2025-12-31 12:50:47 INFO  org.example.servlet.BranchServelet - Updated Successfully
-2025-12-31 12:50:47 INFO  org.example.servlet.BranchServelet - Branch created successfully: 1
-2025-12-31 12:50:47 INFO  org.example.servlet.BranchServelet - Branch Deleted Successfully..
-2025-12-31 12:50:47 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 12:50:47 ERROR org.example.DAO.EmployeeDAO - Delete failed: no Employee found with this id:-1
-2025-12-31 12:50:47 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 12:50:47 INFO  org.example.DAO.EmployeeDAO - Successfully deleted Employee with id:1
-2025-12-31 12:50:47 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 12:50:47 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 12:50:47 INFO  org.example.DAO.EmployeeDAO - Successfully updated employee with id=1
-2025-12-31 12:50:47 INFO  org.example.servlet.EmployeeServelet - Employee created successfully: 1
-2025-12-31 12:50:47 INFO  org.example.servlet.EmployeeServelet - Updated Successfully
-2025-12-31 12:50:47 INFO  org.example.servlet.EmployeeServelet - Employee Deleted Successfully..
-2025-12-31 12:53:19 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 12:53:19 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2025-12-31 12:53:19 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 12:53:19 INFO  org.example.DAO.BranchDAO - Successfully updated account with id=1
-2025-12-31 12:53:19 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2025-12-31 12:53:19 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 12:53:19 INFO  org.example.DAO.BranchDAO - Successfully deleted Branch with id:1
-2025-12-31 12:53:19 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=0
-2025-12-31 12:53:19 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 12:53:19 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2025-12-31 12:53:21 INFO  org.example.servlet.BranchServelet - Fetched all Branches successfully
-2025-12-31 12:53:21 INFO  org.example.servlet.BranchServelet - Updated Successfully
-2025-12-31 12:53:21 INFO  org.example.servlet.BranchServelet - Branch created successfully: 1
-2025-12-31 12:53:21 INFO  org.example.servlet.BranchServelet - Branch Deleted Successfully..
-2025-12-31 12:53:21 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 12:53:21 ERROR org.example.DAO.EmployeeDAO - Delete failed: no Employee found with this id:-1
-2025-12-31 12:53:21 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 12:53:21 INFO  org.example.DAO.EmployeeDAO - Successfully deleted Employee with id:1
-2025-12-31 12:53:21 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 12:53:21 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 12:53:21 INFO  org.example.DAO.EmployeeDAO - Successfully updated employee with id=1
-2025-12-31 12:53:21 INFO  org.example.servlet.EmployeeServelet - Employee created successfully: 1
-2025-12-31 12:53:21 INFO  org.example.servlet.EmployeeServelet - Updated Successfully
-2025-12-31 12:53:21 INFO  org.example.servlet.EmployeeServelet - Employee Deleted Successfully..
-2025-12-31 12:55:56 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 12:55:56 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2025-12-31 12:55:56 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 12:55:56 INFO  org.example.DAO.BranchDAO - Successfully updated account with id=1
-2025-12-31 12:55:56 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2025-12-31 12:55:56 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 12:55:56 INFO  org.example.DAO.BranchDAO - Successfully deleted Branch with id:1
-2025-12-31 12:55:56 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=0
-2025-12-31 12:55:56 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 12:55:56 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2025-12-31 12:55:58 INFO  org.example.servlet.BranchServelet - Fetched all Branches successfully
-2025-12-31 12:55:58 INFO  org.example.servlet.BranchServelet - Updated Successfully
-2025-12-31 12:55:58 INFO  org.example.servlet.BranchServelet - Branch created successfully: 1
-2025-12-31 12:55:58 INFO  org.example.servlet.BranchServelet - Branch Deleted Successfully..
-2025-12-31 12:55:58 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 12:55:58 ERROR org.example.DAO.EmployeeDAO - Delete failed: no Employee found with this id:-1
-2025-12-31 12:55:58 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 12:55:58 INFO  org.example.DAO.EmployeeDAO - Successfully deleted Employee with id:1
-2025-12-31 12:55:58 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 12:55:58 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 12:55:58 INFO  org.example.DAO.EmployeeDAO - Successfully updated employee with id=1
-2025-12-31 12:55:59 INFO  org.example.servlet.EmployeeServelet - Employee created successfully: 1
-2025-12-31 12:55:59 INFO  org.example.servlet.EmployeeServelet - Updated Successfully
-2025-12-31 12:55:59 INFO  org.example.servlet.EmployeeServelet - Employee Deleted Successfully..
-2025-12-31 12:56:45 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 12:56:45 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2025-12-31 12:57:01 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 12:57:01 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2025-12-31 12:57:12 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 12:57:12 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2025-12-31 12:57:12 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 12:57:12 INFO  org.example.DAO.BranchDAO - Successfully updated account with id=1
-2025-12-31 12:57:12 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2025-12-31 12:57:12 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 12:57:13 INFO  org.example.DAO.BranchDAO - Successfully deleted Branch with id:1
-2025-12-31 12:57:13 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=0
-2025-12-31 12:57:13 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 12:57:13 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2025-12-31 12:57:14 INFO  org.example.servlet.BranchServelet - Fetched all Branches successfully
-2025-12-31 12:57:14 INFO  org.example.servlet.BranchServelet - Updated Successfully
-2025-12-31 12:57:14 INFO  org.example.servlet.BranchServelet - Branch created successfully: 1
-2025-12-31 12:57:14 INFO  org.example.servlet.BranchServelet - Branch Deleted Successfully..
-2025-12-31 12:57:14 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 12:57:15 ERROR org.example.DAO.EmployeeDAO - Delete failed: no Employee found with this id:-1
-2025-12-31 12:57:15 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 12:57:15 INFO  org.example.DAO.EmployeeDAO - Successfully deleted Employee with id:1
-2025-12-31 12:57:15 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 12:57:15 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 12:57:15 INFO  org.example.DAO.EmployeeDAO - Successfully updated employee with id=1
-2025-12-31 12:57:15 INFO  org.example.servlet.EmployeeServelet - Employee created successfully: 1
-2025-12-31 12:57:15 INFO  org.example.servlet.EmployeeServelet - Updated Successfully
-2025-12-31 12:57:15 INFO  org.example.servlet.EmployeeServelet - Employee Deleted Successfully..
-2025-12-31 12:57:53 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 12:57:53 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2025-12-31 12:57:53 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 12:57:53 INFO  org.example.DAO.BranchDAO - Successfully updated account with id=1
-2025-12-31 12:57:53 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2025-12-31 12:57:53 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 12:57:53 INFO  org.example.DAO.BranchDAO - Successfully deleted Branch with id:1
-2025-12-31 12:57:53 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=0
-2025-12-31 12:57:53 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 12:57:53 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2025-12-31 12:57:55 INFO  org.example.servlet.BranchServelet - Fetched all Branches successfully
-2025-12-31 12:57:55 INFO  org.example.servlet.BranchServelet - Updated Successfully
-2025-12-31 12:57:55 INFO  org.example.servlet.BranchServelet - Branch created successfully: 1
-2025-12-31 12:57:55 INFO  org.example.servlet.BranchServelet - Branch Deleted Successfully..
-2025-12-31 12:57:55 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 12:57:55 ERROR org.example.DAO.EmployeeDAO - Delete failed: no Employee found with this id:-1
-2025-12-31 12:57:55 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 12:57:55 INFO  org.example.DAO.EmployeeDAO - Successfully deleted Employee with id:1
-2025-12-31 12:57:55 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 12:57:55 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 12:57:55 INFO  org.example.DAO.EmployeeDAO - Successfully updated employee with id=1
-2025-12-31 12:57:55 INFO  org.example.servlet.EmployeeServelet - Employee created successfully: 1
-2025-12-31 12:57:55 INFO  org.example.servlet.EmployeeServelet - Updated Successfully
-2025-12-31 12:57:56 INFO  org.example.servlet.EmployeeServelet - Employee Deleted Successfully..
-2025-12-31 13:10:34 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 13:10:34 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2025-12-31 13:10:35 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 13:10:35 INFO  org.example.DAO.BranchDAO - Successfully updated account with id=1
-2025-12-31 13:10:35 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2025-12-31 13:10:35 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 13:10:35 INFO  org.example.DAO.BranchDAO - Successfully deleted Branch with id:1
-2025-12-31 13:10:35 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=0
-2025-12-31 13:10:35 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 13:10:35 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2025-12-31 13:10:36 INFO  org.example.servlet.BranchServelet - Fetched all Branches successfully
-2025-12-31 13:10:36 INFO  org.example.servlet.BranchServelet - Updated Successfully
-2025-12-31 13:10:36 INFO  org.example.servlet.BranchServelet - Branch created successfully: 1
-2025-12-31 13:10:36 INFO  org.example.servlet.BranchServelet - Branch Deleted Successfully..
-2025-12-31 13:10:37 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 13:10:37 ERROR org.example.DAO.EmployeeDAO - Delete failed: no Employee found with this id:-1
-2025-12-31 13:10:37 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 13:10:37 INFO  org.example.DAO.EmployeeDAO - Successfully deleted Employee with id:1
-2025-12-31 13:10:37 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 13:10:37 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 13:10:37 INFO  org.example.DAO.EmployeeDAO - Successfully updated employee with id=1
-2025-12-31 13:10:37 INFO  org.example.servlet.EmployeeServelet - Employee created successfully: 1
-2025-12-31 13:10:37 INFO  org.example.servlet.EmployeeServelet - Updated Successfully
-2025-12-31 13:10:37 INFO  org.example.servlet.EmployeeServelet - Employee Deleted Successfully..
-2025-12-31 14:18:11 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 14:18:11 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2025-12-31 14:18:11 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 14:18:11 INFO  org.example.DAO.BranchDAO - Successfully updated account with id=1
-2025-12-31 14:18:11 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2025-12-31 14:18:11 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 14:18:11 INFO  org.example.DAO.BranchDAO - Successfully deleted Branch with id:1
-2025-12-31 14:18:11 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=0
-2025-12-31 14:18:11 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 14:18:11 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2025-12-31 14:18:12 INFO  org.example.servlet.BranchServelet - Fetched all Branches successfully
-2025-12-31 14:18:13 INFO  org.example.servlet.BranchServelet - Updated Successfully
-2025-12-31 14:18:13 INFO  org.example.servlet.BranchServelet - Failed to insert Branch, EXCEPTION:
+2025-12-31 10:40:01 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 10:40:02 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2025-12-31 10:40:02 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 10:40:02 INFO  org.example.dao.BranchDAO - Successfully updated account with id=1
+2025-12-31 10:40:02 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2025-12-31 10:40:02 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 10:40:02 INFO  org.example.dao.BranchDAO - Successfully deleted Branch with id:1
+2025-12-31 10:40:02 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=0
+2025-12-31 10:40:02 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 10:40:02 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2025-12-31 10:40:02 INFO  org.example.servlet.EmployeeServlet - Employee created successfully: 1
+2025-12-31 10:40:02 INFO  org.example.servlet.EmployeeServlet - Updated Successfully
+2025-12-31 10:40:02 INFO  org.example.servlet.EmployeeServlet - Employee Deleted Successfully..
+2025-12-31 10:58:56 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 11:02:17 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 11:02:17 INFO  org.example.dao.EmployeeDAO - Successfully deleted Employee with id:1
+2025-12-31 11:05:03 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 11:05:03 INFO  org.example.dao.EmployeeDAO - Successfully updated employee with id=1
+2025-12-31 11:08:19 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 11:09:09 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 11:09:10 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 11:09:10 INFO  org.example.dao.EmployeeDAO - Successfully deleted Employee with id:1
+2025-12-31 11:09:10 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 11:09:10 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 11:09:10 INFO  org.example.dao.EmployeeDAO - Successfully updated employee with id=1
+2025-12-31 11:09:21 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 11:09:21 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2025-12-31 11:09:21 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 11:09:21 INFO  org.example.dao.BranchDAO - Successfully updated account with id=1
+2025-12-31 11:09:21 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2025-12-31 11:09:21 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 11:09:21 INFO  org.example.dao.BranchDAO - Successfully deleted Branch with id:1
+2025-12-31 11:09:21 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=0
+2025-12-31 11:09:21 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 11:09:21 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2025-12-31 11:09:23 INFO  org.example.servlet.BranchServlet - Fetched all Branches successfully
+2025-12-31 11:09:23 INFO  org.example.servlet.BranchServlet - Updated Successfully
+2025-12-31 11:09:23 INFO  org.example.servlet.BranchServlet - Branch created successfully: 1
+2025-12-31 11:09:23 INFO  org.example.servlet.BranchServlet - Branch Deleted Successfully..
+2025-12-31 11:09:23 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 11:09:23 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 11:09:23 INFO  org.example.dao.EmployeeDAO - Successfully deleted Employee with id:1
+2025-12-31 11:09:24 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 11:09:24 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 11:09:24 INFO  org.example.dao.EmployeeDAO - Successfully updated employee with id=1
+2025-12-31 11:09:24 INFO  org.example.servlet.EmployeeServlet - Employee created successfully: 1
+2025-12-31 11:09:24 INFO  org.example.servlet.EmployeeServlet - Updated Successfully
+2025-12-31 11:09:24 INFO  org.example.servlet.EmployeeServlet - Employee Deleted Successfully..
+2025-12-31 11:11:02 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 11:11:02 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2025-12-31 11:11:02 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 11:11:02 INFO  org.example.dao.BranchDAO - Successfully updated account with id=1
+2025-12-31 11:11:02 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2025-12-31 11:11:02 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 11:11:02 INFO  org.example.dao.BranchDAO - Successfully deleted Branch with id:1
+2025-12-31 11:11:02 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=0
+2025-12-31 11:11:02 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 11:11:02 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2025-12-31 11:11:04 INFO  org.example.servlet.BranchServlet - Fetched all Branches successfully
+2025-12-31 11:11:04 INFO  org.example.servlet.BranchServlet - Updated Successfully
+2025-12-31 11:11:04 INFO  org.example.servlet.BranchServlet - Branch created successfully: 1
+2025-12-31 11:11:04 INFO  org.example.servlet.BranchServlet - Branch Deleted Successfully..
+2025-12-31 11:11:04 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 11:11:04 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 11:11:04 INFO  org.example.dao.EmployeeDAO - Successfully deleted Employee with id:1
+2025-12-31 11:11:04 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 11:11:04 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 11:11:04 INFO  org.example.dao.EmployeeDAO - Successfully updated employee with id=1
+2025-12-31 11:11:04 INFO  org.example.servlet.EmployeeServlet - Employee created successfully: 1
+2025-12-31 11:11:04 INFO  org.example.servlet.EmployeeServlet - Updated Successfully
+2025-12-31 11:11:04 INFO  org.example.servlet.EmployeeServlet - Employee Deleted Successfully..
+2025-12-31 12:13:50 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 12:13:51 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2025-12-31 12:13:51 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 12:13:51 INFO  org.example.dao.BranchDAO - Successfully updated account with id=1
+2025-12-31 12:13:51 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2025-12-31 12:13:51 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 12:13:51 INFO  org.example.dao.BranchDAO - Successfully deleted Branch with id:1
+2025-12-31 12:13:51 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=0
+2025-12-31 12:13:51 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 12:13:51 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2025-12-31 12:13:52 INFO  org.example.servlet.BranchServlet - Fetched all Branches successfully
+2025-12-31 12:13:52 INFO  org.example.servlet.BranchServlet - Updated Successfully
+2025-12-31 12:13:52 INFO  org.example.servlet.BranchServlet - Branch created successfully: 1
+2025-12-31 12:13:52 INFO  org.example.servlet.BranchServlet - Branch Deleted Successfully..
+2025-12-31 12:13:53 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 12:13:53 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 12:13:53 INFO  org.example.dao.EmployeeDAO - Successfully deleted Employee with id:1
+2025-12-31 12:13:53 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 12:13:53 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 12:13:53 INFO  org.example.dao.EmployeeDAO - Successfully updated employee with id=1
+2025-12-31 12:13:53 INFO  org.example.servlet.EmployeeServlet - Employee created successfully: 1
+2025-12-31 12:13:53 INFO  org.example.servlet.EmployeeServlet - Updated Successfully
+2025-12-31 12:13:53 INFO  org.example.servlet.EmployeeServlet - Employee Deleted Successfully..
+2025-12-31 12:17:49 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 12:17:49 INFO  org.example.dao.EmployeeDAO - Successfully deleted Employee with id:1
+2025-12-31 12:20:26 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 12:20:26 INFO  org.example.dao.EmployeeDAO - Successfully updated employee with id=1
+2025-12-31 12:20:46 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 12:20:46 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2025-12-31 12:20:46 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 12:20:46 INFO  org.example.dao.BranchDAO - Successfully updated account with id=1
+2025-12-31 12:20:46 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2025-12-31 12:20:46 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 12:20:46 INFO  org.example.dao.BranchDAO - Successfully deleted Branch with id:1
+2025-12-31 12:20:46 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=0
+2025-12-31 12:20:46 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 12:20:46 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2025-12-31 12:20:48 INFO  org.example.servlet.BranchServlet - Fetched all Branches successfully
+2025-12-31 12:20:48 INFO  org.example.servlet.BranchServlet - Updated Successfully
+2025-12-31 12:20:48 INFO  org.example.servlet.BranchServlet - Branch created successfully: 1
+2025-12-31 12:20:48 INFO  org.example.servlet.BranchServlet - Branch Deleted Successfully..
+2025-12-31 12:20:48 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 12:20:48 INFO  org.example.dao.EmployeeDAO - Successfully updated employee with id=1
+2025-12-31 12:20:48 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 12:20:48 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 12:20:48 INFO  org.example.dao.EmployeeDAO - Successfully deleted Employee with id:1
+2025-12-31 12:20:48 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 12:20:48 INFO  org.example.dao.EmployeeDAO - Successfully deleted Employee with id:1
+2025-12-31 12:20:48 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 12:20:48 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 12:20:48 INFO  org.example.dao.EmployeeDAO - Successfully updated employee with id=1
+2025-12-31 12:20:48 INFO  org.example.servlet.EmployeeServlet - Employee created successfully: 1
+2025-12-31 12:20:48 INFO  org.example.servlet.EmployeeServlet - Updated Successfully
+2025-12-31 12:20:48 INFO  org.example.servlet.EmployeeServlet - Employee Deleted Successfully..
+2025-12-31 12:22:06 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 12:22:06 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2025-12-31 12:22:06 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 12:22:06 INFO  org.example.dao.BranchDAO - Successfully updated account with id=1
+2025-12-31 12:22:06 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2025-12-31 12:22:06 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 12:22:06 INFO  org.example.dao.BranchDAO - Successfully deleted Branch with id:1
+2025-12-31 12:22:06 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=0
+2025-12-31 12:22:06 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 12:22:06 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2025-12-31 12:22:08 INFO  org.example.servlet.BranchServlet - Fetched all Branches successfully
+2025-12-31 12:22:08 INFO  org.example.servlet.BranchServlet - Updated Successfully
+2025-12-31 12:22:08 INFO  org.example.servlet.BranchServlet - Branch created successfully: 1
+2025-12-31 12:22:08 INFO  org.example.servlet.BranchServlet - Branch Deleted Successfully..
+2025-12-31 12:22:08 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 12:22:08 INFO  org.example.dao.EmployeeDAO - Successfully updated employee with id=1
+2025-12-31 12:22:08 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 12:22:08 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 12:22:08 INFO  org.example.dao.EmployeeDAO - Successfully deleted Employee with id:1
+2025-12-31 12:22:08 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 12:22:08 INFO  org.example.dao.EmployeeDAO - Successfully deleted Employee with id:1
+2025-12-31 12:22:08 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 12:22:08 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 12:22:08 INFO  org.example.dao.EmployeeDAO - Successfully updated employee with id=1
+2025-12-31 12:22:08 INFO  org.example.servlet.EmployeeServlet - Employee created successfully: 1
+2025-12-31 12:22:08 INFO  org.example.servlet.EmployeeServlet - Updated Successfully
+2025-12-31 12:22:08 INFO  org.example.servlet.EmployeeServlet - Employee Deleted Successfully..
+2025-12-31 12:26:42 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 12:26:42 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2025-12-31 12:26:42 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 12:26:42 INFO  org.example.dao.BranchDAO - Successfully updated account with id=1
+2025-12-31 12:26:42 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2025-12-31 12:26:42 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 12:26:42 INFO  org.example.dao.BranchDAO - Successfully deleted Branch with id:1
+2025-12-31 12:26:42 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=0
+2025-12-31 12:26:42 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 12:26:42 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2025-12-31 12:26:44 INFO  org.example.servlet.BranchServlet - Fetched all Branches successfully
+2025-12-31 12:26:44 INFO  org.example.servlet.BranchServlet - Updated Successfully
+2025-12-31 12:26:44 INFO  org.example.servlet.BranchServlet - Branch created successfully: 1
+2025-12-31 12:26:44 INFO  org.example.servlet.BranchServlet - Branch Deleted Successfully..
+2025-12-31 12:26:44 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 12:26:44 INFO  org.example.dao.EmployeeDAO - Successfully updated employee with id=1
+2025-12-31 12:26:44 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 12:26:44 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 12:26:44 INFO  org.example.dao.EmployeeDAO - Successfully deleted Employee with id:1
+2025-12-31 12:26:44 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 12:26:44 INFO  org.example.dao.EmployeeDAO - Successfully deleted Employee with id:1
+2025-12-31 12:26:44 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 12:26:44 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 12:26:44 INFO  org.example.dao.EmployeeDAO - Successfully updated employee with id=1
+2025-12-31 12:26:44 INFO  org.example.servlet.EmployeeServlet - Employee created successfully: 1
+2025-12-31 12:26:44 INFO  org.example.servlet.EmployeeServlet - Updated Successfully
+2025-12-31 12:26:44 INFO  org.example.servlet.EmployeeServlet - Employee Deleted Successfully..
+2025-12-31 12:31:41 ERROR org.example.dao.EmployeeDAO - Delete failed: no Employee found with this id:0
+2025-12-31 12:31:52 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 12:31:52 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2025-12-31 12:31:52 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 12:31:52 INFO  org.example.dao.BranchDAO - Successfully updated account with id=1
+2025-12-31 12:31:52 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2025-12-31 12:31:52 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 12:31:52 INFO  org.example.dao.BranchDAO - Successfully deleted Branch with id:1
+2025-12-31 12:31:52 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=0
+2025-12-31 12:31:52 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 12:31:52 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2025-12-31 12:31:54 INFO  org.example.servlet.BranchServlet - Fetched all Branches successfully
+2025-12-31 12:31:54 INFO  org.example.servlet.BranchServlet - Updated Successfully
+2025-12-31 12:31:54 INFO  org.example.servlet.BranchServlet - Branch created successfully: 1
+2025-12-31 12:31:54 INFO  org.example.servlet.BranchServlet - Branch Deleted Successfully..
+2025-12-31 12:31:54 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 12:31:54 ERROR org.example.dao.EmployeeDAO - Delete failed: no Employee found with this id:0
+2025-12-31 12:31:54 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 12:31:54 INFO  org.example.dao.EmployeeDAO - Successfully deleted Employee with id:1
+2025-12-31 12:31:54 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 12:31:54 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 12:31:54 INFO  org.example.dao.EmployeeDAO - Successfully updated employee with id=1
+2025-12-31 12:31:54 INFO  org.example.servlet.EmployeeServlet - Employee created successfully: 1
+2025-12-31 12:31:54 INFO  org.example.servlet.EmployeeServlet - Updated Successfully
+2025-12-31 12:31:54 INFO  org.example.servlet.EmployeeServlet - Employee Deleted Successfully..
+2025-12-31 12:33:07 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 12:33:07 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2025-12-31 12:33:07 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 12:33:07 INFO  org.example.dao.BranchDAO - Successfully updated account with id=1
+2025-12-31 12:33:07 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2025-12-31 12:33:07 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 12:33:07 INFO  org.example.dao.BranchDAO - Successfully deleted Branch with id:1
+2025-12-31 12:33:07 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=0
+2025-12-31 12:33:07 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 12:33:07 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2025-12-31 12:33:08 INFO  org.example.servlet.BranchServlet - Fetched all Branches successfully
+2025-12-31 12:33:08 INFO  org.example.servlet.BranchServlet - Updated Successfully
+2025-12-31 12:33:08 INFO  org.example.servlet.BranchServlet - Branch created successfully: 1
+2025-12-31 12:33:08 INFO  org.example.servlet.BranchServlet - Branch Deleted Successfully..
+2025-12-31 12:33:09 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 12:33:09 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 12:33:09 INFO  org.example.dao.EmployeeDAO - Successfully deleted Employee with id:1
+2025-12-31 12:33:09 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 12:33:09 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 12:33:09 INFO  org.example.dao.EmployeeDAO - Successfully updated employee with id=1
+2025-12-31 12:33:09 INFO  org.example.servlet.EmployeeServlet - Employee created successfully: 1
+2025-12-31 12:33:09 INFO  org.example.servlet.EmployeeServlet - Updated Successfully
+2025-12-31 12:33:09 INFO  org.example.servlet.EmployeeServlet - Employee Deleted Successfully..
+2025-12-31 12:33:26 ERROR org.example.dao.EmployeeDAO - Delete failed: no Employee found with this id:0
+2025-12-31 12:33:47 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 12:33:47 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2025-12-31 12:33:47 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 12:33:47 INFO  org.example.dao.BranchDAO - Successfully updated account with id=1
+2025-12-31 12:33:47 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2025-12-31 12:33:48 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 12:33:48 INFO  org.example.dao.BranchDAO - Successfully deleted Branch with id:1
+2025-12-31 12:33:48 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=0
+2025-12-31 12:33:48 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 12:33:48 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2025-12-31 12:33:49 INFO  org.example.servlet.BranchServlet - Fetched all Branches successfully
+2025-12-31 12:33:49 INFO  org.example.servlet.BranchServlet - Updated Successfully
+2025-12-31 12:33:49 INFO  org.example.servlet.BranchServlet - Branch created successfully: 1
+2025-12-31 12:33:49 INFO  org.example.servlet.BranchServlet - Branch Deleted Successfully..
+2025-12-31 12:33:49 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 12:33:50 ERROR org.example.dao.EmployeeDAO - Delete failed: no Employee found with this id:0
+2025-12-31 12:33:50 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 12:33:50 INFO  org.example.dao.EmployeeDAO - Successfully deleted Employee with id:1
+2025-12-31 12:33:50 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 12:33:50 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 12:33:50 INFO  org.example.dao.EmployeeDAO - Successfully updated employee with id=1
+2025-12-31 12:33:50 INFO  org.example.servlet.EmployeeServlet - Employee created successfully: 1
+2025-12-31 12:33:50 INFO  org.example.servlet.EmployeeServlet - Updated Successfully
+2025-12-31 12:33:50 INFO  org.example.servlet.EmployeeServlet - Employee Deleted Successfully..
+2025-12-31 12:38:21 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 12:38:21 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2025-12-31 12:38:21 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 12:38:21 INFO  org.example.dao.BranchDAO - Successfully updated account with id=1
+2025-12-31 12:38:21 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2025-12-31 12:38:21 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 12:38:21 INFO  org.example.dao.BranchDAO - Successfully deleted Branch with id:1
+2025-12-31 12:38:21 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=0
+2025-12-31 12:38:21 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 12:38:21 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2025-12-31 12:38:23 INFO  org.example.servlet.BranchServlet - Fetched all Branches successfully
+2025-12-31 12:38:23 INFO  org.example.servlet.BranchServlet - Updated Successfully
+2025-12-31 12:38:23 INFO  org.example.servlet.BranchServlet - Branch created successfully: 1
+2025-12-31 12:38:23 INFO  org.example.servlet.BranchServlet - Branch Deleted Successfully..
+2025-12-31 12:38:23 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 12:38:23 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 12:38:23 INFO  org.example.dao.EmployeeDAO - Successfully deleted Employee with id:1
+2025-12-31 12:38:23 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 12:38:23 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 12:38:23 INFO  org.example.dao.EmployeeDAO - Successfully updated employee with id=1
+2025-12-31 12:38:24 INFO  org.example.servlet.EmployeeServlet - Employee created successfully: 1
+2025-12-31 12:38:24 INFO  org.example.servlet.EmployeeServlet - Updated Successfully
+2025-12-31 12:38:24 INFO  org.example.servlet.EmployeeServlet - Employee Deleted Successfully..
+2025-12-31 12:43:51 ERROR org.example.dao.EmployeeDAO - Delete failed: no Employee found with this id:-1
+2025-12-31 12:44:58 ERROR org.example.dao.BranchDAO - Delete failed: no Branch found with this id:-1
+2025-12-31 12:45:13 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 12:45:13 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2025-12-31 12:45:13 ERROR org.example.dao.BranchDAO - Delete failed: no Branch found with this id:-1
+2025-12-31 12:45:13 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 12:45:13 INFO  org.example.dao.BranchDAO - Successfully updated account with id=1
+2025-12-31 12:45:13 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2025-12-31 12:45:13 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 12:45:13 INFO  org.example.dao.BranchDAO - Successfully deleted Branch with id:1
+2025-12-31 12:45:13 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=0
+2025-12-31 12:45:13 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 12:45:13 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2025-12-31 12:45:15 INFO  org.example.servlet.BranchServlet - Fetched all Branches successfully
+2025-12-31 12:45:15 INFO  org.example.servlet.BranchServlet - Updated Successfully
+2025-12-31 12:45:15 INFO  org.example.servlet.BranchServlet - Branch created successfully: 1
+2025-12-31 12:45:15 INFO  org.example.servlet.BranchServlet - Branch Deleted Successfully..
+2025-12-31 12:45:15 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 12:45:15 ERROR org.example.dao.EmployeeDAO - Delete failed: no Employee found with this id:-1
+2025-12-31 12:45:15 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 12:45:15 INFO  org.example.dao.EmployeeDAO - Successfully deleted Employee with id:1
+2025-12-31 12:45:15 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 12:45:15 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 12:45:15 INFO  org.example.dao.EmployeeDAO - Successfully updated employee with id=1
+2025-12-31 12:45:15 INFO  org.example.servlet.EmployeeServlet - Employee created successfully: 1
+2025-12-31 12:45:15 INFO  org.example.servlet.EmployeeServlet - Updated Successfully
+2025-12-31 12:45:15 INFO  org.example.servlet.EmployeeServlet - Employee Deleted Successfully..
+2025-12-31 12:50:45 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 12:50:45 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2025-12-31 12:50:45 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 12:50:45 INFO  org.example.dao.BranchDAO - Successfully updated account with id=1
+2025-12-31 12:50:45 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2025-12-31 12:50:45 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 12:50:45 INFO  org.example.dao.BranchDAO - Successfully deleted Branch with id:1
+2025-12-31 12:50:45 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=0
+2025-12-31 12:50:45 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 12:50:45 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2025-12-31 12:50:47 INFO  org.example.servlet.BranchServlet - Fetched all Branches successfully
+2025-12-31 12:50:47 INFO  org.example.servlet.BranchServlet - Updated Successfully
+2025-12-31 12:50:47 INFO  org.example.servlet.BranchServlet - Branch created successfully: 1
+2025-12-31 12:50:47 INFO  org.example.servlet.BranchServlet - Branch Deleted Successfully..
+2025-12-31 12:50:47 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 12:50:47 ERROR org.example.dao.EmployeeDAO - Delete failed: no Employee found with this id:-1
+2025-12-31 12:50:47 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 12:50:47 INFO  org.example.dao.EmployeeDAO - Successfully deleted Employee with id:1
+2025-12-31 12:50:47 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 12:50:47 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 12:50:47 INFO  org.example.dao.EmployeeDAO - Successfully updated employee with id=1
+2025-12-31 12:50:47 INFO  org.example.servlet.EmployeeServlet - Employee created successfully: 1
+2025-12-31 12:50:47 INFO  org.example.servlet.EmployeeServlet - Updated Successfully
+2025-12-31 12:50:47 INFO  org.example.servlet.EmployeeServlet - Employee Deleted Successfully..
+2025-12-31 12:53:19 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 12:53:19 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2025-12-31 12:53:19 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 12:53:19 INFO  org.example.dao.BranchDAO - Successfully updated account with id=1
+2025-12-31 12:53:19 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2025-12-31 12:53:19 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 12:53:19 INFO  org.example.dao.BranchDAO - Successfully deleted Branch with id:1
+2025-12-31 12:53:19 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=0
+2025-12-31 12:53:19 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 12:53:19 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2025-12-31 12:53:21 INFO  org.example.servlet.BranchServlet - Fetched all Branches successfully
+2025-12-31 12:53:21 INFO  org.example.servlet.BranchServlet - Updated Successfully
+2025-12-31 12:53:21 INFO  org.example.servlet.BranchServlet - Branch created successfully: 1
+2025-12-31 12:53:21 INFO  org.example.servlet.BranchServlet - Branch Deleted Successfully..
+2025-12-31 12:53:21 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 12:53:21 ERROR org.example.dao.EmployeeDAO - Delete failed: no Employee found with this id:-1
+2025-12-31 12:53:21 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 12:53:21 INFO  org.example.dao.EmployeeDAO - Successfully deleted Employee with id:1
+2025-12-31 12:53:21 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 12:53:21 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 12:53:21 INFO  org.example.dao.EmployeeDAO - Successfully updated employee with id=1
+2025-12-31 12:53:21 INFO  org.example.servlet.EmployeeServlet - Employee created successfully: 1
+2025-12-31 12:53:21 INFO  org.example.servlet.EmployeeServlet - Updated Successfully
+2025-12-31 12:53:21 INFO  org.example.servlet.EmployeeServlet - Employee Deleted Successfully..
+2025-12-31 12:55:56 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 12:55:56 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2025-12-31 12:55:56 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 12:55:56 INFO  org.example.dao.BranchDAO - Successfully updated account with id=1
+2025-12-31 12:55:56 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2025-12-31 12:55:56 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 12:55:56 INFO  org.example.dao.BranchDAO - Successfully deleted Branch with id:1
+2025-12-31 12:55:56 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=0
+2025-12-31 12:55:56 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 12:55:56 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2025-12-31 12:55:58 INFO  org.example.servlet.BranchServlet - Fetched all Branches successfully
+2025-12-31 12:55:58 INFO  org.example.servlet.BranchServlet - Updated Successfully
+2025-12-31 12:55:58 INFO  org.example.servlet.BranchServlet - Branch created successfully: 1
+2025-12-31 12:55:58 INFO  org.example.servlet.BranchServlet - Branch Deleted Successfully..
+2025-12-31 12:55:58 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 12:55:58 ERROR org.example.dao.EmployeeDAO - Delete failed: no Employee found with this id:-1
+2025-12-31 12:55:58 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 12:55:58 INFO  org.example.dao.EmployeeDAO - Successfully deleted Employee with id:1
+2025-12-31 12:55:58 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 12:55:58 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 12:55:58 INFO  org.example.dao.EmployeeDAO - Successfully updated employee with id=1
+2025-12-31 12:55:59 INFO  org.example.servlet.EmployeeServlet - Employee created successfully: 1
+2025-12-31 12:55:59 INFO  org.example.servlet.EmployeeServlet - Updated Successfully
+2025-12-31 12:55:59 INFO  org.example.servlet.EmployeeServlet - Employee Deleted Successfully..
+2025-12-31 12:56:45 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 12:56:45 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2025-12-31 12:57:01 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 12:57:01 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2025-12-31 12:57:12 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 12:57:12 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2025-12-31 12:57:12 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 12:57:12 INFO  org.example.dao.BranchDAO - Successfully updated account with id=1
+2025-12-31 12:57:12 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2025-12-31 12:57:12 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 12:57:13 INFO  org.example.dao.BranchDAO - Successfully deleted Branch with id:1
+2025-12-31 12:57:13 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=0
+2025-12-31 12:57:13 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 12:57:13 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2025-12-31 12:57:14 INFO  org.example.servlet.BranchServlet - Fetched all Branches successfully
+2025-12-31 12:57:14 INFO  org.example.servlet.BranchServlet - Updated Successfully
+2025-12-31 12:57:14 INFO  org.example.servlet.BranchServlet - Branch created successfully: 1
+2025-12-31 12:57:14 INFO  org.example.servlet.BranchServlet - Branch Deleted Successfully..
+2025-12-31 12:57:14 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 12:57:15 ERROR org.example.dao.EmployeeDAO - Delete failed: no Employee found with this id:-1
+2025-12-31 12:57:15 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 12:57:15 INFO  org.example.dao.EmployeeDAO - Successfully deleted Employee with id:1
+2025-12-31 12:57:15 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 12:57:15 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 12:57:15 INFO  org.example.dao.EmployeeDAO - Successfully updated employee with id=1
+2025-12-31 12:57:15 INFO  org.example.servlet.EmployeeServlet - Employee created successfully: 1
+2025-12-31 12:57:15 INFO  org.example.servlet.EmployeeServlet - Updated Successfully
+2025-12-31 12:57:15 INFO  org.example.servlet.EmployeeServlet - Employee Deleted Successfully..
+2025-12-31 12:57:53 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 12:57:53 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2025-12-31 12:57:53 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 12:57:53 INFO  org.example.dao.BranchDAO - Successfully updated account with id=1
+2025-12-31 12:57:53 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2025-12-31 12:57:53 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 12:57:53 INFO  org.example.dao.BranchDAO - Successfully deleted Branch with id:1
+2025-12-31 12:57:53 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=0
+2025-12-31 12:57:53 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 12:57:53 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2025-12-31 12:57:55 INFO  org.example.servlet.BranchServlet - Fetched all Branches successfully
+2025-12-31 12:57:55 INFO  org.example.servlet.BranchServlet - Updated Successfully
+2025-12-31 12:57:55 INFO  org.example.servlet.BranchServlet - Branch created successfully: 1
+2025-12-31 12:57:55 INFO  org.example.servlet.BranchServlet - Branch Deleted Successfully..
+2025-12-31 12:57:55 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 12:57:55 ERROR org.example.dao.EmployeeDAO - Delete failed: no Employee found with this id:-1
+2025-12-31 12:57:55 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 12:57:55 INFO  org.example.dao.EmployeeDAO - Successfully deleted Employee with id:1
+2025-12-31 12:57:55 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 12:57:55 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 12:57:55 INFO  org.example.dao.EmployeeDAO - Successfully updated employee with id=1
+2025-12-31 12:57:55 INFO  org.example.servlet.EmployeeServlet - Employee created successfully: 1
+2025-12-31 12:57:55 INFO  org.example.servlet.EmployeeServlet - Updated Successfully
+2025-12-31 12:57:56 INFO  org.example.servlet.EmployeeServlet - Employee Deleted Successfully..
+2025-12-31 13:10:34 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 13:10:34 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2025-12-31 13:10:35 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 13:10:35 INFO  org.example.dao.BranchDAO - Successfully updated account with id=1
+2025-12-31 13:10:35 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2025-12-31 13:10:35 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 13:10:35 INFO  org.example.dao.BranchDAO - Successfully deleted Branch with id:1
+2025-12-31 13:10:35 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=0
+2025-12-31 13:10:35 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 13:10:35 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2025-12-31 13:10:36 INFO  org.example.servlet.BranchServlet - Fetched all Branches successfully
+2025-12-31 13:10:36 INFO  org.example.servlet.BranchServlet - Updated Successfully
+2025-12-31 13:10:36 INFO  org.example.servlet.BranchServlet - Branch created successfully: 1
+2025-12-31 13:10:36 INFO  org.example.servlet.BranchServlet - Branch Deleted Successfully..
+2025-12-31 13:10:37 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 13:10:37 ERROR org.example.dao.EmployeeDAO - Delete failed: no Employee found with this id:-1
+2025-12-31 13:10:37 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 13:10:37 INFO  org.example.dao.EmployeeDAO - Successfully deleted Employee with id:1
+2025-12-31 13:10:37 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 13:10:37 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 13:10:37 INFO  org.example.dao.EmployeeDAO - Successfully updated employee with id=1
+2025-12-31 13:10:37 INFO  org.example.servlet.EmployeeServlet - Employee created successfully: 1
+2025-12-31 13:10:37 INFO  org.example.servlet.EmployeeServlet - Updated Successfully
+2025-12-31 13:10:37 INFO  org.example.servlet.EmployeeServlet - Employee Deleted Successfully..
+2025-12-31 14:18:11 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 14:18:11 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2025-12-31 14:18:11 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 14:18:11 INFO  org.example.dao.BranchDAO - Successfully updated account with id=1
+2025-12-31 14:18:11 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2025-12-31 14:18:11 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 14:18:11 INFO  org.example.dao.BranchDAO - Successfully deleted Branch with id:1
+2025-12-31 14:18:11 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=0
+2025-12-31 14:18:11 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 14:18:11 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2025-12-31 14:18:12 INFO  org.example.servlet.BranchServlet - Fetched all Branches successfully
+2025-12-31 14:18:13 INFO  org.example.servlet.BranchServlet - Updated Successfully
+2025-12-31 14:18:13 INFO  org.example.servlet.BranchServlet - Failed to insert Branch, EXCEPTION:
 java.io.IOException: null
-2025-12-31 14:18:13 INFO  org.example.servlet.BranchServelet - Branch created successfully: 1
-2025-12-31 14:18:13 INFO  org.example.servlet.BranchServelet - Branch Deleted Successfully..
-2025-12-31 14:18:13 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 14:18:13 ERROR org.example.DAO.EmployeeDAO - Delete failed: no Employee found with this id:-1
-2025-12-31 14:18:13 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 14:18:13 INFO  org.example.DAO.EmployeeDAO - Successfully deleted Employee with id:1
-2025-12-31 14:18:13 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 14:18:13 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 14:18:13 INFO  org.example.DAO.EmployeeDAO - Successfully updated employee with id=1
-2025-12-31 14:18:13 INFO  org.example.servlet.EmployeeServelet - Employee created successfully: 1
-2025-12-31 14:18:13 INFO  org.example.servlet.EmployeeServelet - Updated Successfully
-2025-12-31 14:18:13 INFO  org.example.servlet.EmployeeServelet - Employee Deleted Successfully..
-2025-12-31 14:20:12 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 14:20:12 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2025-12-31 14:20:13 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 14:20:13 INFO  org.example.DAO.BranchDAO - Successfully updated account with id=1
-2025-12-31 14:20:13 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2025-12-31 14:20:13 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 14:20:13 INFO  org.example.DAO.BranchDAO - Successfully deleted Branch with id:1
-2025-12-31 14:20:13 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=0
-2025-12-31 14:20:13 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 14:20:13 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2025-12-31 14:20:14 ERROR org.example.servlet.BranchServelet - Failed to delete Branch, EXCEPTION: java.lang.NumberFormatException: Cannot parse null string
-2025-12-31 14:20:14 INFO  org.example.servlet.BranchServelet - Fetched all Branches successfully
-2025-12-31 14:20:14 INFO  org.example.servlet.BranchServelet - Updated Successfully
-2025-12-31 14:20:14 ERROR org.example.servlet.BranchServelet - Failed to Update Branch , EXCEPTION:
+2025-12-31 14:18:13 INFO  org.example.servlet.BranchServlet - Branch created successfully: 1
+2025-12-31 14:18:13 INFO  org.example.servlet.BranchServlet - Branch Deleted Successfully..
+2025-12-31 14:18:13 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 14:18:13 ERROR org.example.dao.EmployeeDAO - Delete failed: no Employee found with this id:-1
+2025-12-31 14:18:13 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 14:18:13 INFO  org.example.dao.EmployeeDAO - Successfully deleted Employee with id:1
+2025-12-31 14:18:13 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 14:18:13 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 14:18:13 INFO  org.example.dao.EmployeeDAO - Successfully updated employee with id=1
+2025-12-31 14:18:13 INFO  org.example.servlet.EmployeeServlet - Employee created successfully: 1
+2025-12-31 14:18:13 INFO  org.example.servlet.EmployeeServlet - Updated Successfully
+2025-12-31 14:18:13 INFO  org.example.servlet.EmployeeServlet - Employee Deleted Successfully..
+2025-12-31 14:20:12 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 14:20:12 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2025-12-31 14:20:13 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 14:20:13 INFO  org.example.dao.BranchDAO - Successfully updated account with id=1
+2025-12-31 14:20:13 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2025-12-31 14:20:13 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 14:20:13 INFO  org.example.dao.BranchDAO - Successfully deleted Branch with id:1
+2025-12-31 14:20:13 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=0
+2025-12-31 14:20:13 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 14:20:13 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2025-12-31 14:20:14 ERROR org.example.servlet.BranchServlet - Failed to delete Branch, EXCEPTION: java.lang.NumberFormatException: Cannot parse null string
+2025-12-31 14:20:14 INFO  org.example.servlet.BranchServlet - Fetched all Branches successfully
+2025-12-31 14:20:14 INFO  org.example.servlet.BranchServlet - Updated Successfully
+2025-12-31 14:20:14 ERROR org.example.servlet.BranchServlet - Failed to Update Branch , EXCEPTION:
 java.io.IOException: null
-2025-12-31 14:20:14 ERROR org.example.servlet.BranchServelet - Failed to insert Branch, EXCEPTION:
+2025-12-31 14:20:14 ERROR org.example.servlet.BranchServlet - Failed to insert Branch, EXCEPTION:
 java.io.IOException: null
-2025-12-31 14:20:14 INFO  org.example.servlet.BranchServelet - Branch created successfully: 1
-2025-12-31 14:20:14 INFO  org.example.servlet.BranchServelet - Branch Deleted Successfully..
-2025-12-31 14:20:15 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 14:20:15 ERROR org.example.DAO.EmployeeDAO - Delete failed: no Employee found with this id:-1
-2025-12-31 14:20:15 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 14:20:15 INFO  org.example.DAO.EmployeeDAO - Successfully deleted Employee with id:1
-2025-12-31 14:20:15 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 14:20:15 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 14:20:15 INFO  org.example.DAO.EmployeeDAO - Successfully updated employee with id=1
-2025-12-31 14:20:15 INFO  org.example.servlet.EmployeeServelet - Employee created successfully: 1
-2025-12-31 14:20:15 INFO  org.example.servlet.EmployeeServelet - Updated Successfully
-2025-12-31 14:20:15 ERROR org.example.servlet.EmployeeServelet - Failed to insert Employee
+2025-12-31 14:20:14 INFO  org.example.servlet.BranchServlet - Branch created successfully: 1
+2025-12-31 14:20:14 INFO  org.example.servlet.BranchServlet - Branch Deleted Successfully..
+2025-12-31 14:20:15 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 14:20:15 ERROR org.example.dao.EmployeeDAO - Delete failed: no Employee found with this id:-1
+2025-12-31 14:20:15 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 14:20:15 INFO  org.example.dao.EmployeeDAO - Successfully deleted Employee with id:1
+2025-12-31 14:20:15 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 14:20:15 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 14:20:15 INFO  org.example.dao.EmployeeDAO - Successfully updated employee with id=1
+2025-12-31 14:20:15 INFO  org.example.servlet.EmployeeServlet - Employee created successfully: 1
+2025-12-31 14:20:15 INFO  org.example.servlet.EmployeeServlet - Updated Successfully
+2025-12-31 14:20:15 ERROR org.example.servlet.EmployeeServlet - Failed to insert Employee
 java.io.IOException: null
-2025-12-31 14:20:15 ERROR org.example.servlet.EmployeeServelet - Failed to Update Employee
+2025-12-31 14:20:15 ERROR org.example.servlet.EmployeeServlet - Failed to Update Employee
 java.io.IOException: null
-2025-12-31 14:20:15 INFO  org.example.servlet.EmployeeServelet - Employee Deleted Successfully..
-2025-12-31 14:21:40 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 14:21:40 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2025-12-31 14:21:40 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 14:21:40 INFO  org.example.DAO.BranchDAO - Successfully updated account with id=1
-2025-12-31 14:21:40 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2025-12-31 14:21:40 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 14:21:40 INFO  org.example.DAO.BranchDAO - Successfully deleted Branch with id:1
-2025-12-31 14:21:40 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=0
-2025-12-31 14:21:40 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 14:21:40 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2025-12-31 14:21:42 ERROR org.example.servlet.BranchServelet - Failed to delete Branch, EXCEPTION: java.lang.NumberFormatException: Cannot parse null string
-2025-12-31 14:21:42 INFO  org.example.servlet.BranchServelet - Fetched all Branches successfully
-2025-12-31 14:21:42 INFO  org.example.servlet.BranchServelet - Updated Successfully
-2025-12-31 14:21:42 ERROR org.example.servlet.BranchServelet - Failed to Update Branch , EXCEPTION:
+2025-12-31 14:20:15 INFO  org.example.servlet.EmployeeServlet - Employee Deleted Successfully..
+2025-12-31 14:21:40 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 14:21:40 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2025-12-31 14:21:40 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 14:21:40 INFO  org.example.dao.BranchDAO - Successfully updated account with id=1
+2025-12-31 14:21:40 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2025-12-31 14:21:40 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 14:21:40 INFO  org.example.dao.BranchDAO - Successfully deleted Branch with id:1
+2025-12-31 14:21:40 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=0
+2025-12-31 14:21:40 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 14:21:40 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2025-12-31 14:21:42 ERROR org.example.servlet.BranchServlet - Failed to delete Branch, EXCEPTION: java.lang.NumberFormatException: Cannot parse null string
+2025-12-31 14:21:42 INFO  org.example.servlet.BranchServlet - Fetched all Branches successfully
+2025-12-31 14:21:42 INFO  org.example.servlet.BranchServlet - Updated Successfully
+2025-12-31 14:21:42 ERROR org.example.servlet.BranchServlet - Failed to Update Branch , EXCEPTION:
 java.io.IOException: null
-2025-12-31 14:21:42 ERROR org.example.servlet.BranchServelet - Failed to insert Branch, EXCEPTION:
+2025-12-31 14:21:42 ERROR org.example.servlet.BranchServlet - Failed to insert Branch, EXCEPTION:
 java.io.IOException: null
-2025-12-31 14:21:42 INFO  org.example.servlet.BranchServelet - Branch created successfully: 1
-2025-12-31 14:21:42 INFO  org.example.servlet.BranchServelet - Branch Deleted Successfully..
-2025-12-31 14:21:42 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 14:21:42 ERROR org.example.DAO.EmployeeDAO - Delete failed: no Employee found with this id:-1
-2025-12-31 14:21:42 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 14:21:42 INFO  org.example.DAO.EmployeeDAO - Successfully deleted Employee with id:1
-2025-12-31 14:21:42 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 14:21:42 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 14:21:42 INFO  org.example.DAO.EmployeeDAO - Successfully updated employee with id=1
-2025-12-31 14:21:42 INFO  org.example.servlet.EmployeeServelet - Employee created successfully: 1
-2025-12-31 14:21:42 INFO  org.example.servlet.EmployeeServelet - Updated Successfully
-2025-12-31 14:21:42 ERROR org.example.servlet.EmployeeServelet - Failed to insert Employee
+2025-12-31 14:21:42 INFO  org.example.servlet.BranchServlet - Branch created successfully: 1
+2025-12-31 14:21:42 INFO  org.example.servlet.BranchServlet - Branch Deleted Successfully..
+2025-12-31 14:21:42 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 14:21:42 ERROR org.example.dao.EmployeeDAO - Delete failed: no Employee found with this id:-1
+2025-12-31 14:21:42 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 14:21:42 INFO  org.example.dao.EmployeeDAO - Successfully deleted Employee with id:1
+2025-12-31 14:21:42 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 14:21:42 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 14:21:42 INFO  org.example.dao.EmployeeDAO - Successfully updated employee with id=1
+2025-12-31 14:21:42 INFO  org.example.servlet.EmployeeServlet - Employee created successfully: 1
+2025-12-31 14:21:42 INFO  org.example.servlet.EmployeeServlet - Updated Successfully
+2025-12-31 14:21:42 ERROR org.example.servlet.EmployeeServlet - Failed to insert Employee
 java.io.IOException: null
-2025-12-31 14:21:42 ERROR org.example.servlet.EmployeeServelet - Failed to Delete Employee
+2025-12-31 14:21:42 ERROR org.example.servlet.EmployeeServlet - Failed to Delete Employee
 java.lang.NumberFormatException: Cannot parse null string
 	at java.base/java.lang.Integer.parseInt(Integer.java:624)
 	at java.base/java.lang.Integer.parseInt(Integer.java:778)
-	at org.example.servlet.EmployeeServelet.doDelete(EmployeeServelet.java:46)
-	at org.example.EmployeeServeletTest.testdoDeleteInvalid(EmployeeServeletTest.java:88)
+	at org.example.servlet.EmployeeServlet.doDelete(EmployeeServelet.java:46)
+	at org.example.EmployeeServletTest.testdoDeleteInvalid(EmployeeServeletTest.java:88)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
@@ -1453,45 +1453,45 @@ java.lang.NumberFormatException: Cannot parse null string
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-2025-12-31 14:21:42 ERROR org.example.servlet.EmployeeServelet - Failed to Update Employee
+2025-12-31 14:21:42 ERROR org.example.servlet.EmployeeServlet - Failed to Update Employee
 java.io.IOException: null
-2025-12-31 14:21:42 INFO  org.example.servlet.EmployeeServelet - Employee Deleted Successfully..
-2025-12-31 14:23:40 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 14:23:40 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2025-12-31 14:23:41 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 14:23:41 INFO  org.example.DAO.BranchDAO - Successfully updated account with id=1
-2025-12-31 14:23:41 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2025-12-31 14:23:41 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 14:23:41 INFO  org.example.DAO.BranchDAO - Successfully deleted Branch with id:1
-2025-12-31 14:23:41 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=0
-2025-12-31 14:23:41 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 14:23:41 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2025-12-31 14:23:42 ERROR org.example.servlet.BranchServelet - Failed to delete Branch, EXCEPTION: java.lang.NumberFormatException: Cannot parse null string
-2025-12-31 14:23:42 INFO  org.example.servlet.BranchServelet - Fetched all Branches successfully
-2025-12-31 14:23:42 INFO  org.example.servlet.BranchServelet - Updated Successfully
-2025-12-31 14:23:42 ERROR org.example.servlet.BranchServelet - Failed to Update Branch , EXCEPTION:
+2025-12-31 14:21:42 INFO  org.example.servlet.EmployeeServlet - Employee Deleted Successfully..
+2025-12-31 14:23:40 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 14:23:40 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2025-12-31 14:23:41 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 14:23:41 INFO  org.example.dao.BranchDAO - Successfully updated account with id=1
+2025-12-31 14:23:41 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2025-12-31 14:23:41 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 14:23:41 INFO  org.example.dao.BranchDAO - Successfully deleted Branch with id:1
+2025-12-31 14:23:41 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=0
+2025-12-31 14:23:41 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 14:23:41 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2025-12-31 14:23:42 ERROR org.example.servlet.BranchServlet - Failed to delete Branch, EXCEPTION: java.lang.NumberFormatException: Cannot parse null string
+2025-12-31 14:23:42 INFO  org.example.servlet.BranchServlet - Fetched all Branches successfully
+2025-12-31 14:23:42 INFO  org.example.servlet.BranchServlet - Updated Successfully
+2025-12-31 14:23:42 ERROR org.example.servlet.BranchServlet - Failed to Update Branch , EXCEPTION:
 java.io.IOException: null
-2025-12-31 14:23:42 ERROR org.example.servlet.BranchServelet - Failed to insert Branch, EXCEPTION:
+2025-12-31 14:23:42 ERROR org.example.servlet.BranchServlet - Failed to insert Branch, EXCEPTION:
 java.io.IOException: null
-2025-12-31 14:23:42 INFO  org.example.servlet.BranchServelet - Branch created successfully: 1
-2025-12-31 14:23:42 INFO  org.example.servlet.BranchServelet - Branch Deleted Successfully..
-2025-12-31 14:23:43 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 14:23:43 ERROR org.example.DAO.EmployeeDAO - Delete failed: no Employee found with this id:-1
-2025-12-31 14:23:43 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 14:23:43 INFO  org.example.DAO.EmployeeDAO - Successfully deleted Employee with id:1
-2025-12-31 14:23:43 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 14:23:43 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 14:23:43 INFO  org.example.DAO.EmployeeDAO - Successfully updated employee with id=1
-2025-12-31 14:23:43 INFO  org.example.servlet.EmployeeServelet - Employee created successfully: 1
-2025-12-31 14:23:43 INFO  org.example.servlet.EmployeeServelet - Updated Successfully
-2025-12-31 14:23:43 ERROR org.example.servlet.EmployeeServelet - Failed to insert Employee
+2025-12-31 14:23:42 INFO  org.example.servlet.BranchServlet - Branch created successfully: 1
+2025-12-31 14:23:42 INFO  org.example.servlet.BranchServlet - Branch Deleted Successfully..
+2025-12-31 14:23:43 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 14:23:43 ERROR org.example.dao.EmployeeDAO - Delete failed: no Employee found with this id:-1
+2025-12-31 14:23:43 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 14:23:43 INFO  org.example.dao.EmployeeDAO - Successfully deleted Employee with id:1
+2025-12-31 14:23:43 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 14:23:43 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 14:23:43 INFO  org.example.dao.EmployeeDAO - Successfully updated employee with id=1
+2025-12-31 14:23:43 INFO  org.example.servlet.EmployeeServlet - Employee created successfully: 1
+2025-12-31 14:23:43 INFO  org.example.servlet.EmployeeServlet - Updated Successfully
+2025-12-31 14:23:43 ERROR org.example.servlet.EmployeeServlet - Failed to insert Employee
 java.io.IOException: null
-2025-12-31 14:23:43 ERROR org.example.servlet.EmployeeServelet - Failed to Delete Employee
+2025-12-31 14:23:43 ERROR org.example.servlet.EmployeeServlet - Failed to Delete Employee
 java.lang.NumberFormatException: Cannot parse null string
 	at java.base/java.lang.Integer.parseInt(Integer.java:624)
 	at java.base/java.lang.Integer.parseInt(Integer.java:778)
-	at org.example.servlet.EmployeeServelet.doDelete(EmployeeServelet.java:46)
-	at org.example.EmployeeServeletTest.testdoDeleteInvalid(EmployeeServeletTest.java:88)
+	at org.example.servlet.EmployeeServlet.doDelete(EmployeeServelet.java:46)
+	at org.example.EmployeeServletTest.testdoDeleteInvalid(EmployeeServeletTest.java:88)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
@@ -1561,25 +1561,25 @@ java.lang.NumberFormatException: Cannot parse null string
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-2025-12-31 14:23:43 ERROR org.example.servlet.EmployeeServelet - Failed to Update Employee
+2025-12-31 14:23:43 ERROR org.example.servlet.EmployeeServlet - Failed to Update Employee
 java.io.IOException: null
-2025-12-31 14:23:43 INFO  org.example.servlet.EmployeeServelet - Employee Deleted Successfully..
-2025-12-31 14:25:24 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 14:25:24 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2025-12-31 14:25:24 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 14:25:25 INFO  org.example.DAO.BranchDAO - Successfully updated account with id=1
-2025-12-31 14:25:25 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2025-12-31 14:25:25 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 14:25:25 INFO  org.example.DAO.BranchDAO - Successfully deleted Branch with id:1
-2025-12-31 14:25:25 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=0
-2025-12-31 14:25:25 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 14:25:25 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2025-12-31 14:25:26 ERROR org.example.servlet.BranchServelet - Failed to delete Branch, EXCEPTION:
+2025-12-31 14:23:43 INFO  org.example.servlet.EmployeeServlet - Employee Deleted Successfully..
+2025-12-31 14:25:24 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 14:25:24 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2025-12-31 14:25:24 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 14:25:25 INFO  org.example.dao.BranchDAO - Successfully updated account with id=1
+2025-12-31 14:25:25 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2025-12-31 14:25:25 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 14:25:25 INFO  org.example.dao.BranchDAO - Successfully deleted Branch with id:1
+2025-12-31 14:25:25 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=0
+2025-12-31 14:25:25 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 14:25:25 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2025-12-31 14:25:26 ERROR org.example.servlet.BranchServlet - Failed to delete Branch, EXCEPTION:
 java.lang.NumberFormatException: Cannot parse null string
 	at java.base/java.lang.Integer.parseInt(Integer.java:624)
 	at java.base/java.lang.Integer.parseInt(Integer.java:778)
-	at org.example.servlet.BranchServelet.doDelete(BranchServelet.java:77)
-	at org.example.BranchServeletTest.testDoDeleteInvalid(BranchServeletTest.java:112)
+	at org.example.servlet.BranchServlet.doDelete(BranchServelet.java:77)
+	at org.example.BranchServletTest.testDoDeleteInvalid(BranchServeletTest.java:112)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
@@ -1649,31 +1649,31 @@ java.lang.NumberFormatException: Cannot parse null string
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-2025-12-31 14:25:26 INFO  org.example.servlet.BranchServelet - Fetched all Branches successfully
-2025-12-31 14:25:26 INFO  org.example.servlet.BranchServelet - Updated Successfully
-2025-12-31 14:25:26 ERROR org.example.servlet.BranchServelet - Failed to Update Branch , EXCEPTION:
+2025-12-31 14:25:26 INFO  org.example.servlet.BranchServlet - Fetched all Branches successfully
+2025-12-31 14:25:26 INFO  org.example.servlet.BranchServlet - Updated Successfully
+2025-12-31 14:25:26 ERROR org.example.servlet.BranchServlet - Failed to Update Branch , EXCEPTION:
 java.io.IOException: null
-2025-12-31 14:25:26 ERROR org.example.servlet.BranchServelet - Failed to insert Branch, EXCEPTION:
+2025-12-31 14:25:26 ERROR org.example.servlet.BranchServlet - Failed to insert Branch, EXCEPTION:
 java.io.IOException: null
-2025-12-31 14:25:26 INFO  org.example.servlet.BranchServelet - Branch created successfully: 1
-2025-12-31 14:25:26 INFO  org.example.servlet.BranchServelet - Branch Deleted Successfully..
-2025-12-31 14:25:27 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 14:25:27 ERROR org.example.DAO.EmployeeDAO - Delete failed: no Employee found with this id:-1
-2025-12-31 14:25:27 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 14:25:27 INFO  org.example.DAO.EmployeeDAO - Successfully deleted Employee with id:1
-2025-12-31 14:25:27 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 14:25:27 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 14:25:27 INFO  org.example.DAO.EmployeeDAO - Successfully updated employee with id=1
-2025-12-31 14:25:27 INFO  org.example.servlet.EmployeeServelet - Employee created successfully: 1
-2025-12-31 14:25:27 INFO  org.example.servlet.EmployeeServelet - Updated Successfully
-2025-12-31 14:25:27 ERROR org.example.servlet.EmployeeServelet - Failed to insert Employee
+2025-12-31 14:25:26 INFO  org.example.servlet.BranchServlet - Branch created successfully: 1
+2025-12-31 14:25:26 INFO  org.example.servlet.BranchServlet - Branch Deleted Successfully..
+2025-12-31 14:25:27 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 14:25:27 ERROR org.example.dao.EmployeeDAO - Delete failed: no Employee found with this id:-1
+2025-12-31 14:25:27 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 14:25:27 INFO  org.example.dao.EmployeeDAO - Successfully deleted Employee with id:1
+2025-12-31 14:25:27 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 14:25:27 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 14:25:27 INFO  org.example.dao.EmployeeDAO - Successfully updated employee with id=1
+2025-12-31 14:25:27 INFO  org.example.servlet.EmployeeServlet - Employee created successfully: 1
+2025-12-31 14:25:27 INFO  org.example.servlet.EmployeeServlet - Updated Successfully
+2025-12-31 14:25:27 ERROR org.example.servlet.EmployeeServlet - Failed to insert Employee
 java.io.IOException: null
-2025-12-31 14:25:27 ERROR org.example.servlet.EmployeeServelet - Failed to Delete Employee
+2025-12-31 14:25:27 ERROR org.example.servlet.EmployeeServlet - Failed to Delete Employee
 java.lang.NumberFormatException: Cannot parse null string
 	at java.base/java.lang.Integer.parseInt(Integer.java:624)
 	at java.base/java.lang.Integer.parseInt(Integer.java:778)
-	at org.example.servlet.EmployeeServelet.doDelete(EmployeeServelet.java:46)
-	at org.example.EmployeeServeletTest.testdoDeleteInvalid(EmployeeServeletTest.java:88)
+	at org.example.servlet.EmployeeServlet.doDelete(EmployeeServelet.java:46)
+	at org.example.EmployeeServletTest.testdoDeleteInvalid(EmployeeServeletTest.java:88)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
@@ -1743,15 +1743,15 @@ java.lang.NumberFormatException: Cannot parse null string
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-2025-12-31 14:25:27 ERROR org.example.servlet.EmployeeServelet - Failed to Update Employee
+2025-12-31 14:25:27 ERROR org.example.servlet.EmployeeServlet - Failed to Update Employee
 java.io.IOException: null
-2025-12-31 14:25:27 INFO  org.example.servlet.EmployeeServelet - Employee Deleted Successfully..
-2025-12-31 14:40:27 ERROR org.example.servlet.BranchServelet - Failed to delete Branch, EXCEPTION:
+2025-12-31 14:25:27 INFO  org.example.servlet.EmployeeServlet - Employee Deleted Successfully..
+2025-12-31 14:40:27 ERROR org.example.servlet.BranchServlet - Failed to delete Branch, EXCEPTION:
 java.lang.NumberFormatException: Cannot parse null string
 	at java.base/java.lang.Integer.parseInt(Integer.java:624)
 	at java.base/java.lang.Integer.parseInt(Integer.java:778)
-	at org.example.servlet.BranchServelet.doDelete(BranchServelet.java:77)
-	at org.example.BranchServeletTest.testDoDeleteInvalid(BranchServeletTest.java:112)
+	at org.example.servlet.BranchServlet.doDelete(BranchServelet.java:77)
+	at org.example.BranchServletTest.testDoDeleteInvalid(BranchServeletTest.java:112)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
@@ -1821,24 +1821,24 @@ java.lang.NumberFormatException: Cannot parse null string
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-2025-12-31 14:40:27 INFO  org.example.servlet.BranchServelet - Fetched all Branches successfully
-2025-12-31 14:40:27 INFO  org.example.servlet.BranchServelet - Updated Successfully
-2025-12-31 14:40:27 ERROR org.example.servlet.BranchServelet - Failed to Update Branch , EXCEPTION:
+2025-12-31 14:40:27 INFO  org.example.servlet.BranchServlet - Fetched all Branches successfully
+2025-12-31 14:40:27 INFO  org.example.servlet.BranchServlet - Updated Successfully
+2025-12-31 14:40:27 ERROR org.example.servlet.BranchServlet - Failed to Update Branch , EXCEPTION:
 java.io.IOException: null
-2025-12-31 14:40:27 ERROR org.example.servlet.BranchServelet - Failed to insert Branch, EXCEPTION:
+2025-12-31 14:40:27 ERROR org.example.servlet.BranchServlet - Failed to insert Branch, EXCEPTION:
 java.io.IOException: null
-2025-12-31 14:40:27 INFO  org.example.servlet.BranchServelet - Branch created successfully: 1
-2025-12-31 14:40:27 INFO  org.example.servlet.BranchServelet - Branch Deleted Successfully..
-2025-12-31 14:40:28 INFO  org.example.servlet.EmployeeServelet - Employee created successfully: 1
-2025-12-31 14:40:28 INFO  org.example.servlet.EmployeeServelet - Updated Successfully
-2025-12-31 14:40:28 ERROR org.example.servlet.EmployeeServelet - Failed to insert Employee
+2025-12-31 14:40:27 INFO  org.example.servlet.BranchServlet - Branch created successfully: 1
+2025-12-31 14:40:27 INFO  org.example.servlet.BranchServlet - Branch Deleted Successfully..
+2025-12-31 14:40:28 INFO  org.example.servlet.EmployeeServlet - Employee created successfully: 1
+2025-12-31 14:40:28 INFO  org.example.servlet.EmployeeServlet - Updated Successfully
+2025-12-31 14:40:28 ERROR org.example.servlet.EmployeeServlet - Failed to insert Employee
 java.io.IOException: null
-2025-12-31 14:40:28 ERROR org.example.servlet.EmployeeServelet - Failed to Delete Employee
+2025-12-31 14:40:28 ERROR org.example.servlet.EmployeeServlet - Failed to Delete Employee
 java.lang.NumberFormatException: Cannot parse null string
 	at java.base/java.lang.Integer.parseInt(Integer.java:624)
 	at java.base/java.lang.Integer.parseInt(Integer.java:778)
-	at org.example.servlet.EmployeeServelet.doDelete(EmployeeServelet.java:46)
-	at org.example.EmployeeServeletTest.testdoDeleteInvalid(EmployeeServeletTest.java:88)
+	at org.example.servlet.EmployeeServlet.doDelete(EmployeeServelet.java:46)
+	at org.example.EmployeeServletTest.testdoDeleteInvalid(EmployeeServeletTest.java:88)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
@@ -1908,15 +1908,15 @@ java.lang.NumberFormatException: Cannot parse null string
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-2025-12-31 14:40:28 ERROR org.example.servlet.EmployeeServelet - Failed to Update Employee
+2025-12-31 14:40:28 ERROR org.example.servlet.EmployeeServlet - Failed to Update Employee
 java.io.IOException: null
-2025-12-31 14:40:28 INFO  org.example.servlet.EmployeeServelet - Employee Deleted Successfully..
-2025-12-31 14:45:51 ERROR org.example.servlet.BranchServelet - Failed to delete Branch, EXCEPTION:
+2025-12-31 14:40:28 INFO  org.example.servlet.EmployeeServlet - Employee Deleted Successfully..
+2025-12-31 14:45:51 ERROR org.example.servlet.BranchServlet - Failed to delete Branch, EXCEPTION:
 java.lang.NumberFormatException: Cannot parse null string
 	at java.base/java.lang.Integer.parseInt(Integer.java:624)
 	at java.base/java.lang.Integer.parseInt(Integer.java:778)
-	at org.example.servlet.BranchServelet.doDelete(BranchServelet.java:77)
-	at org.example.BranchServeletTest.testDoDeleteInvalid(BranchServeletTest.java:112)
+	at org.example.servlet.BranchServlet.doDelete(BranchServelet.java:77)
+	at org.example.BranchServletTest.testDoDeleteInvalid(BranchServeletTest.java:112)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
@@ -1986,24 +1986,24 @@ java.lang.NumberFormatException: Cannot parse null string
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-2025-12-31 14:45:51 INFO  org.example.servlet.BranchServelet - Fetched all Branches successfully
-2025-12-31 14:45:51 INFO  org.example.servlet.BranchServelet - Updated Successfully
-2025-12-31 14:45:52 ERROR org.example.servlet.BranchServelet - Failed to Update Branch , EXCEPTION:
+2025-12-31 14:45:51 INFO  org.example.servlet.BranchServlet - Fetched all Branches successfully
+2025-12-31 14:45:51 INFO  org.example.servlet.BranchServlet - Updated Successfully
+2025-12-31 14:45:52 ERROR org.example.servlet.BranchServlet - Failed to Update Branch , EXCEPTION:
 java.io.IOException: null
-2025-12-31 14:45:52 ERROR org.example.servlet.BranchServelet - Failed to insert Branch, EXCEPTION:
+2025-12-31 14:45:52 ERROR org.example.servlet.BranchServlet - Failed to insert Branch, EXCEPTION:
 java.io.IOException: null
-2025-12-31 14:45:52 INFO  org.example.servlet.BranchServelet - Branch created successfully: 1
-2025-12-31 14:45:52 INFO  org.example.servlet.BranchServelet - Branch Deleted Successfully..
-2025-12-31 14:45:52 INFO  org.example.servlet.EmployeeServelet - Employee created successfully: 1
-2025-12-31 14:45:52 INFO  org.example.servlet.EmployeeServelet - Updated Successfully
-2025-12-31 14:45:52 ERROR org.example.servlet.EmployeeServelet - Failed to insert Employee
+2025-12-31 14:45:52 INFO  org.example.servlet.BranchServlet - Branch created successfully: 1
+2025-12-31 14:45:52 INFO  org.example.servlet.BranchServlet - Branch Deleted Successfully..
+2025-12-31 14:45:52 INFO  org.example.servlet.EmployeeServlet - Employee created successfully: 1
+2025-12-31 14:45:52 INFO  org.example.servlet.EmployeeServlet - Updated Successfully
+2025-12-31 14:45:52 ERROR org.example.servlet.EmployeeServlet - Failed to insert Employee
 java.io.IOException: null
-2025-12-31 14:45:52 ERROR org.example.servlet.EmployeeServelet - Failed to Delete Employee
+2025-12-31 14:45:52 ERROR org.example.servlet.EmployeeServlet - Failed to Delete Employee
 java.lang.NumberFormatException: Cannot parse null string
 	at java.base/java.lang.Integer.parseInt(Integer.java:624)
 	at java.base/java.lang.Integer.parseInt(Integer.java:778)
-	at org.example.servlet.EmployeeServelet.doDelete(EmployeeServelet.java:46)
-	at org.example.EmployeeServeletTest.testdoDeleteInvalid(EmployeeServeletTest.java:88)
+	at org.example.servlet.EmployeeServlet.doDelete(EmployeeServelet.java:46)
+	at org.example.EmployeeServletTest.testdoDeleteInvalid(EmployeeServeletTest.java:88)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
@@ -2073,27 +2073,27 @@ java.lang.NumberFormatException: Cannot parse null string
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-2025-12-31 14:45:52 ERROR org.example.servlet.EmployeeServelet - Failed to Update Employee
+2025-12-31 14:45:52 ERROR org.example.servlet.EmployeeServlet - Failed to Update Employee
 java.io.IOException: null
-2025-12-31 14:45:52 INFO  org.example.servlet.EmployeeServelet - Employee Deleted Successfully..
-2025-12-31 15:04:00 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 15:04:00 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2025-12-31 15:04:26 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 15:04:26 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2025-12-31 15:04:26 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 15:04:26 INFO  org.example.DAO.BranchDAO - Successfully updated account with id=1
-2025-12-31 15:04:26 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2025-12-31 15:04:26 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 15:04:26 INFO  org.example.DAO.BranchDAO - Successfully deleted Branch with id:1
-2025-12-31 15:04:26 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=0
-2025-12-31 15:04:26 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 15:04:26 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2025-12-31 15:04:28 ERROR org.example.servlet.BranchServelet - Failed to delete Branch, EXCEPTION:
+2025-12-31 14:45:52 INFO  org.example.servlet.EmployeeServlet - Employee Deleted Successfully..
+2025-12-31 15:04:00 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 15:04:00 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2025-12-31 15:04:26 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 15:04:26 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2025-12-31 15:04:26 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 15:04:26 INFO  org.example.dao.BranchDAO - Successfully updated account with id=1
+2025-12-31 15:04:26 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2025-12-31 15:04:26 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 15:04:26 INFO  org.example.dao.BranchDAO - Successfully deleted Branch with id:1
+2025-12-31 15:04:26 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=0
+2025-12-31 15:04:26 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 15:04:26 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2025-12-31 15:04:28 ERROR org.example.servlet.BranchServlet - Failed to delete Branch, EXCEPTION:
 java.lang.NumberFormatException: Cannot parse null string
 	at java.base/java.lang.Integer.parseInt(Integer.java:624)
 	at java.base/java.lang.Integer.parseInt(Integer.java:778)
-	at org.example.servlet.BranchServelet.doDelete(BranchServelet.java:77)
-	at org.example.BranchServeletTest.testDoDeleteInvalid(BranchServeletTest.java:112)
+	at org.example.servlet.BranchServlet.doDelete(BranchServelet.java:77)
+	at org.example.BranchServletTest.testDoDeleteInvalid(BranchServeletTest.java:112)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
@@ -2163,31 +2163,31 @@ java.lang.NumberFormatException: Cannot parse null string
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-2025-12-31 15:04:28 INFO  org.example.servlet.BranchServelet - Fetched all Branches successfully
-2025-12-31 15:04:28 INFO  org.example.servlet.BranchServelet - Updated Successfully
-2025-12-31 15:04:28 ERROR org.example.servlet.BranchServelet - Failed to Update Branch , EXCEPTION:
+2025-12-31 15:04:28 INFO  org.example.servlet.BranchServlet - Fetched all Branches successfully
+2025-12-31 15:04:28 INFO  org.example.servlet.BranchServlet - Updated Successfully
+2025-12-31 15:04:28 ERROR org.example.servlet.BranchServlet - Failed to Update Branch , EXCEPTION:
 java.io.IOException: null
-2025-12-31 15:04:28 ERROR org.example.servlet.BranchServelet - Failed to insert Branch, EXCEPTION:
+2025-12-31 15:04:28 ERROR org.example.servlet.BranchServlet - Failed to insert Branch, EXCEPTION:
 java.io.IOException: null
-2025-12-31 15:04:28 INFO  org.example.servlet.BranchServelet - Branch created successfully: 1
-2025-12-31 15:04:28 INFO  org.example.servlet.BranchServelet - Branch Deleted Successfully..
-2025-12-31 15:04:28 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 15:04:28 ERROR org.example.DAO.EmployeeDAO - Delete failed: no Employee found with this id:-1
-2025-12-31 15:04:28 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 15:04:28 INFO  org.example.DAO.EmployeeDAO - Successfully deleted Employee with id:1
-2025-12-31 15:04:28 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 15:04:28 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 15:04:28 INFO  org.example.DAO.EmployeeDAO - Successfully updated employee with id=1
-2025-12-31 15:04:28 INFO  org.example.servlet.EmployeeServelet - Employee created successfully: 1
-2025-12-31 15:04:28 INFO  org.example.servlet.EmployeeServelet - Updated Successfully
-2025-12-31 15:04:28 ERROR org.example.servlet.EmployeeServelet - Failed to insert Employee
+2025-12-31 15:04:28 INFO  org.example.servlet.BranchServlet - Branch created successfully: 1
+2025-12-31 15:04:28 INFO  org.example.servlet.BranchServlet - Branch Deleted Successfully..
+2025-12-31 15:04:28 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 15:04:28 ERROR org.example.dao.EmployeeDAO - Delete failed: no Employee found with this id:-1
+2025-12-31 15:04:28 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 15:04:28 INFO  org.example.dao.EmployeeDAO - Successfully deleted Employee with id:1
+2025-12-31 15:04:28 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 15:04:28 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 15:04:28 INFO  org.example.dao.EmployeeDAO - Successfully updated employee with id=1
+2025-12-31 15:04:28 INFO  org.example.servlet.EmployeeServlet - Employee created successfully: 1
+2025-12-31 15:04:28 INFO  org.example.servlet.EmployeeServlet - Updated Successfully
+2025-12-31 15:04:28 ERROR org.example.servlet.EmployeeServlet - Failed to insert Employee
 java.io.IOException: null
-2025-12-31 15:04:28 ERROR org.example.servlet.EmployeeServelet - Failed to Delete Employee
+2025-12-31 15:04:28 ERROR org.example.servlet.EmployeeServlet - Failed to Delete Employee
 java.lang.NumberFormatException: Cannot parse null string
 	at java.base/java.lang.Integer.parseInt(Integer.java:624)
 	at java.base/java.lang.Integer.parseInt(Integer.java:778)
-	at org.example.servlet.EmployeeServelet.doDelete(EmployeeServelet.java:46)
-	at org.example.EmployeeServeletTest.testdoDeleteInvalid(EmployeeServeletTest.java:88)
+	at org.example.servlet.EmployeeServlet.doDelete(EmployeeServelet.java:46)
+	at org.example.EmployeeServletTest.testdoDeleteInvalid(EmployeeServeletTest.java:88)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
@@ -2257,25 +2257,25 @@ java.lang.NumberFormatException: Cannot parse null string
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-2025-12-31 15:04:28 ERROR org.example.servlet.EmployeeServelet - Failed to Update Employee
+2025-12-31 15:04:28 ERROR org.example.servlet.EmployeeServlet - Failed to Update Employee
 java.io.IOException: null
-2025-12-31 15:04:28 INFO  org.example.servlet.EmployeeServelet - Employee Deleted Successfully..
-2025-12-31 15:10:54 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 15:10:54 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2025-12-31 15:10:54 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 15:10:54 INFO  org.example.DAO.BranchDAO - Successfully updated account with id=1
-2025-12-31 15:10:54 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2025-12-31 15:10:54 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 15:10:54 INFO  org.example.DAO.BranchDAO - Successfully deleted Branch with id:1
-2025-12-31 15:10:54 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=0
-2025-12-31 15:10:54 INFO  org.example.DAO.BranchDAO - Successfully inserted account: 1
-2025-12-31 15:10:54 INFO  org.example.DAO.BranchDAO - Successfully fetched all Branch, count=1
-2025-12-31 15:10:56 ERROR org.example.servlet.BranchServelet - Failed to delete Branch, EXCEPTION:
+2025-12-31 15:04:28 INFO  org.example.servlet.EmployeeServlet - Employee Deleted Successfully..
+2025-12-31 15:10:54 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 15:10:54 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2025-12-31 15:10:54 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 15:10:54 INFO  org.example.dao.BranchDAO - Successfully updated account with id=1
+2025-12-31 15:10:54 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2025-12-31 15:10:54 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 15:10:54 INFO  org.example.dao.BranchDAO - Successfully deleted Branch with id:1
+2025-12-31 15:10:54 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=0
+2025-12-31 15:10:54 INFO  org.example.dao.BranchDAO - Successfully inserted account: 1
+2025-12-31 15:10:54 INFO  org.example.dao.BranchDAO - Successfully fetched all Branch, count=1
+2025-12-31 15:10:56 ERROR org.example.servlet.BranchServlet - Failed to delete Branch, EXCEPTION:
 java.lang.NumberFormatException: Cannot parse null string
 	at java.base/java.lang.Integer.parseInt(Integer.java:624)
 	at java.base/java.lang.Integer.parseInt(Integer.java:778)
-	at org.example.servlet.BranchServelet.doDelete(BranchServelet.java:77)
-	at org.example.BranchServeletTest.testDoDeleteInvalid(BranchServeletTest.java:112)
+	at org.example.servlet.BranchServlet.doDelete(BranchServelet.java:77)
+	at org.example.BranchServletTest.testDoDeleteInvalid(BranchServeletTest.java:112)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
@@ -2345,31 +2345,31 @@ java.lang.NumberFormatException: Cannot parse null string
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-2025-12-31 15:10:56 INFO  org.example.servlet.BranchServelet - Fetched all Branches successfully
-2025-12-31 15:10:56 INFO  org.example.servlet.BranchServelet - Updated Successfully
-2025-12-31 15:10:56 ERROR org.example.servlet.BranchServelet - Failed to Update Branch , EXCEPTION:
+2025-12-31 15:10:56 INFO  org.example.servlet.BranchServlet - Fetched all Branches successfully
+2025-12-31 15:10:56 INFO  org.example.servlet.BranchServlet - Updated Successfully
+2025-12-31 15:10:56 ERROR org.example.servlet.BranchServlet - Failed to Update Branch , EXCEPTION:
 java.io.IOException: null
-2025-12-31 15:10:56 ERROR org.example.servlet.BranchServelet - Failed to insert Branch, EXCEPTION:
+2025-12-31 15:10:56 ERROR org.example.servlet.BranchServlet - Failed to insert Branch, EXCEPTION:
 java.io.IOException: null
-2025-12-31 15:10:56 INFO  org.example.servlet.BranchServelet - Branch created successfully: 1
-2025-12-31 15:10:56 INFO  org.example.servlet.BranchServelet - Branch Deleted Successfully..
-2025-12-31 15:10:56 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 15:10:56 ERROR org.example.DAO.EmployeeDAO - Delete failed: no Employee found with this id:-1
-2025-12-31 15:10:56 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 15:10:56 INFO  org.example.DAO.EmployeeDAO - Successfully deleted Employee with id:1
-2025-12-31 15:10:56 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 15:10:56 INFO  org.example.DAO.EmployeeDAO - Successfully inserted Employee: 1
-2025-12-31 15:10:56 INFO  org.example.DAO.EmployeeDAO - Successfully updated employee with id=1
-2025-12-31 15:10:56 INFO  org.example.servlet.EmployeeServelet - Employee created successfully: 1
-2025-12-31 15:10:56 INFO  org.example.servlet.EmployeeServelet - Updated Successfully
-2025-12-31 15:10:56 ERROR org.example.servlet.EmployeeServelet - Failed to insert Employee
+2025-12-31 15:10:56 INFO  org.example.servlet.BranchServlet - Branch created successfully: 1
+2025-12-31 15:10:56 INFO  org.example.servlet.BranchServlet - Branch Deleted Successfully..
+2025-12-31 15:10:56 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 15:10:56 ERROR org.example.dao.EmployeeDAO - Delete failed: no Employee found with this id:-1
+2025-12-31 15:10:56 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 15:10:56 INFO  org.example.dao.EmployeeDAO - Successfully deleted Employee with id:1
+2025-12-31 15:10:56 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 15:10:56 INFO  org.example.dao.EmployeeDAO - Successfully inserted Employee: 1
+2025-12-31 15:10:56 INFO  org.example.dao.EmployeeDAO - Successfully updated employee with id=1
+2025-12-31 15:10:56 INFO  org.example.servlet.EmployeeServlet - Employee created successfully: 1
+2025-12-31 15:10:56 INFO  org.example.servlet.EmployeeServlet - Updated Successfully
+2025-12-31 15:10:56 ERROR org.example.servlet.EmployeeServlet - Failed to insert Employee
 java.io.IOException: null
-2025-12-31 15:10:56 ERROR org.example.servlet.EmployeeServelet - Failed to Delete Employee
+2025-12-31 15:10:56 ERROR org.example.servlet.EmployeeServlet - Failed to Delete Employee
 java.lang.NumberFormatException: Cannot parse null string
 	at java.base/java.lang.Integer.parseInt(Integer.java:624)
 	at java.base/java.lang.Integer.parseInt(Integer.java:778)
-	at org.example.servlet.EmployeeServelet.doDelete(EmployeeServelet.java:46)
-	at org.example.EmployeeServeletTest.testdoDeleteInvalid(EmployeeServeletTest.java:88)
+	at org.example.servlet.EmployeeServlet.doDelete(EmployeeServelet.java:46)
+	at org.example.EmployeeServletTest.testdoDeleteInvalid(EmployeeServeletTest.java:88)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
@@ -2439,6 +2439,6 @@ java.lang.NumberFormatException: Cannot parse null string
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-2025-12-31 15:10:56 ERROR org.example.servlet.EmployeeServelet - Failed to Update Employee
+2025-12-31 15:10:56 ERROR org.example.servlet.EmployeeServlet - Failed to Update Employee
 java.io.IOException: null
-2025-12-31 15:10:56 INFO  org.example.servlet.EmployeeServelet - Employee Deleted Successfully..
+2025-12-31 15:10:56 INFO  org.example.servlet.EmployeeServlet - Employee Deleted Successfully..

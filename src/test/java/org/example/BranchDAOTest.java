@@ -3,7 +3,7 @@ package org.example;
 
 import org.example.exception.DataException;
 import org.example.model.Branch;
-import org.example.DAO.BranchDAO;
+import org.example.dao.BranchDAO;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -25,7 +25,6 @@ class BranchDAOTest {
         branchDAO = new BranchDAO();
 
         try (
-
                 Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/BankBranchManagement","root","root");) {
             Statement stmt = con.createStatement();
             stmt.execute("Delete from employee");

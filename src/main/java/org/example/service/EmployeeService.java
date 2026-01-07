@@ -1,6 +1,6 @@
 package org.example.service;
 import org.example.model.Employee;
-import org.example.DAO.EmployeeDAO;
+import org.example.dao.EmployeeDAO;
 
 import java.util.List;
 
