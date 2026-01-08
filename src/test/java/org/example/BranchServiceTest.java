@@ -46,7 +46,7 @@ class BranchServiceTest {
 
          Object  result = branchService.findAll();
 
-        assertEquals(branches, result);
+        assertEquals(branches, result,"Expected");
         verify(branchDAO).findAll();
     }
 

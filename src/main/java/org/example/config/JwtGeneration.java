@@ -15,6 +15,9 @@ public class JwtGeneration {
     private static final Logger LOG = LoggerFactory.getLogger(JwtGeneration.class);
     private static final SecretKey SECRET_KEY = Keys.hmacShaKeyFor("The Key is Secret so dont share the key".getBytes());
     private static final long EXPIRATION_TIME = (long) 30 * 60 * 1000;
+    private JwtGeneration() {
+    }
+
     public static String generateToken(String mail) {
         LOG.info("started token generation");
         return Jwts.builder()
@@ -44,4 +47,6 @@ public class JwtGeneration {
     public static boolean validateToken(String token, String username) {
         return extractMail(token).equals(username) && !isTokenExpired(token);
     }
+
+
 }

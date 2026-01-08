@@ -11,38 +11,43 @@ import javax.crypto.SecretKey;
 
 import java.util.Date;
 
-<span class="fc" id="L14">public class JwtGeneration {</span>
+public class JwtGeneration {
 <span class="fc" id="L15">    private static final Logger LOG = LoggerFactory.getLogger(JwtGeneration.class);</span>
 <span class="fc" id="L16">    private static final SecretKey SECRET_KEY = Keys.hmacShaKeyFor(&quot;The Key is Secret so dont share the key&quot;.getBytes());</span>
     private static final long EXPIRATION_TIME = (long) 30 * 60 * 1000;
+    private JwtGeneration() {
+    }
+
     public static String generateToken(String mail) {
-<span class="nc" id="L19">        LOG.info(&quot;started token generation&quot;);</span>
-<span class="nc" id="L20">        return Jwts.builder()</span>
-<span class="nc" id="L21">                .setSubject(mail)</span>
-<span class="nc" id="L22">                .setIssuedAt(new Date())</span>
-<span class="nc" id="L23">                .setExpiration(new Date(System.currentTimeMillis() + EXPIRATION_TIME))</span>
-<span class="nc" id="L24">                .signWith(SECRET_KEY, SignatureAlgorithm.HS256)</span>
-<span class="nc" id="L25">                .compact();</span>
+<span class="nc" id="L22">        LOG.info(&quot;started token generation&quot;);</span>
+<span class="nc" id="L23">        return Jwts.builder()</span>
+<span class="nc" id="L24">                .setSubject(mail)</span>
+<span class="nc" id="L25">                .setIssuedAt(new Date())</span>
+<span class="nc" id="L26">                .setExpiration(new Date(System.currentTimeMillis() + EXPIRATION_TIME))</span>
+<span class="nc" id="L27">                .signWith(SECRET_KEY, SignatureAlgorithm.HS256)</span>
+<span class="nc" id="L28">                .compact();</span>
     }
 
     public static String extractMail(String token) {
-<span class="nc" id="L29">        return getClaims(token).getSubject();</span>
+<span class="nc" id="L32">        return getClaims(token).getSubject();</span>
     }
 
     public static boolean isTokenExpired(String token) {
-<span class="nc" id="L33">        return getClaims(token).getExpiration().before(new Date());</span>
+<span class="nc" id="L36">        return getClaims(token).getExpiration().before(new Date());</span>
     }
 
     private static Claims getClaims(String token) {
-<span class="nc" id="L37">        return Jwts.parser()</span>
-<span class="nc" id="L38">                .verifyWith(SECRET_KEY)</span>
-<span class="nc" id="L39">                .build()</span>
-<span class="nc" id="L40">                .parseSignedClaims(token)</span>
-<span class="nc" id="L41">                .getPayload();</span>
+<span class="nc" id="L40">        return Jwts.parser()</span>
+<span class="nc" id="L41">                .verifyWith(SECRET_KEY)</span>
+<span class="nc" id="L42">                .build()</span>
+<span class="nc" id="L43">                .parseSignedClaims(token)</span>
+<span class="nc" id="L44">                .getPayload();</span>
     }
 
     public static boolean validateToken(String token, String username) {
-<span class="nc bnc" id="L45" title="All 4 branches missed.">        return extractMail(token).equals(username) &amp;&amp; !isTokenExpired(token);</span>
+<span class="nc bnc" id="L48" title="All 4 branches missed.">        return extractMail(token).equals(username) &amp;&amp; !isTokenExpired(token);</span>
     }
+
+
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>

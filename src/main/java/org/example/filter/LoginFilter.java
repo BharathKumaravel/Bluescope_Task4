@@ -5,12 +5,14 @@ import jakarta.servlet.*;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import org.example.config.JwtGeneration;
+import org.example.exception.DataException;
 
 import java.io.IOException;
 
 public class LoginFilter implements Filter {
+    private static final int SUB_STRING=7;
 
-    private JwtGeneration jwtGeneration = new JwtGeneration();
+
 
     @Override
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
@@ -34,21 +36,22 @@ public class LoginFilter implements Filter {
             return;
         }
 
-        String token = authHeader.substring(7);
+        String token = authHeader.substring(SUB_STRING);
 
         try {
 
-            String username = jwtGeneration.extractMail(token);
+            String username = JwtGeneration.extractMail(token);
 
-            if (jwtGeneration.validateToken(token, username)) {
+            if (JwtGeneration.validateToken(token, username)) {
                 chain.doFilter(request, response);
-                return;
+               return;
             }
 
         } catch (Exception e) {
             res.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
             res.getWriter().write("Invalid token");
-            return;
+            throw new DataException("failed",e);
+
         }
 
         chain.doFilter(request, response);

@@ -5,33 +5,34 @@ import org.example.config.JwtGeneration;
 import org.example.dao.UserDAO;
 import org.example.model.User;
 
-<span class="nc" id="L8">public class UserService {</span>
+<span class="fc" id="L8">public class UserService {</span>
 
-<span class="nc" id="L10">    Hashing hashing = new Hashing();</span>
-<span class="nc" id="L11">    UserDAO userDAO =new UserDAO();</span>
-<span class="nc" id="L12">    JwtGeneration jwtGeneration = new JwtGeneration();</span>
+
+
+<span class="fc" id="L12">    UserDAO userDAO =new UserDAO();</span>
 
     public void addUser(User user) {
 
-<span class="nc" id="L16">        String pass = user.getPassword();</span>
-<span class="nc" id="L17">        user.setPassword(hashing.hashPassword(pass));</span>
+<span class="fc" id="L16">        String pass = user.getPassword();</span>
+<span class="fc" id="L17">        user.setPassword(Hashing.hashPassword(pass));</span>
 
-<span class="nc" id="L19">        userDAO.addUser(user);</span>
+<span class="fc" id="L19">        userDAO.addUser(user);</span>
 
-<span class="nc" id="L21">    }</span>
+<span class="fc" id="L21">    }</span>
+
 
     public String verify(String mail , String password){
-<span class="nc" id="L24">        String hashPassword = userDAO.getPass(mail);</span>
-<span class="nc bnc" id="L25" title="All 2 branches missed.">        if(hashPassword !=null) {</span>
-<span class="nc" id="L26">            boolean isValid = hashing.verifyPassword(password, hashPassword);</span>
-<span class="nc bnc" id="L27" title="All 2 branches missed.">            if (isValid) {</span>
-<span class="nc" id="L28">                return jwtGeneration.generateToken(mail);</span>
+<span class="fc" id="L25">        String hashPassword = userDAO.getPass(mail);</span>
+<span class="pc bpc" id="L26" title="1 of 2 branches missed.">        if(hashPassword !=null) {</span>
+<span class="fc" id="L27">            boolean isValid = Hashing.verifyPassword(password, hashPassword);</span>
+<span class="pc bpc" id="L28" title="1 of 2 branches missed.">            if (isValid) {</span>
+<span class="nc" id="L29">                return JwtGeneration.generateToken(mail);</span>
             } else {
-<span class="nc" id="L30">                return &quot;Password wrong&quot;;</span>
+<span class="fc" id="L31">                return &quot;Password wrong&quot;;</span>
             }
         }
         else {
-<span class="nc" id="L34">            return &quot;No mail Found in this mailId please register&quot;;</span>
+<span class="nc" id="L35">            return &quot;No mail Found in this mailId please register&quot;;</span>
         }
     }
 }

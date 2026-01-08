@@ -32,8 +32,8 @@ class EmployeeDAOTest {
         employeeDAO.insert(createEmployee());
 
         List<Employee> employeeList=employeeDAO.getEmployeeByBranchId(1);
-        assertEquals(1,employeeList.size());
-        assertEquals("Bharath",employeeList.get(0).getEmployeeName());
+        assertEquals(1,employeeList.size(),"Expected");
+        assertEquals("Bharath",employeeList.get(0).getEmployeeName(),"Expected");
     }
     @Test
     void testInsertInvalid(){
@@ -44,7 +44,7 @@ class EmployeeDAOTest {
         catch (DataException e)
         {
         assertNotNull(e);
-        assertEquals("Failde to Insert Employee",e.getMessage());
+        assertEquals("Failde to Insert Employee",e.getMessage(),"Expected");
         }
 
     }
@@ -69,7 +69,7 @@ class EmployeeDAOTest {
         employeeDAO.delete(-1);}
       catch (DataException e) {
           assertNotNull(e);
-          assertEquals("Failed to delete Employee",e.getMessage());
+          assertEquals("Failed to delete Employee",e.getMessage(),"Expected");
       }
 
     }
@@ -81,7 +81,7 @@ class EmployeeDAOTest {
        employeeDAO.updateEmployee("Clerk", 1);
 
         Employee updated = employeeDAO.getEmployeeByBranchId(1).get(0);
-        assertEquals("Clerk", updated.getDesignation());
+        assertEquals("Clerk", updated.getDesignation(),"Expected");
     }
 
 

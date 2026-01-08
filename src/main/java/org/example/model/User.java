@@ -5,6 +5,11 @@ public class User {
     private int empId;
     private String password;
 
+    public User() {
+    }
+
+
+
     public String getEmail() {
         return email;
     }

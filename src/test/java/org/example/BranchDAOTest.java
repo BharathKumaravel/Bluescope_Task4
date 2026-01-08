@@ -12,7 +12,7 @@ import java.sql.DriverManager;
 import java.sql.Statement;
 import java.util.List;
 
-import static java.lang.Class.forName;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class BranchDAOTest {
@@ -41,8 +41,8 @@ class BranchDAOTest {
         branchDAO.insert(branch);
 
         List<Branch> branches = branchDAO.findAll();
-        assertEquals(1, branches.size());
-        assertEquals("ChennaiBranch", branches.get(0).getBranchName());
+        assertEquals(1, branches.size(),"Expected");
+        assertEquals("ChennaiBranch", branches.get(0).getBranchName(),"Expected");
     }
     @Test
     void testInsertInvalid() {
@@ -51,8 +51,8 @@ class BranchDAOTest {
         try {
             branchDAO.insert(branch);
         } catch (DataException e) {
-            assertNotNull(e.getMessage());
-            assertEquals("Failed:", e.getMessage());
+            assertNotNull(e.getMessage(),"Expected");
+            assertEquals("Failed:", e.getMessage(),"Expected");
         }
     }
 
@@ -64,7 +64,7 @@ class BranchDAOTest {
 
         List<Branch> branches = branchDAO.findAll();
 
-        assertFalse(branches.isEmpty());
+        assertFalse(branches.isEmpty(),"Expected");
     }
 
     @Test
@@ -74,7 +74,7 @@ class BranchDAOTest {
 
         branchDAO.delete(1);
 
-        assertEquals(0, branchDAO.findAll().size());
+        assertEquals(0, branchDAO.findAll().size(),"Expected");
     }
 
     @Test
@@ -85,7 +85,7 @@ class BranchDAOTest {
         branchDAO.updateBranch("NEWIFSC123", 1);
 
         Branch updated = branchDAO.findAll().get(0);
-        assertEquals("NEWIFSC123", updated.getIfscCode());
+        assertEquals("NEWIFSC123", updated.getIfscCode(),"Expected");
     }
 
 

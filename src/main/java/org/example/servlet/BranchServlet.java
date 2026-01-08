@@ -5,8 +5,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import org.example.config.JwtGeneration;
-import org.example.exception.DataException;
+
 import org.example.model.Branch;
 import org.example.model.BranchUpdate;
 
@@ -15,9 +14,7 @@ import org.example.service.BranchService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-//import javax.servlet.http.HttpServlet;
-//import javax.servlet.http.HttpServletRequest;
-//import javax.servlet.http.HttpServletResponse;
+
 
 import java.io.IOException;
 import java.util.List;
@@ -26,13 +23,11 @@ import java.util.List;
 public class
 BranchServlet extends HttpServlet {
     private static final long serialVersionUID=1L;
-
-JwtGeneration jwtGeneration =new JwtGeneration();
-  private static final Logger LOG = LoggerFactory.getLogger(BranchServlet.class);
+    private static final Logger LOG = LoggerFactory.getLogger(BranchServlet.class);
 
     private final ObjectMapper objectMapper = new ObjectMapper();
 
-   final BranchService branchService =new BranchService();
+   private  BranchService branchService =new BranchService();
 
     @Override
     public void doPost(HttpServletRequest request, HttpServletResponse response){

@@ -26,11 +26,11 @@ public class UserDAO {
 
     public void addUser(User user) {
         try(Connection con = DBConnection.getConnect().getConnection();
-            PreparedStatement ps = con.prepareStatement(ADD_SQL);){
-            LOG.info("Connection created");
+            PreparedStatement ps = con.prepareStatement(ADD_SQL)){
+
             ps.setString(INSERT_MAIL, user.getEmail());
             ps.setString(INSERT_PASSWORD, user.getPassword());
-            LOG.info("Value fetched");
+
             ps.executeUpdate();
            LOG.info("done");
         } catch (SQLException e) {
@@ -49,8 +49,7 @@ public class UserDAO {
             } else {
                 return null;
             }
-        }catch (SQLException e)
-        {
+        }catch (SQLException e) {
             throw new DataException("Failed to get Password from db",e);
         }
     }

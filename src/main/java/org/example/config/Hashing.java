@@ -2,11 +2,15 @@ package org.example.config;
 import org.mindrot.jbcrypt.BCrypt;
 
 public class Hashing {
-    public String hashPassword(String pass){
-        return BCrypt.hashpw(pass,BCrypt.gensalt(5));
+    private static final int SALT_VALUE=5;
+    public static String hashPassword(String pass){
+
+        return BCrypt.hashpw(pass,BCrypt.gensalt(SALT_VALUE));
     }
 
-    public boolean verifyPassword(String password, String hashPassword) {
+    public static boolean verifyPassword(String password, String hashPassword) {
         return BCrypt.checkpw(password,hashPassword);
     }
+
+    private Hashing(){}
 }
