@@ -12,6 +12,7 @@ org\example\model\Branch.class
 org\example\model\EmployeeUpdate.class
 org\example\filter\LoginFilter.class
 org\example\servlet\BranchServlet.class
+org\example\config\EncryptDecrypt.class
 org\example\config\Hashing.class
 org\example\filter\LoggingFilter.class
 org\example\dao\EmployeeDAO.class

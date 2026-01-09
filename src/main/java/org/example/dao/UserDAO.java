@@ -14,14 +14,19 @@ import java.sql.SQLException;
 public class UserDAO {
     private static final int INSERT_MAIL=1;
     private static final int INSERT_PASSWORD=2;
+    private static final int INSERT_ROLE=3;
 
     private static final int GET_PASSWORD=1;
 
+    private static final int GET_ROLES=1;
+
     private static final Logger LOG = LoggerFactory.getLogger(UserDAO.class);
 
-    static final String ADD_SQL="INSERT INTO users (email,password) values(?,?)";
+    static final String ADD_SQL="INSERT INTO users (email,password,role) values(?,?,?)";
 
     static final String GET_PASS="SELECT password from users where email = ?";
+
+    static final String GET_ROLE="SELECT role from users where email = ?";
 
 
     public void addUser(User user) {
@@ -30,6 +35,7 @@ public class UserDAO {
 
             ps.setString(INSERT_MAIL, user.getEmail());
             ps.setString(INSERT_PASSWORD, user.getPassword());
+            ps.setString(INSERT_ROLE, user.getRole());
 
             ps.executeUpdate();
            LOG.info("done");
@@ -52,5 +58,24 @@ public class UserDAO {
         }catch (SQLException e) {
             throw new DataException("Failed to get Password from db",e);
         }
+    }
+
+    public  String getRole(String mail) {
+      try(Connection con = DBConnection.getConnect().getConnection();
+       PreparedStatement ps = con.prepareStatement(GET_ROLE)) {
+          ps.setString(GET_ROLES,mail);
+          ResultSet rs = ps.executeQuery();
+          if(rs.next()){
+              return rs.getString("role");
+          }
+          else {
+              return null;
+          }
+
+      }
+      catch (SQLException e)
+      {
+          throw new DataException("Failed to get Role from db");
+      }
     }
 }

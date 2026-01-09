@@ -7,6 +7,5 @@ org\example\EmployeeServletTest.class
 org\example\EmployeeServletTest$1.class
 org\example\LoginServletTest$1.class
 org\example\UserServiceTest.class
-org\example\UserDAOTest.class
 org\example\BranchServletTest.class
 org\example\BranchDAOTest.class

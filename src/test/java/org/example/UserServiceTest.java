@@ -39,7 +39,7 @@ class UserServiceTest {
     void testAddUser() {
 
         User user = new User();
-
+         user.setRole("Admin");
         userService.addUser(user);
 
         verify(userDAO).addUser(user);

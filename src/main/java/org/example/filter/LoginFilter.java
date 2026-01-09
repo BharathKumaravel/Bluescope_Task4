@@ -5,14 +5,15 @@ import jakarta.servlet.*;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import org.example.config.JwtGeneration;
+import org.example.dao.UserDAO;
 import org.example.exception.DataException;
+import org.example.service.UserService;
 
 import java.io.IOException;
 
 public class LoginFilter implements Filter {
     private static final int SUB_STRING=7;
-
-
+    UserService userService = new UserService();
 
     @Override
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
@@ -41,8 +42,16 @@ public class LoginFilter implements Filter {
         try {
 
             String username = JwtGeneration.extractMail(token);
+            String role =userService.getRole(username);
+
 
             if (JwtGeneration.validateToken(token, username)) {
+                if(req.getMethod().equals("DELETE") || req.getMethod().equals("PUT")) {
+                    if(!"ADMIN".equalsIgnoreCase(role)) {
+                        res.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
+                        res.getWriter().write("Only Admin Have Access to Edit");
+                        return;
+                    }}
                 chain.doFilter(request, response);
                return;
             }

@@ -14,44 +14,69 @@ import java.sql.SQLException;
 <span class="fc" id="L14">public class UserDAO {</span>
     private static final int INSERT_MAIL=1;
     private static final int INSERT_PASSWORD=2;
+    private static final int INSERT_ROLE=3;
 
     private static final int GET_PASSWORD=1;
 
-<span class="fc" id="L20">    private static final Logger LOG = LoggerFactory.getLogger(UserDAO.class);</span>
+    private static final int GET_ROLES=1;
 
-    static final String ADD_SQL=&quot;INSERT INTO users (email,password) values(?,?)&quot;;
+<span class="fc" id="L23">    private static final Logger LOG = LoggerFactory.getLogger(UserDAO.class);</span>
+
+    static final String ADD_SQL=&quot;INSERT INTO users (email,password,role) values(?,?,?)&quot;;
 
     static final String GET_PASS=&quot;SELECT password from users where email = ?&quot;;
 
+    static final String GET_ROLE=&quot;SELECT role from users where email = ?&quot;;
+
 
     public void addUser(User user) {
-<span class="fc" id="L28">        try(Connection con = DBConnection.getConnect().getConnection();</span>
-<span class="fc" id="L29">            PreparedStatement ps = con.prepareStatement(ADD_SQL)){</span>
+<span class="nc" id="L33">        try(Connection con = DBConnection.getConnect().getConnection();</span>
+<span class="nc" id="L34">            PreparedStatement ps = con.prepareStatement(ADD_SQL)){</span>
 
-<span class="fc" id="L31">            ps.setString(INSERT_MAIL, user.getEmail());</span>
-<span class="fc" id="L32">            ps.setString(INSERT_PASSWORD, user.getPassword());</span>
+<span class="nc" id="L36">            ps.setString(INSERT_MAIL, user.getEmail());</span>
+<span class="nc" id="L37">            ps.setString(INSERT_PASSWORD, user.getPassword());</span>
+<span class="nc" id="L38">            ps.setString(INSERT_ROLE, user.getRole());</span>
 
-<span class="fc" id="L34">            ps.executeUpdate();</span>
-<span class="fc" id="L35">           LOG.info(&quot;done&quot;);</span>
-<span class="nc" id="L36">        } catch (SQLException e) {</span>
-<span class="nc" id="L37">            throw new DataException(&quot;Connection Failed&quot;,e);</span>
-<span class="fc" id="L38">        }</span>
-<span class="fc" id="L39">    }</span>
+<span class="nc" id="L40">            ps.executeUpdate();</span>
+<span class="nc" id="L41">           LOG.info(&quot;done&quot;);</span>
+<span class="nc" id="L42">        } catch (SQLException e) {</span>
+<span class="nc" id="L43">            throw new DataException(&quot;Connection Failed&quot;,e);</span>
+<span class="nc" id="L44">        }</span>
+<span class="nc" id="L45">    }</span>
 
     public String getPass(String mail) {
-<span class="fc" id="L42">        try(Connection con = DBConnection.getConnect().getConnection();</span>
-<span class="fc" id="L43">        PreparedStatement ps = con.prepareStatement(GET_PASS)){</span>
-<span class="fc" id="L44">            ps.setString(GET_PASSWORD,mail);</span>
-<span class="fc" id="L45">            ResultSet rs = ps.executeQuery();</span>
-<span class="fc" id="L46">            LOG.info(&quot;Query Executed&quot;);</span>
-<span class="pc bpc" id="L47" title="1 of 2 branches missed.">            if(rs.next()) {</span>
-<span class="fc" id="L48">                return rs.getString(&quot;password&quot;);</span>
+<span class="nc" id="L48">        try(Connection con = DBConnection.getConnect().getConnection();</span>
+<span class="nc" id="L49">        PreparedStatement ps = con.prepareStatement(GET_PASS)){</span>
+<span class="nc" id="L50">            ps.setString(GET_PASSWORD,mail);</span>
+<span class="nc" id="L51">            ResultSet rs = ps.executeQuery();</span>
+<span class="nc" id="L52">            LOG.info(&quot;Query Executed&quot;);</span>
+<span class="nc bnc" id="L53" title="All 2 branches missed.">            if(rs.next()) {</span>
+<span class="nc" id="L54">                return rs.getString(&quot;password&quot;);</span>
             } else {
-<span class="nc" id="L50">                return null;</span>
+<span class="nc" id="L56">                return null;</span>
             }
-<span class="pc bpc" id="L52" title="2 of 4 branches missed.">        }catch (SQLException e) {</span>
-<span class="nc" id="L53">            throw new DataException(&quot;Failed to get Password from db&quot;,e);</span>
+<span class="nc bnc" id="L58" title="All 4 branches missed.">        }catch (SQLException e) {</span>
+<span class="nc" id="L59">            throw new DataException(&quot;Failed to get Password from db&quot;,e);</span>
         }
+    }
+
+    public  String getRole(String mail) {
+<span class="nc" id="L64">      try(Connection con = DBConnection.getConnect().getConnection();</span>
+<span class="nc" id="L65">       PreparedStatement ps = con.prepareStatement(GET_ROLE)) {</span>
+<span class="nc" id="L66">          ps.setString(GET_ROLES,mail);</span>
+<span class="nc" id="L67">          ResultSet rs = ps.executeQuery();</span>
+<span class="nc bnc" id="L68" title="All 2 branches missed.">          if(rs.next()){</span>
+<span class="nc" id="L69">              return rs.getString(&quot;role&quot;);</span>
+          }
+          else {
+<span class="nc" id="L72">              return null;</span>
+          }
+
+<span class="nc bnc" id="L75" title="All 4 branches missed.">      }</span>
+<span class="nc" id="L76">      catch (SQLException e)</span>
+      {
+<span class="nc" id="L78">          throw new DataException(&quot;Failed to get Role from db&quot;);</span>
+      }
     }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>

@@ -31,15 +31,14 @@ public class LoginServlet extends HttpServlet {
     @Override
    public void doGet(HttpServletRequest req, HttpServletResponse resp) {
         try {
+
             String email =req.getParameter("mail");
             String password= req.getParameter("password");
             String token = userService.verify(email,password);
             resp.setStatus(HttpServletResponse.SC_ACCEPTED);
             resp.getWriter().write("Token: " + token);
             LOG.info("Token Generated");
-        }catch (Exception e)
-        {
-
+        }catch (Exception e) {
             resp.setStatus(HttpServletResponse.SC_BAD_REQUEST);
             throw new DataException("Failed",e);
         }

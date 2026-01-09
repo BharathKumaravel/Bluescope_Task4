@@ -1,6 +1,0 @@
-projectKey=BankBranchManagement
-serverUrl=https://demo.fingress.com/analyze
-serverVersion=9.4.0.54424
-dashboardUrl=https://demo.fingress.com/analyze/dashboard?id=BankBranchManagement
-ceTaskId=AZucl_-3W1kzxE1pJ5b5
-ceTaskUrl=https://demo.fingress.com/analyze/api/ce/task?id=AZucl_-3W1kzxE1pJ5b5

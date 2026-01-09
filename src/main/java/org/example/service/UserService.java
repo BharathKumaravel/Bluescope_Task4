@@ -1,5 +1,6 @@
 package org.example.service;
 
+import org.example.config.EncryptDecrypt;
 import org.example.config.Hashing;
 import org.example.config.JwtGeneration;
 import org.example.dao.UserDAO;
@@ -14,7 +15,9 @@ public class UserService {
     public void addUser(User user) {
 
         String pass = user.getPassword();
+        String role = user.getRole();
         user.setPassword(Hashing.hashPassword(pass));
+        user.setRole(EncryptDecrypt.encrypt(role));
 
         userDAO.addUser(user);
 
@@ -34,5 +37,10 @@ public class UserService {
         else {
             return "No mail Found in this mailId please register";
         }
+    }
+
+    public String getRole(String mail) {
+        String encoded = userDAO.getRole(mail);
+        return EncryptDecrypt.decode(encoded);
     }
 }
